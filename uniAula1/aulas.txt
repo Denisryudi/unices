@@ -254,4 +254,3 @@ Assim, para converter o número hexadecimal 2BC em binário, devemos substituir 
 B = 1011
 C = 1100
 
-
