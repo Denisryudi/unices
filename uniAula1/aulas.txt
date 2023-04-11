@@ -215,6 +215,11 @@ possam ser entendidos pelo controlador de E/S e vice-versa.
 Drivers de Dispositivos: São programas que permitem que o sistema operacional se comunique com os dispositivos de E/S, permitindo que o sistema operacional reconheça o 
 dispositivo, controle suas funções e obtenha informações dele.
 
+Um processador é um circuito integrado que possui muitos transistores.
+slot = socket 
+
+unidade de controle, unidade de logica aritmetica e unidade de 
+
 
 2BC HEXADECIMAL
 
@@ -253,4 +258,18 @@ Assim, para converter o número hexadecimal 2BC em binário, devemos substituir 
 2 = 0010
 B = 1011
 C = 1100
+
+ram memory is more expensive and has a smaller storage capacity.
+in evolution is more easy to upgrate a Hard Drive than RAM 
+or
+In the evolution of computers, it is easier to improve a hard disk drive (HDD) than to improve the Random Access Memory (RAM), and similar things.
+
+Interrupts are signals sent by hardware or software to the CPU of a computer to request its attention. When an interrupt is received, the CPU 
+stops what it is doing and directs its attention to the interrupt request
+
+interrupções =  when you request something from the computer and it stops what it's doing to attend to your request.
+
+Polling is a computer programming technique where a program or system regularly checks for updates or changes in data 
+instead of waiting for notifications or interrupts. The statement you provided is referring to the concept of interrupts, 
+where the computer stops what it's doing to attend to a request or event.
 
