@@ -11,3 +11,12 @@ período de tempo. Por sua vez, a localidade espacial busca maximizar o cache co
  a eficiência do cache e reduzir o tempo de acesso aos dados."
 Ou seja, o princípio de localização (temporal e espacial) das memórias cache é importante para garantir a eficiência e a economia de energia, pois permite a utilização 
 de técnicas de hierarquização de memória que maximizam o desempenho e minimizam o consumo de potência.
+
+
+https://www.ic.unicamp.br/~ducatte/mc542/Arquitetura/arq_hp7.pdf
+
+chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.inf.pucrs.br/emoreno/undergraduate/CC/orgarqii/class_files/Aula12.pdf
+
+https://razor.com.br/blog/hardware/memoria-cache-do-processador/
+
+chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/http://www.eng.uerj.br/~ldmm/arquitetura/Hierarquia_de_Memoria.pdf
