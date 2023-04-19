@@ -1,0 +1,211 @@
+Intranet = Redes de computadores internas, acessadas pelos colaboradores por questão de segurança.
+
+extranet = rede externa, acesso pela internet. duas redes conectadas entre elas. 2 intranet
+
+
+Lan = alta taxa de transferência, Protocolos TCP/IP, ETHERNET, Ponto a ponto ou cliente servidor
+
+Man = rede Lan com alcance metropolitano , internet, fibra, rádio 
+Wan = rede de longa distancia ultrapassa a barreira  de cidades
+WPAN BLUETOOTH redes pessoas de curta distancia sem fio
+
+Padrão IEEE802.3
+HALF DUPLEx = os 2 mandam e recebem mas um de cada vez
+FULL DUPLEX = 2 Fios um envia e outro recebe informação ao mesmo tempo
+
+HUB interligar fisicamente os dispositivos da rede
+Desuso pois envia um pacote por vez , não tem controle de fluxo.
+Broadcast = uma porta envia a informação para todos os dispositivos sempre 
+
+Switch = Controle de tráfego 
+Busca a melhor rota 
+Ao invés de enviar para todas as rotas, ele e envia para todas na primeira vez por broadcast, mas após a primeria conexão ele seleciona as portas corretas sem precisar enviar para
+todos os dispositivos
+
+Roteador = mais técnica, pode conectar diversas redes e de diverentes tipos
+Definição de IP 
+Roteador/modem/wifi 
+
+Meios de transmissão
+
+Meio físico = Coaxial, par trançado, fibra - Guiados 
+Não guiados = rádio, infravermelho, sem fio entre outros
+Através de Topologias 
+
+Coaxial = placas 10mbs, Padrão 10 base 5, expansão de 500m
+Padrão 10 base 2 = expansão de 185m (mais barato)
+
+Isento de interferências electromagneticas
+
+Camadas
+Jaqueta(proteção)> malha de metal(proteção contra interferências)> Isolamento interno (proteção isolante)> Fio de cobre 
+
+
+
+Cabo Par Trançado (ETHERNET)
+
+Base 10
+4 pares de cores diferentes
+trançados auxiliar na montagem e capa vinil para proteger do campo electromagnetico externo
+
+Cabo FTP = FOILED TWISTED PAIR = blindagem simples > folha de aço > envolve todos os pares de cabos> protegendo-os contra interferências externas.
+
+Cabo STP = SHIELDED TWISTED PAIR = Blindagem individual para cada par de cabos> melhora a tolerância do cabo com relação a distância.
+
+Cabo SSTP = SCREENED SHIELDED TWISTED PAIR = Combina a blindagem para cada par com a segunda blindagem externa >envolvendo todos os pares >especialmente resistentes  a interferências
+externas.
+
+
+Fibra ótica = sinais luminosos > Camadas de núcleo > filamento de vidro > Revestimento(isolante elétrico) 
+Monomodo transportado de forma direta no núcleo do cabo
+Multimodo = Feixe de luz viaja fazendo refrações nas paredes
+
+Topologia de rede = a estrutura lógica da rede, como a informação trafega dentro da minha rede, como recebo ou envio a informação. 
+
+Ponto a ponto: peer to peer, interliga dois computadores
+Barramento: Todos os comp se comunicam por um barramento central, o mesmo pacote passará pra todas as máquinas. mais de 1 pacote ao mesmo tempo = colisão 
+Anel: Dispositivos conectados em série; circuito fechado; única direção. desvantagem: rede extensa demora na chegada da inf. ex: a,b,c,d,e,f para a > f = Tempo longo
+Se qualquer computador falhar pode causar uma interferência no envio da informação. 
+Estrela: Ponto central que faz o intermédio do envio da informação ex: a    hub, switch, cabos de par trançados
+                                                                    b  h  c
+                                                                       d
+                                                                h = central que envia para abcd 
+
+ Dial-up discada 
+ modem
+ 56kbps
+ Instável
+ custos
+ Bloqueio da linha
+ Ainda existe
+
+ ADSL
+
+ asymmetric Digital Subscriberline
+
+ 1989
+ alta vel
+ linha tel.
+ modem
+ Possui canal de voz, upload, download.
+
+ CATV
+
+ tv a cabo
+ alta vel
+ Canal de vídeo, downstream, upstream
+
+ Elétrica
+
+ PCL 
+
+ Power line communication
+
+ Barata e rápida podem de facil interferência
+
+
+ Rádio 
+
+ Antena, ondas
+Transfere dados cliente/usuário
+grandes distancias
+grande vel
+suscetível a interferência
+
+infravermelho
+WPAN 
+curta
+Aparelhos eletronicos 
+
+Radio curto alcance
+10m de alcance
+
+
+Remota
+Auxílio de reparos
+instalações
+VPN
+teamviewer.
+
+
+TCP/IP
+
+Transmission Control Protocolos
+
+Robusto, controle de fluxo(melhor caminho), conexões lógicas, full-duplex
+
+Informação timer
+
+UDP 
+
+User Datagram Protocol 
+= envia a informação sem controle de fluxo
+visualização de videos 
+escolha para enviar dados em tempo realizado
+
+DHCP
+
+Dynamic Host Configuration Protocol
+Protocolo de config dinâmica de endereços de rede
+solicita uma requisição ao servidor DHCP 
+
+da um endereço de IP para o dispositivo 
+
+transmissão em serial > que paralela
+
+LTE Long term evolution.
+
+
+
+
+Modelo OSI
+É o primero modelo padrão de comunicação entre sistemas de computadores e redes, ele faz uso de sete camadas para garantir essa conversa
+Base para o TCP/IP 
+Encapsulamento 
+
+1º Aplicação quer conversar - modelo pilha
+2º apresentação
+Formato de dados
+Criptografica
+Compactação
+
+3ºsessão 
+
+sincronia 
+início e fim da conexão 
+
+aplicação> codificar> estabelecer conexão> conversar de maneira estruturada
+4ªtransporte
+
+cliente servidor
+
+identificação por porta,
+segmentação de dados, reconstrução de segmentos, controle de fluxo, controle de erros> retransmissão 
+
+5º rede
+
+roteamento entre redes diferentes
+Melhor caminho
+empacotamento
+
+6ª enlace de dados
+Ponto a ponto
+intra-rede
+controle de fluxo de erros
+
+7ªfisica
+
+Transmissão de bits
+convenção de sinais
+Dispositivos físicos e conexões
+
+Equivalência de pilhas
+OSI - Open System Interconection
+TCP/IP Protocolo de internet 
+
+Ou seja
+
+Aplicação> Representação dos dados
+Transporte> Comunicação entre os dispositivos
+Internet> Melhor caminho pela rede
+Acesso à rede> Controle de hardware e conexões ponto-a-ponto
