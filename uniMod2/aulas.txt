@@ -209,3 +209,30 @@ Aplicação> Representação dos dados
 Transporte> Comunicação entre os dispositivos
 Internet> Melhor caminho pela rede
 Acesso à rede> Controle de hardware e conexões ponto-a-ponto
+
+
+Cliente servidor web limita a velocidade dependendo da largura da banda.
+Com 500g/s se a largura da banda do site não for alta não adianta nada.
+Afinal mesmo tendo uma velocidade alta, o site não comporta rodar em tamanha velocidade
+
+Largura de banda: capacidade x tráfego. muita capacidade com muito tráfego = lentidâo.
+Latência tempo de resposta rtt round Trip  time 
+
+Throughtput = medida utilizada para mensurar a taxa em que os dados são transmitidos com êxito, de um lugar para o outro, em um determinado período de tempo 
+
+protocolos = padrões que permitam a comunicação entre diversos modelos
+protocolos estão sempre ligadas à uma RFC = Request for comments > publicadas pela IETF > Internet Engineering Task Force> cisco . 
+
+
+Entrega de dados pelo "melhor esforço" = priorizar a saída da voz, nisso  a imagem reduz a qualidade
+
+UDP = videos
+TCP/IP Bancos confiável fim a fim 
+
+Redes = conjunto de módulos processadores interligados por um sistema de comunicação capazes de trocar informações e compartilhar recursos. 
+
+Sistema de comunicação = Arranjo topológico que interliga os módulos processadores através de enlaces(links, cabo de fibra ótica que vem do isp)
+e regras(protocolos) para organizar essa comunicação 
+
+peer to peer = comunicação entre clientes(torrent0) cada um tem um pedaço e passa para o outro por upload. baixar pedaços simultaneamente 
+TCP faz o ajuste na resposta da comunicação entre os 2
