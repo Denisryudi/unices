@@ -236,3 +236,92 @@ e regras(protocolos) para organizar essa comunicação
 
 peer to peer = comunicação entre clientes(torrent0) cada um tem um pedaço e passa para o outro por upload. baixar pedaços simultaneamente 
 TCP faz o ajuste na resposta da comunicação entre os 2
+
+DHCP = Protocolo que solicita uma requisição ao servidor, e o servidor retorna dando um ip ao dispositivo
+
+FTP = File Transfer Protocol, transferência de arquivos 
+acesso a arquivos remotos 
+
+HTTP = Hyper Text Transfer Protocol, Camada de aplicação, trocam msg por HTTP, Browsers, tratativa de erros (404)
+
+SSL = Security Sochets Layer, criptografia, HTTPS, Compras em cartões
+
+SSH = Security Shell, protocolo para login remoto, comunicação segura.
+
+DNS = Domain Name System, endereço do site, atribuição de nome
+
+IP estatico = fixo
+Dinâmico = semelhante ao DHCP, ao entrar na rede recebe um endereço de ip, e quando sair da rede esse mesmo endereço sera liberado e fornecido ao próximo dispositivo
+
+TCP/IP 4 Camadas
+Cama de aplicação = mais próxima do usuário
+FTP, DNS, HTTP, SSH, DHCP
+
+Camada de transporte = Separar os dados da forma que eles serão trafegados e verificar como ocorrerá isso.
+Controle de fluxo da rede 
+Controle de erros 
+TCP, UDP
+
+Camada inter-Redes
+
+ Função fazer com que os hosts adicionem pacotes em qualquer rede e garantir que eles trafegarão independentemente 
+ ex: Dividir uma informação em diferentes pacotes e fazê-los trafegar independentemente um do outro
+
+Camada host/rede
+
+detectar e corrigir possíveis erros no nível físico e controle de fluxo
+nível hardware
+comunicação entre camada inferior e superior
+
+
+---OSI
+
+Enlace = técnica de detecção> verificação de paridade, método de soma de verificação 
+e verificação de redundancia cíclica. quadros
+
+Camada de rede 
+Frames
+Caminhos apropriados
+
+Roteamento, endereçamento e sub-rede
+
+CAMADA de sessão
+
+abre uma sessão especif entre 2 pcs
+controlar a sessão entre 2 elementos dessa rede
+
+CAMADA apresentação
+
+responsável por transformar os dados da camada de aplicação/interface pra camada de transporte 
+converter de letras pra 0 e 1 como o contrário 
+compacta os dados reduzindo os bits a serem transmitidos na rede e realiza a criptografia(diferença de sintaxe)
+
+
+
+
+
+
+----->
+Camada física = responsável pelos dados físicos da transmissão de bits.
+
+Camada de enlace de dados = Enquadramentos, controle de fluxo e correção/verificação de erros.
+
+Camada de rede = responsável pelo roteamento, endereçamento e gerenciamento de sub-redes
+
+Camada de transporte = controle de fluxo, garantir que a informação venha de um lado para o outro 
+
+Camada de sessão = Abre subsessões entre 2 indivíduos
+
+Camada de apresentação = Parte de igualdade de sintaxe entre o transmissor e o receptor 
+
+Cama de aplicação = Interface com o usuário 
+
+
+
+
+A camada que implementa o protocolo Internet (IP) faz a função de roteamento de dados.
+Sim, isso está correto. A camada do protocolo Internet (IP) é responsável pelo roteamento dos pacotes de dados através da rede, garantindo 
+que eles cheguem ao destino correto. Essa camada é responsável por endereçar, encapsular e enviar os pacotes de dados através da rede, 
+utilizando um sistema de endereçamento único e global (endereços IP). O roteamento é feito através de tabelas de roteamento que indicam 
+qual é o próximo salto (roteador) para encaminhar o pacote em direção ao seu destino.
+
