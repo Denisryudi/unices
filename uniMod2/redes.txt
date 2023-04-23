@@ -325,3 +325,53 @@ que eles cheguem ao destino correto. Essa camada é responsável por endereçar,
 utilizando um sistema de endereçamento único e global (endereços IP). O roteamento é feito através de tabelas de roteamento que indicam 
 qual é o próximo salto (roteador) para encaminhar o pacote em direção ao seu destino.
 
+
+----------------\
+
+
+função da soma de verificação (checksum)
+
+A função da soma de verificação (checksum) é um método de detecção de erros usado para garantir que os dados transmitidos em uma rede sejam recebidos corretamente.
+A ideia é simples: somar todos os valores dos bytes de um pacote de dados e adicionar um valor de verificação ao final do pacote. O receptor, por sua vez, calcula
+a soma dos bytes recebidos e compara com o valor de verificação para verificar se há erros na transmissão.
+
+Para calcular a soma de verificação, o emissor do pacote percorre todos os bytes que serão enviados e soma seus valores, gerando um resultado único. 
+Este resultado é então adicionado ao final do pacote, para que o receptor possa verificar se o pacote foi recebido corretamente.
+
+Ao receber o pacote, o receptor recalcula a soma de verificação, somando os valores dos bytes recebidos e verificando se o resultado é igual ao valor de 
+verificação enviado pelo emissor. Se houver discrepância, isso indica que houve erro na transmissão do pacote e o receptor pode solicitar que o pacote
+seja reenviado.
+
+A função de soma de verificação é usada em muitos protocolos de rede, incluindo o TCP e o UDP, para garantir que os dados transmitidos sejam recebidos sem erros.
+
+
+
+
+
+
+Situação
+É o contexto onde a sua história se passa. Quem está ouvindo a história não estava lá com você e, assim sendo, para que esta pessoa entenda melhor, é preciso colocá-la em um contexto.
+
+Tarefa
+É o que tinha que ser feito. Qual era o desafio a ser superado?
+
+Ação
+É o que você fez de fato. Como você agiu para superar este desafio?
+
+Resultado
+O que aconteceu? Qual foi o resultado gerado a partir da sua ação?
+
+
+
+
+
+S - Eu era estagiária na empresa X. A empresa passava por dificuldades e precisava alcançar a meta de vendas, a qual não era batida haviam 7 meses. 
+Minha atribuição era cuidar da análise dos dados do varejo.
+
+T - Minha gestora me pediu para realizar uma análise separando por tipo de varejista.
+
+A - Além de separar por tipo de varejista, percebi que poderiam existir ganhos separando por território geográfico e cruzando com faixa de preço. Montei 
+esta análise mais detalhada e mostrei-a para a minha chefe.
+
+R - Através dessa análise, minha chefe redefiniu algumas estratégias para o varejo e foram implantadas ações diferenciadas, que resultaram em um aumento de vendas 20% neste canal.
+
