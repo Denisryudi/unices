@@ -345,3 +345,8 @@ seja reenviado.
 A função de soma de verificação é usada em muitos protocolos de rede, incluindo o TCP e o UDP, para garantir que os dados transmitidos sejam recebidos sem erros.
 
 
+PPP (Point-to-Point Protocol) é um protocolo de rede de comunicação ponto a ponto que permite a transferência de dados entre dois dispositivos em uma rede.
+ Ele é utilizado para estabelecer conexões entre computadores, roteadores ou outros dispositivos de rede em uma rede IP (Internet Protocol). O PPP é uma 
+ das várias tecnologias usadas para fornecer acesso à internet em todo o mundo, sendo amplamente utilizado em conexões dial-up, linhas privadas, redes 
+ de área local (LAN) e redes de longa distância (WAN). Ele faz parte da arquitetura TCP/IP porque é um protocolo de camada de enlace, que permite a 
+ transmissão de dados entre a camada de rede e a camada física da rede.
