@@ -345,33 +345,3 @@ seja reenviado.
 A função de soma de verificação é usada em muitos protocolos de rede, incluindo o TCP e o UDP, para garantir que os dados transmitidos sejam recebidos sem erros.
 
 
-
-
-
-
-Situação
-É o contexto onde a sua história se passa. Quem está ouvindo a história não estava lá com você e, assim sendo, para que esta pessoa entenda melhor, é preciso colocá-la em um contexto.
-
-Tarefa
-É o que tinha que ser feito. Qual era o desafio a ser superado?
-
-Ação
-É o que você fez de fato. Como você agiu para superar este desafio?
-
-Resultado
-O que aconteceu? Qual foi o resultado gerado a partir da sua ação?
-
-
-
-
-
-S - Eu era estagiária na empresa X. A empresa passava por dificuldades e precisava alcançar a meta de vendas, a qual não era batida haviam 7 meses. 
-Minha atribuição era cuidar da análise dos dados do varejo.
-
-T - Minha gestora me pediu para realizar uma análise separando por tipo de varejista.
-
-A - Além de separar por tipo de varejista, percebi que poderiam existir ganhos separando por território geográfico e cruzando com faixa de preço. Montei 
-esta análise mais detalhada e mostrei-a para a minha chefe.
-
-R - Através dessa análise, minha chefe redefiniu algumas estratégias para o varejo e foram implantadas ações diferenciadas, que resultaram em um aumento de vendas 20% neste canal.
-
