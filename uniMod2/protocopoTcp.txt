@@ -1,6 +1,0 @@
- Um socket é um ponto de extremidade de um canal de comunicação bidirecional entre um servidor e um cliente. É uma abstração de 
- software que representa um ponto final em uma rede, permitindo que diferentes processos se comuniquem através de uma rede. O 
- processo de uso de um socket envolve a criação de um socket pelo cliente ou servidor, a configuração do endereço IP e da porta 
- associados a ele e a abertura do socket para a comunicação. A importância do socket na disponibilização de serviços de rede é 
- que ele permite a identificação exclusiva do processo que deseja se comunicar, fornecendo um canal de comunicação entre processos
-  em uma rede. Um exemplo de serviço baseado no protocolo TCP é o protocolo HTTP, utilizado para a transmissão de páginas web pela internet.
