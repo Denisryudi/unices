@@ -1,9 +1,11 @@
 body{
-		background: #FFF0F5
+		
 }
 
-#serah2{
-	width: 100%;
+.principal {
+	background: #FFF0F5
+}
+
 }
 
 h1{
@@ -30,6 +32,29 @@ em strong{
 	color: #4B0082;
 }
 
+
+
+.itens {
+	font-style: italic;
+}
+
+.beneficios {
+	background: #00FA9A;
+	width: 100%
+}
+
+h2 {
+	text-align: center;
+}
+
+ul {
+	display: inline-block;
+	vertical-align: top;
+	display: inherit;
+}
+
 #ff{
-	width: 100%;
+	width: 30%;
+	
+	border: 2px solid #000000;
 }
