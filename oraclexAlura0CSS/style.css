@@ -3,14 +3,18 @@ body{
 }
 
 .principal {
-	background: #FFF0F5
-}
+	background: #AFEEEE
+	padding: 20px;
 
 }
 
-h1{
+.titulo-principal {
+	padding-left: 20px;
+}
+
+.titulo-centralizado{
 	height: 50px;
-	border: 2px solid #000000;
+	border: 2px solid #4B0082;
 	text-align: center;
 	padding-top: 10px;
 	margin-left: 40px;
@@ -40,20 +44,20 @@ em strong{
 
 .beneficios {
 	background: #00FA9A;
-	width: 100%
+	padding: 20px;
 }
 
-h2 {
-	text-align: center;
-}
+
 
 ul {
 	display: inline-block;
 	vertical-align: top;
-	display: inherit;
+	width: 20%;
+	margin-right: 14%;
+
 }
 
-#ff{
+.ff{
 	width: 30%;
 	
 	border: 2px solid #000000;
