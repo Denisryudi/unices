@@ -1,0 +1,64 @@
+body{
+		
+}
+
+.principal {
+	background: #AFEEEE
+	padding: 20px;
+
+}
+
+.titulo-principal {
+	padding-left: 20px;
+}
+
+.titulo-centralizado{
+	height: 50px;
+	border: 2px solid #4B0082;
+	text-align: center;
+	padding-top: 10px;
+	margin-left: 40px;
+	margin: 20px;
+
+}
+
+p{
+	text-align: center;
+
+}
+
+#missao {
+	font-size: 20px
+}
+
+
+em strong{
+	color: #4B0082;
+}
+
+
+
+.itens {
+	font-style: italic;
+}
+
+.beneficios {
+	background: #00FA9A;
+	padding: 20px;
+}
+
+
+
+ul {
+	display: inline-block;
+	vertical-align: top;
+	width: 20%;
+	margin-right: 14%;
+
+}
+
+.ff{
+	width: 30%;
+	
+	border: 2px solid #000000;
+}

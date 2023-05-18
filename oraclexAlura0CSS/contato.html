@@ -2,9 +2,9 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>Produtos - Ev Pinturas</title>
+		<title>Contatos - Ev Pinturas</title>
 		<link rel="stylesheet" href="reset.css">
-		<link rel="stylesheet" href="produtos.css">
+		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
 		<header>
@@ -19,3 +19,56 @@
 				</nav>
 			</div>
 		</header>
+
+		<main>
+			<form>
+				<label for="nomesobrenome">Nome e sobrenome</label>
+				<input type="text" id="nomesobrenome" class="input-padrao">
+
+				<label for="email">Email</label>
+				<input type="text" id="email"class="input-padrao">
+
+				<label for="telefone">Telefone</label>
+				<input type="text" id="telefone"class="input-padrao">	
+
+				<label for="mensagem">Mensagem</label>
+				<textarea cols="30" rows="10" id="mensagem"class="input-padrao"></textarea>
+
+				<div>
+					<p>Como prefere o nosso contato?</p>
+					<label for="radio-email"><input type="radio" name="contato"value="email" id="radio-email">Email</label>
+					
+
+
+					<label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
+					
+
+
+					<label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp">Whatsapp</label>
+					
+				</div>
+
+
+
+				<label class="checkbox"><input type="checkbox">Gostaria de receber nossas novidades por e-mail?</label>
+
+				<input type="submit" value="Enviar formulário">
+
+
+
+
+
+			</form>
+
+		</main>
+
+
+
+
+		<footer>
+			<img src="">
+			<p class="copyright">&copy; Copyright Ev pinturas 1990
+		</footer>
+
+	</body>
+</html>
