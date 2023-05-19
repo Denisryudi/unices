@@ -108,9 +108,10 @@ form {
 	margin: 40px 0;
 }
 
-form label, form p {
+form label, form legend {
 	display: block;
 	margin: 4px 0;
+	font-weight: bold;
 }
 
 .input-padrao {
@@ -126,4 +127,43 @@ form textarea {
 
 .checkbox {
 	margin: 20px 0;
+}
+. form legend {
+	color: #FFF0F5;
+
+}
+
+.enviar {
+	width: 20%;
+	padding: 5px 0;
+	background: #000000;
+	color: #ffffff;
+	font-weight: bold;
+	border: none;
+	border-radius: 3px;
+	transition: 1.5s background;
+	cursor: pointer;
+}
+
+.enviar:hover	{
+	background: #9370DB;
+
+	transform: rotate(360deg) scale(1.1);
+	transition: transform 0.8s ease;
+}
+
+table	{
+	margin: 5px 0 40px;
+}
+
+thead, th, td {
+	background: ;
+	color: black;
+	padding: 5px 5px 5px 5px;
+	border: 1px solid #000000;
+	border-radius: 3px;
+}
+
+thead {
+	background: #F5F5F5;
 }
