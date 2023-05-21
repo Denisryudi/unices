@@ -86,12 +86,20 @@ nav a:hover {
 }
 footer {
   background: #000000;
-  padding-top: 2px;
-  display: flex; /* Define o container como um flex container */
-   /* Centraliza o conteúdo horizontalmente */
-  align-items: center; /* Centraliza o conteúdo verticalmente */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Alinha horizontalmente o conteúdo do footer */
 }
 
+.footer-content {
+  display: flex;
+  align-items: center;
+}
+
+.footer-content img {
+  
+	margin-top: 80px;
+}
 .copyright {
 	color: #FFFFFF;
 	font-size: 13px;
