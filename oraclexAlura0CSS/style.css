@@ -1,11 +1,20 @@
+body {
+	font-family: 'Wix Madefor Display', sans-serif;
+	background: #F0FFFF;
+}
+
 header {
 	background: #BBBBBB;
 	padding: 20px 0;
 }
 
+.undertaker {
+	border-radius: 3px;
+}
+
 .caixa {
 	position: relative;
-	width: 940px;
+	width: 1225px;
 	margin: 0 auto;
 }
 
@@ -94,6 +103,7 @@ footer {
 .footer-content {
   display: flex;
   align-items: center;
+  border-radius: 3px;
 }
 
 .footer-content img {
@@ -111,6 +121,9 @@ footer {
 main {
 	width: 940px;
 	margin: 0 auto;
+	background-size: #F0FFFF;
+	padding-bottom: 250px;
+	
 }
 form {
 	margin: 40px 0;
@@ -174,4 +187,64 @@ thead, th, td {
 
 thead {
 	background: #F5F5F5;
+}
+/*css da página inicial */
+.image-container {
+	
+
+	margin: 10px 10px 10px 10px;
+	border-radius: 3px;
+	width: 550px;
+  max-height: 550px;
+	float: left;
+  background: #F0FFFF;
+
+
+}
+
+
+
+.principal{
+
+
+}
+
+.titulo-principal {
+	padding-left: 20px;
+}
+
+.titulo-centralizado {
+	text-align: center
+}
+
+p {
+	text-align: center;
+}
+
+#missao {
+	font-size: 20px
+}
+
+em strong {
+	color: #FF0000;
+}
+
+.itens {
+	font-style: italic
+}
+
+.beneficios {
+	background: #FFFFFF;
+	padding: 20px;
+}
+
+ul {
+	display: inline-block;
+	vertical-align: top;
+	width: 20%;
+	margin-right: 15%;
+}
+
+.imagembeneficios {
+	width: 50%;
 }
