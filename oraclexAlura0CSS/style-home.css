@@ -3,7 +3,7 @@ body{
 }
 
 .principal {
-	background: #AFEEEE
+	background: linear-gradient(45deg, #808080, #ffffff, #ffffff)
 	padding: 20px;
 
 }

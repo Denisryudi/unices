@@ -4,7 +4,7 @@ body {
 }
 
 header {
-	background: #BBBBBB;
+	background: linear-gradient(45deg, #ffffff, #808080);
 	padding: 20px 0;
 }
 
@@ -119,12 +119,13 @@ footer {
 
 
 main {
-	width: 940px;
-	margin: 0 auto;
+	margin-left: 600px;
+	width: 1000px;
 	background-size: #F0FFFF;
 	padding-bottom: 250px;
-	
+	padding-top: 20px;
 }
+
 form {
 	margin: 40px 0;
 }
@@ -189,62 +190,53 @@ thead {
 	background: #F5F5F5;
 }
 /*css da página inicial */
-.image-container {
-	
+.image-container {width: 450px; height: 450px; padding:10px; float: left; margin: 25px; background-image: linear-gradient(45deg, #7FFFD4, #6495ED, #ffffff);}
 
-	margin: 10px 10px 10px 10px;
-	border-radius: 3px;
-	width: 550px;
-  max-height: 550px;
-	float: left;
+
+
+
+.principal {
+  padding: 30px 30px 0 0;
   background: #F0FFFF;
-
-
-}
-
-
-
-.principal{
-
+	text-align: left;
+	font-size: 2em;
+	margin: 0 0 1em;
 
 }
 
+}
 .titulo-principal {
-	padding-left: 20px;
+
+	background: #F0FFFF;
+
+	font-size: 1em;
+	margin: 0 0 1em;
+	clear: left;
 }
 
-.titulo-centralizado {
-	text-align: center
+.principal p {
+	margin: 0 0 1em;
+
 }
 
-p {
-	text-align: center;
+.principal strong,  {
+	font-weight: bold;
 }
 
-#missao {
-	font-size: 20px
+.principal em {
+	font-style: italic;
 }
 
-em strong {
-	color: #FF0000;
+.mapa {
+	padding: 3em 0;
 }
 
-.itens {
-	font-style: italic
+.mapa p {
+	margin: 0 0 2em
+	text-align:center;
 }
 
-.beneficios {
-	background: #FFFFFF;
-	padding: 20px;
-}
+.video {
 
-ul {
-	display: inline-block;
-	vertical-align: top;
-	width: 20%;
-	margin-right: 15%;
-}
-
-.imagembeneficios {
-	width: 50%;
+	width: 560px;
 }
