@@ -412,3 +412,212 @@ Ao criar um estilo qualquer, qual o melhor padrão para marcar o nosso conteúdo
 Alternativa correta
 Ser específico e genérico ao mesmo tempo
 Um balanço é a melhor alternativa. Nem tão específica, para poder repetir as classes, e nem tão genérica, para poder não precisar combinar classes.
+
+
+.titulo-principal {
+	text-align: center;
+	font-size: 2em;
+	margin: 0 0 1em;
+	background: #F5F5F5;
+  clear: left;
+}
+clear left limpa o float
+
+
+
+Para que serve a propriedade float?
+
+Descolar o elemento na lateral e deixar os outros elementos ao redor
+Alternativa correta! Tanto o float:left quanto o float: right servem para que o elemento se destaque na tela, deixe de ocupar o espaço em que estava, 
+para que os outros elementos possam se posicionar ao redor dele
+
+
+.itens:first-child {
+  font-weight: fold;
+} 
+.itens:last-child
+
+.itens:nth-child(3) #3 elemento da lista
+
+.itens:nth-child(2n) {
+  elementos pares 
+}
+----------------------------------------------------------------------------------------------------------------------------------------------------// pseudo elementos
+
+pseudo elementos
+
+deixar a primeira letra em itálico: 
+
+.titulo-principal:first-letter {
+	font-weight: bold;
+}
+
+p:first-line {
+  content: " ["
+}
+deixa a primeira linha do texto com a qualidade
+
+unicode 
+.itens:before {
+	content: "✶";
+}
+
+
+Quando queremos criar um elemento na página, via CSS, antes do elemento do HTML, usamos a propriedade :before.
+
+
+main > p {         significa que a filha direta da main p vai ter a cor de fundo vermelha.
+  background: red;
+}
+
+img + p {  selecina um parágrafo dp do irmão do primeiro elemento
+	background: red;
+}
+
+img ~ p { seleciona todos os elementos dp do irmao do primeiro parágrafo obs:imagem primeiro irmão esta no rep
+
+}
+
+
+selecionar todos menos um parágrafo escolhido:
+
+.principal p:not(#missao) {
+  background: red;
+}
+
+exclusão
+
+
+ex: 
+
+<h2>
+  <section>
+      <h2>
+          <p>
+          </p>
+          <h2>
+
+  Como fazemos para selecionar o último <h2>?
+  
+    section > p + h2
+  
+  Alternativa correta! O último h2 é filho direto da section e irmão do p.
+
+
+
+
+  ------------------------------------------------------------------------------------------------------
+Como usar as medidas proporcionais para deixar um elemento de 100% de largura com o equivalente a um terço do elemento pai, menos 10px?
+
+Alternativa correta
+width: calc( 33% - 10px )
+
+Alternativa correta! Essa é a forma mais direta!
+
+e
+
+width: calc( (100% / 3) - 10px )
+
+Alternativa correta! Essa é uma forma mais complexa, não precisa dessa primeira conta!
+
+
+opacity: 0.7; vai deixando transparente de 0 a 1
+
+
+
+
+.imagem-beneficios {
+  width: 60%;
+  opacity: 0.3;
+  transition: 400ms;
+}
+
+.imagem-beneficios:hover {       = ao passar o mouse por cima a opacidade = 1 e sem = a 0.3 
+	opacity: 1;
+}
+
+alterar para rgba + opacidade
+
+color: rgba(0, 0, 0, 0.3);
+
+
+sombra no elemento:
+
+.imagem-beneficios {
+  width: 60%;
+  opacity: 1;
+  transition: 400ms;
+  box-shadow: 10px 10px #000000;  <----
+
+}                               \this/
+blur:      box-shadow: 10px 10px 5px #000000;
+
+                                    \this/
+sombra:    box-shadow: 10px 10px 5px 10px #000000;
+
+                                                            \    a segunda    / \           terceira            /
+mais de 1 sombra:    box-shadow: 10px 10px 5px 2px #000000, -10px -10px yellow, -20px 20px rgba(255, 0, 0, 0.5);
+
+box interna:     box-shadow: inset 0 0 30px #FF0000;
+                                X   y
+sombra em texto: 	text-shadow: 2px 2px #87CEEB;
+
+
+
+
+Como fazer uma sombra interna em um elemento?
+
+Alternativa correta
+box-shadow: inset 0 0 5px black;
+
+Alternativa correta! Sombra interna, preta, com 5px de espalhamento.
+
+
+
+Como marcar um elemento para que ele seja apresentado de outra forma, em uma tela de até 480px?
+
+Dentro do @media (max-width: 480px) {}
+
+Alternativa correta! É dentro dessa media query que criamos um estilo visual que compreenda telas de até 480px.
+
+ex: 
+
+@media screen and (max-width: 480px) {
+	body {
+		
+	}
+}
+
+
+ex: 
+
+@media screen and (max-width: 480px) {
+	.caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video{
+		width: auto;
+	}
+
+	h1 {
+		text-align: center;
+	}
+
+	nav {
+		position: static;
+	}
+
+	.lista-beneficios, .imagem-beneficios {
+		width: 100%;
+	}
+}
+
+
+Qual a principal tática para não perder muito tempo criando layouts responsivos?
+
+Alternativa correta
+Criar um layout fluido que se adapte sempre
+
+
+Alternativa correta
+Usar medidas proporcionais para tudo
+
+
+É hoje a melhor forma de criar qualquer conteúdo.
