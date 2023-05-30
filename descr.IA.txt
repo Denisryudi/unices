@@ -1,0 +1,20 @@
+ passo descriptografar 
+
+ Processamento de Linguagem Natural. O processamento de linguagem natural envolve a capacidade de converter a fala em texto ou comandos através 
+ de técnicas de análise e compreensão da linguagem humana.
+
+
+Os três níveis de reconhecimento na técnica de Processamento de Linguagem Natural seriam:
+
+Comandos: Nesse nível, o sistema é capaz de reconhecer um conjunto específico de comandos ou palavras-chave, geralmente de dezenas a centenas de palavras. 
+Por exemplo, reconhecer comandos como "abrir", "fechar", "ligar", "desligar", etc.
+
+Discreto: Nesse nível, o sistema é capaz de reconhecer fala ditada com pausas entre as palavras. Ele realiza a discretização das palavras no ciclo da fala,
+ identificando as unidades individuais de fala.
+
+Contínuo: Nesse nível, o sistema é capaz de reconhecer a fala natural, sem pausas entre as palavras. Ele reconhece a natureza contínua da fala, levando 
+em consideração as variações e entonações naturais.
+
+Portanto, os três níveis de reconhecimento no Processamento de Linguagem Natural são Comandos, Discreto e Contínuo.
+
+
