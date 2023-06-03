@@ -40,4 +40,5 @@ DRY = Don't Repeat Yourself!
 Sem redundância desnecessária, no entanto saiba que fatorar um código semelhante em uma função compartilhada
 introduz um alto acoplamento entre essas seções de código. Ou seja ambos os códigos agora dependem de uma interface
 compartilhada. Se ela for alterada ambas as seções devem de código deverão ser ajustadas.
-Duplicação pode ocorrer por acidente ou por conta de alguma reinvenção da roda. 
+Duplicação pode ocorrer por acidente ou por conta de alguma reinvenção da roda. Aproveite das bibliotecas 
+Remover duplicação de código 
