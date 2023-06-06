@@ -17,4 +17,4 @@ em consideração as variações e entonações naturais.
 
 Portanto, os três níveis de reconhecimento no Processamento de Linguagem Natural são Comandos, Discreto e Contínuo.
 
-
+nick of time
