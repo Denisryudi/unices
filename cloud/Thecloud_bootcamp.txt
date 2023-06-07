@@ -4,3 +4,4 @@ Entrega recurso computacional
 Banco de dados
 Storage armazenamento
 Redes
+
