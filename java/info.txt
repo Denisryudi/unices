@@ -1,0 +1,4 @@
+Os executáveis Java precisam da máquina virtual Java.
+
+Os executáveis do mundo Java são portáveis, os do mundo Windows não.
+Lembrando portável significa que podem ser executados em vários sistemas operacionais diferentes (Windows, Linux, Mac, etc).
