@@ -10,3 +10,6 @@ print(f"O faturamento foi de {faturamento} e o lucro foi de {faturamento - custo
 print("lalalalalalalalallalala {}".format(lucro))
 
 print(f'lalalalallalalalala {lucro}')
+
+# ------------para não deixar valores em branco:
+
