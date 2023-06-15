@@ -53,3 +53,12 @@ Correto! Repare que passamos a extensão do arquivo (.java) para o comando javac
 javac Programa.java
 E para chamar a JVM usamos apenas o nome da classe (sem extensão):
 
+usar for somente dentro do laço
+ja o while é capaz de ter um sysout fora do laço
+
+
+Clarice está em dúvida sobre o modo como o break funciona quando utilizado dentro de laços de repetição alinhados.
+Escolha a opção que descreve exatamente o funcionamento desse comando nessas situações.
+
+O break irá interromper apenas o laço de repetição mais interno que o contém.
+
