@@ -1,9 +1,9 @@
 Vale ressaltar que proteções utilizadas em ataques de força bruta podem
 ser utilizadas para ataques de negação de serviço (DoS). Em outras palavras,
 o atacante bloqueia de forma proposital usuários para impedir que eles acessem
-o sistema. Por esse motivo, alguns sistemas evitam bloquear usuários, e
-em vez disso estabelecem um tempo mínimo entre tentativas falhas de login.
-Dessa forma, além de não abrir brecha para um ataque de negação de serviço,
+o sistema. Por esse motivo, alguns sistemas evitam bloquear usuários, e     <-----------------
+em vez disso estabelecem um tempo mínimo entre tentativas falhas de login.    ----------------
+Dessa forma, além de não abrir brecha para um ataque de negação de serviço,   ----------------<
 evita os de força bruta nos quais milhares de tentativas são feitas por segundo.
 Além desses ataques que exploramsua aplicação, também existem os que
 exploram o fator humano envolvido na utilização de seu sistema. Nesse caso,
@@ -63,3 +63,8 @@ uma aplicação que utiliza a concatenação de strings para a formação de um
 comando SQL para autenticação de um usuário. O container web recebe a
 requisição comos parâmetros, a aplicação os concatena coma instrução SQL
 e essa é enviada para execução no banco de dados. Na figura 1.5, tem-se o
+
+highlight:
+Por esse motivo, alguns sistemas evitam bloquear usuários, e
+em vez disso estabelecem um tempo mínimo entre tentativas falhas de login.
+Dessa forma, além de não abrir brecha para um ataque de negação de serviço,
