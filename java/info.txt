@@ -62,3 +62,23 @@ Escolha a opção que descreve exatamente o funcionamento desse comando nessas s
 
 O break irá interromper apenas o laço de repetição mais interno que o contém.
 
+----atributos
+
+Como chamamos, em orientação a objetos, as características de uma classe?
+
+Atributo
+
+Correto, os atributos são as características que especificam uma classe.
+
+
+--class
+
+A partir do conhecimento adquirido de classes, leia as frases abaixo e responda a opção correta.
+
+V Uma classe é uma especificação de um tipo, definindo atributos e comportamentos.
+
+V Um objeto é uma instância de uma classe onde podemos definir valores para seus atributos.
+
+F Para criar uma instância é obrigatório preencher os valores de todos os atributos.
+
+V Para criar uma instância precisamos usar a palavra chave new
