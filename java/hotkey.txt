@@ -6,6 +6,7 @@ sysout + ctrl space
 
 ctrl + shift + f
 
+ctrl + mouse por cima = atalho link
 
 main + ctrl + espaço
 para gerar o método main
