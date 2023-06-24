@@ -12,5 +12,8 @@ simbologia dos conectivos:
 não = ~  - :negação
 e = ^  - :conjunção
 ou = v - :disjunção
-se... então = ->  - :condicional 
+se... então = ->  - :condicional -> p->q   p=hipótese e q= conclusão  
 se, e somente se <->  - :bicondicional 
+
+Tautologia = final da tudo verdadeiro
+
