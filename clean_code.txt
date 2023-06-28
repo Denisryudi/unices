@@ -17,3 +17,19 @@ aumentando a confusão a ponto de se fazer necessário à substitução dessa ve
 Essa nova versão começa à entrar declínio por conta novamente do aumento dos códigos ruins, que estão gerando confusão.
 No fim após 10 anos dando continuidade na nova versão, se faz necessário a mudança par uma nova versão (como novamente
 se embananaram devido às práticas ruins de um código sujo.
+
+À única maneira de ir mais rápido e cumprir prazos é comm um código limpo.
+
+Um programador que escreve um código limpo, é um artista que pode transformar uma tela em branco e
+submet˜ela sob uma série de transformações até que se torne em um sistema graciosamente programado.
+
+Bjarne = gosto de um código elegante e efici˜ente
+Para dificultar o encobrimento de bugs, as depend˜encias mínimas para facilitar a manutenção, o tratamento de erro
+completo de acordo com uma estratégia clara e o desempenho próximo do mais efici˜ente de modo a não incitar as pessoas
+a tornarem o código confuso com otimizações sorrateiras.
+
+Dave = Testes unitários e de aceitação, nomes significativos; ele oferece apenas uma maneira e não várias de se fazer uma 
+tarefa
+Um código sem testes não esta limpo.
+
+
