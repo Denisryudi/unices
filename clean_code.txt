@@ -1,0 +1,19 @@
+cap1
+
+obs: utilizando teclado bluetooth batizado em viagem!!
+
+O código:
+A respeito da substituição dos seres humanos por máquinas: dificilmente ocorreria essa substituição por conta de que elas
+terão de ser capazes de nos entender nos mínimos detalhes a ponto de fazerem a tradução das nossas exig˜encias vagamente
+especificadas em programas executáveis perfeitos para satisfazerem nossas necessidades.
+
+ex: chatgpt
+
+LeBlanc: mais tarde é igual à nunca.
+códigos confusos reduzem a produtividade de uma equipe a ponto de chegar em zero.
+Por conta de serem “exponenciais“ ex: como uma equipe esta demorando demais e não estão conseguindo dar continuidade em
+um projeto, se faz necessário aumentar o número de funcionários, esses mesmos não entendem direito os códigos e acabam 
+aumentando a confusão a ponto de se fazer necessário à substitução dessa versão por outra.
+Essa nova versão começa à entrar declínio por conta novamente do aumento dos códigos ruins, que estão gerando confusão.
+No fim após 10 anos dando continuidade na nova versão, se faz necessário a mudança par uma nova versão (como novamente
+se embananaram devido às práticas ruins de um código sujo.
