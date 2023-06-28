@@ -38,6 +38,23 @@ Michael Feathers = Se importar com o código, um código limpo sempre parece ser
 Ron Jeffries = Efetue todos os testes; sem duplicação de código; Expressa todas as idéias que estão no sistema; minimiza
 o número de entidades, com classes, métodos, funções e outras do tipo.
 Foco mais na duplicação, algo feito repetidas vezes é sinal de que uma idéia não esta bem representada.
+img++
+
+Ward Cunningham = Voc˜e sabe que esta criando um código limpo, quando cada rotina que vc l˜e se mostra como o esperado.
+Um código belo é aquele que faz parecer que a linguagem foi feita para o problema.
+um código bom é aquele em que não se nota, tal como um sistema operacional. 
+
+Escoteiro = troque o nome de uma variável por um melhor, divida uma função que esteja grande demais, elimine um pouco de 
+repetição de código, reduza uma instrução if aninhada.
+
+cap2
+
+Não se refira a um grupo de contas como accontList, a menos que seja uma List. A palavra list significa algo específico
+para programadores. Se o que armazena as contas não for uma List de verdade, poderá onfundir os outros.
+Ou seja ccountGroup, bunchOfaccounts ou paenas ccounts seria melhor!
+
+Usar nomes passíveis de busca, facilitar a localização.
+Nomes longos se sobressaem  aos curtos, e qualquer nome passível de busca se sobressai a uma constante no código.
 
 
 
