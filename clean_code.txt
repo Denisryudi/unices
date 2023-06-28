@@ -31,5 +31,14 @@ a tornarem o código confuso com otimizações sorrateiras.
 Dave = Testes unitários e de aceitação, nomes significativos; ele oferece apenas uma maneira e não várias de se fazer uma 
 tarefa
 Um código sem testes não esta limpo.
+Quanto menor o código melhor.
+
+Michael Feathers = Se importar com o código, um código limpo sempre parece ser escrito por alguém que se importa com ele.
+
+Ron Jeffries = Efetue todos os testes; sem duplicação de código; Expressa todas as idéias que estão no sistema; minimiza
+o número de entidades, com classes, métodos, funções e outras do tipo.
+Foco mais na duplicação, algo feito repetidas vezes é sinal de que uma idéia não esta bem representada.
+
+
 
 
