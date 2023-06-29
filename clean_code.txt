@@ -56,6 +56,12 @@ Ou seja ccountGroup, bunchOfaccounts ou paenas ccounts seria melhor!
 Usar nomes passíveis de busca, facilitar a localização.
 Nomes longos se sobressaem  aos curtos, e qualquer nome passível de busca se sobressai a uma constante no código.
 
+Nomes de classes:
+Devem ter nomes com substantivos, como Customer, WikiPage, Account e AdressParser.
+Evite palavras como gerente, Processadir, dados ou Info no nome dde uma classe, que também nào deve ser um verbo.
 
+Nomes de métodos devem ter verbos, como Post, Payment, Delete Page ou Save. 
+Devem se nomear métodos de acesso, alteração e autenticação segundo seus valores e adicionar os prefixos get, set ou is de acordo com
+o padrão javabean
 
 
