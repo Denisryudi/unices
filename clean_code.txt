@@ -62,6 +62,27 @@ Evite palavras como gerente, Processadir, dados ou Info no nome dde uma classe, 
 
 Nomes de métodos devem ter verbos, como Post, Payment, Delete Page ou Save. 
 Devem se nomear métodos de acesso, alteração e autenticação segundo seus valores e adicionar os prefixos get, set ou is de acordo com
-o padrão javabean
+o padrão javabean.
+		string game = employee.getname();
+		customer.setName("mike");
+		if (paycheck.isPosted())...
 
+Quando os contrutores estiverem sobrecarregados, use métodos de fábrica(factory methody) estáticos com nomes que descreva os
+parãmetros.
+
+evitar brincadeiras nos nomes, selecionar uma palavra por conceito, sem trocadilhos.
+Tomar cuidado com um método add. (contando que as listas e paràmetros e os valores retornados dos diversos
+métodos add. sejam semanticamente equivalentes tudo bem.
+
+Problemas ocorrem quando no add. quando:
+Muitas classes nas quais add criará um novo valor por meio da adição e concatenação de dois valores existentes.
+
+Ao criar uma nova classe que possua um método que coloque seu único parametro em uma coleção, devemos tomar cuidado
+ao chamar esse método de add (caso haja outros métodos) pois caso a semantica seja diferente deve ser usado no lugar
+um nome como o insert, ou append, com isso chamá-lo de add. pode ser um trocadilho.
+
+Use nomes a partir do Domínio da soluçào
+AccountVisitor, JobQueue
+
+Rever página 28 ˜ 34
 
