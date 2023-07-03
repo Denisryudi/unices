@@ -1,6 +1,6 @@
 cap1
 
-obs: utilizando teclado bluetooth batizado em viagem!!
+obs: utilizando teclado bluetooth batizado em viagem
 
 O código:
 A respeito da substituição dos seres humanos por máquinas: dificilmente ocorreria essa substituição por conta de que elas

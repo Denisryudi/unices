@@ -27,4 +27,8 @@ public class Conta {
 		}
 		return false;
 	}
+	//encapsulamento afim de reduzir o risco para acessar o saldo.
+	public double getSaldo() {
+		return this.saldo;
+	}
 }
