@@ -43,3 +43,4 @@ introduz um alto acoplamento entre essas seções de código. Ou seja ambos os c
 compartilhada. Se ela for alterada ambas as seções devem de código deverão ser ajustadas.
 Duplicação pode ocorrer por acidente ou por conta de alguma reinvenção da roda. Aproveite das bibliotecas 
 Remover duplicação de código 
+
