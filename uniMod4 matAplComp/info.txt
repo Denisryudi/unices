@@ -17,3 +17,4 @@ se, e somente se <->  - :bicondicional
 
 Tautologia = final da tudo verdadeiro
 
+caminho critico = prazo máximo
