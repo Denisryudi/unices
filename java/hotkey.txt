@@ -8,6 +8,8 @@ ctrl + shift + f
 
 ctrl + mouse por cima = atalho link
 
+ctrl + o = outline
+
 main + ctrl + espaço
 para gerar o método main
 ctrl + shift + f
