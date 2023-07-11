@@ -82,3 +82,23 @@ V Um objeto é uma instância de uma classe onde podemos definir valores para se
 F Para criar uma instância é obrigatório preencher os valores de todos os atributos.
 
 V Para criar uma instância precisamos usar a palavra chave new
+
+
+
+. -----static 
+
+
+public class Jogador {
+    //Código omitido
+    private int total = 0;
+
+    public Jogador(//atributos){
+       total++;
+    }
+}
+Porém o contador sempre apresenta 1 após inserir um novo jogador. Qual dos motivos abaixo explica a razão desse acontecimento?
+
+
+Alternativa correta
+O total deveria estar como estático, assim sempre que fosse criado um novo objeto do tipo Jogador não seria criado um novo total, 
+mantendo o valor correto.
