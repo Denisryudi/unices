@@ -102,3 +102,11 @@ Porém o contador sempre apresenta 1 após inserir um novo jogador. Qual dos mot
 Alternativa correta
 O total deveria estar como estático, assim sempre que fosse criado um novo objeto do tipo Jogador não seria criado um novo total, 
 mantendo o valor correto.
+
+
+reuso de código
+uma vez criado o mesmo tipo não muda.
+o que muda é o tipo de referência
+polimorfia = mesmo objeto com 2 formas de chegar nele.
+Utilizando hierarquias
+utilizar um método genérico que chama o método específico
