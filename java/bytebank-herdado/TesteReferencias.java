@@ -5,9 +5,9 @@ public class TesteReferencias {
 		g1.setNome("Joaquim");
 		g1.setSalario(1000);
 		
-		Funcionario f1 = new Funcionario();
-		f1.setNome("Pedrinho");
-		f1.setSalario(1000);
+		Designer d1 = new Designer();
+		d1.setNome("Oswald");
+		d1.setSalario(1500);
 		
 		Editor e1 = new Editor();
 		e1.setNome("Gilmar");
@@ -16,10 +16,10 @@ public class TesteReferencias {
 		ControleBonificacao control = new ControleBonificacao();
 		
 		control.registra(g1);
-		control.registra(f1);
+		control.registra(d1);
 		control.registra(e1);
 		
 		System.out.println(control.getSoma());
-		
+		System.out.println();
 	}
 }

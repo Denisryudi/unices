@@ -44,6 +44,3 @@ compartilhada. Se ela for alterada ambas as seções devem de código deverão s
 Duplicação pode ocorrer por acidente ou por conta de alguma reinvenção da roda. Aproveite das bibliotecas 
 
 Remover duplicação de código 
-holy sync eclipse
-
-sync eclipse

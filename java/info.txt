@@ -111,3 +111,11 @@ polimorfia = mesmo objeto com 2 formas de chegar nele.
 Utilizando hierarquias
 utilizar um método genérico que chama o método específico
 Referências de tipos de classes mais genéricas referenciem objetos mais específicos.
+
+classe abstrata:
+Não podem ser instanciadas. Para instanciar, devemos criar primeiro uma classe filha não abstrata.
+
+Uma classe abstrata representa um conceito, algo abstrato, e o compilador não permite instanciar um objeto dessa classe. 
+Para instanciar é preciso criar primeiro uma classe filha não abstrata.
+
+métodos abstratos
