@@ -1,5 +1,5 @@
-//Gerente é um funcionário, Gerente herda da class Funcionario
-public class Gerente extends Funcionario {
+//Gerente é um funcionárioAutenticavel, Gerente herda da class FuncionarioAutenticavel
+public class Gerente extends Funcionario{
 	private int senha;
 
 	
