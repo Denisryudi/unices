@@ -23,3 +23,5 @@ public class Gerente extends Funcionario {
 		return 300;
 		}
 }
+	
+

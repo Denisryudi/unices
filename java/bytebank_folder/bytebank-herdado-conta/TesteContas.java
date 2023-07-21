@@ -10,9 +10,7 @@ public class TesteContas {
 		pc.deposita(200.0);
 		
 		cc.transfere(10.0, pc);
-		
-		
-		
+
 		System.out.println(cc.getSaldo());
 		System.out.println(pc.getSaldo());
 		
