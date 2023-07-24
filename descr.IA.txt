@@ -1,3 +1,8 @@
+
+sync
+
+
+
  passo descriptografar 
 
  Processamento de Linguagem Natural. O processamento de linguagem natural envolve a capacidade de converter a fala em texto ou comandos através 

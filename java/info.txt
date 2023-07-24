@@ -11,7 +11,7 @@ O Bytecode é independente do sistema operacional.
  
 O Bytecode é executado (interpretado) pela JVM.
 
-
+sync eclipse
 JRE = JVM + bibliotecas
 
 JDK = JRE + ferramentas de desenvolvimento
