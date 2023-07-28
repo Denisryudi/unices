@@ -126,7 +126,7 @@ Não possuem corpo (implementação), apenas definem a assinatura.
 Correto, um método abstrato define apenas a assinatura (visibilidade, retorno, nome do método e parâmetros).
 
 
-
+A herança captura o que é comum e isola aquilo que é diferente entre classes.
 
 
 O que é verdade sobre classes abstratas? Selecione todas as afirmações verdadeiras:
@@ -197,3 +197,36 @@ Errado, vimos que as interfaces são uma alternativa também para ter polimorfis
 
 Temos polimorfismo quando uma classe extende de outra ou também quando uma classe implementa uma interface.
 Correta, temos polimorfismo via herança ou interface.
+
+
+
+......
+sobre interfaces
+
+Criar a interface -> método public sempre abstrato -> como: double getValorImposto(); (public e abstract implícito) -> 
+
+
+
+Como vimos durante o curso e revisamos durante este capítulo, quais das afirmativas abaixo descreve uma vantagem do uso de interfaces?
+
+Garante que todos os métodos de classes que implementam uma interface possam ser chamados com segurança.
+Correto! Isso é a ideia do contrato, garantindo que a classe tenha um comportamento, basta assinar o contrato (implementar a inteface).
+
+...
+
+
+Qual das afirmativas a seguir representa uma vantagem do uso de composição e interfaces sobre o uso de herança?
+
+
+A herança é limitada ao polimorfismo, enquanto o uso de interfaces com composição possibilita polimorfismo E reutilização de código.
+Errado pois Herança possibilita sim polimorfismo E reutilização.
+
+
+Com interfaces temos uma alternativa ao polimorfismo, com a composição temos uma alternativa a reutilização de código.
+Não há vantagem alguma pode escolher o que você julga melhor.
+Errado! Na verdade existem algumas vantagens. Normalmente o uso de interfaces (para definir o contrato e ter polimorfismo) e composição (para ter reutilização de código) 
+é mais flexível comparado a herança.
+
+
+Com composições e interfaces teremos mais flexibilidade com nosso código, já que não nos prenderemos ao acoplamento que a herança propõe.
+Correto!
