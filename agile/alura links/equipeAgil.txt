@@ -1,0 +1,165 @@
+Equipe ágil
+
+Qual alternativa melhor define uma equipe ágil?
+
+
+Uma equipe ágil é um grupo de pessoas com todos os conhecimentos necessários para produzir algo.
+
+Exatamente. Em um time ágil o conhecimento necessário para atendimento aos objetivos centrais do projeto está contido na multidisciplinaridade da equipe.
+
+auto-organização
+objetivo compartilhado
+time-box
+restrições
+
+...auto-organização
+
+Quais são os 3 elementos mínimos necessários para que um time possa ser auto organizável?
+
+Objetivos compartilhados, timebox e restrições.
+
+
+Exatamente. Sabendo para onde o time precisa ir (os objetivos), até quando ele precisa chegar (timebox) e quais os limites que ele possui (restrições) o time pode se auto organizar para conseguir alcançar esse objetivo.
+
+***
+Nessa aula aprendemos que as premissas básicas e essenciais para uma equipe ser auto organizável é ter:
+
+Objetivo compartilhado: defina o objetivo no qual todos da equipe participarão do desenvolvimento do projeto de forma compartilhada.
+
+Timebox: espaço de tempo necessário para que a auto organização funcione.
+
+Restrições: o que não deve ser feito no desenvolvimento do projeto.
+
+
+...equipes ageis
+
+De acordo com os três tipos de equipes que atuam em ambientes ágeis, temos:
+
+A equipe que foca em maximizar o valor na entrega de uma feature;
+A equipe que foca em grupos que possui comportamentos similares;
+A equipe que tem como foco otimizar apenas um elemento.
+
+Funcionalidade, jornada do cliente e componente.
+
+***
+Nesta aula aprendemos três principais tipos de equipes ágeis que se auto organizam:
+
+Funcionalidades: essa equipe se organiza em torno de uma funcionalidade e se preocupa em maximizar o valor na entrega ao usuário para uma melhor experiência possível. A equipe precisa ser multidisciplinar, já que ela precisa trabalhar em diversos pontos no código.
+
+Componente: essa equipe funciona muito bem para fazer otimizações locais, porém pode ser crítico mexer em um componente já que ele é usado em diversas funcionalidades, além de garantir a sincronização dos componentes que foram alterados.
+
+Jornada do cliente: essa equipe foca em grupos de clientes que possui comportamentos ou necessidades semelhantes.
+
+
+
+
+Scrum Team
+
+Product Owner -> priorização de demandas
+
+Dev Team -> Da maneira correta, melhoria contínua
+
+Scrum Master -> No tempo correto, remoção de impedimentos
+
+...importantes papéis no scrum
+
+De acordo com o que aprendemos durante essa aula, há três papéis importantes que compõem o Scrum Team.
+
+Quais são eles?
+
+Dev Team (qualidade), Scrum Master (eficiência), Product Owner (eficácia). Esses 3 papéis juntos compõem um Scrum Team e vamos entendê-los mais a fundo nas próximas aulas
+
+***
+Aprendemos que o Scrum team é um conjunto de pessoas que tem o objetivo de fazer produtos excepcionais, e para isso acontecer, são necessárias 3 responsabilidades:
+
+Negócio: responsabilidade em garantir que o produto a ser desenvolvido faça sentido para o mercado. Não adianta você produzir o melhor produto, se não tem cliente para o mesmo.
+
+Tecnológica: responsabilidade em garantir que o produto produzido esteja correto para aquele mercado em específico e público-alvo.
+
+Eficiência: responsabilidade em garantir que o time opere com a melhor qualidade possível.
+
+Ou seja, nessa aula aprendemos que um time ágil é organizado de forma que possua pessoas que fiquem responsáveis por garantir que o produto a ser desenvolvido esteja alinhado com o que o mercado espera, que a qualidade e tecnologias empregadas estão sendo as adequadas e também por pessoas responsáveis por garantir que a equipe opere de uma forma eficiente, sem gargalos.
+
+Product Owner
+
+Foco produto
+Maximizar valor de negócio
+
+-operacional - reuniões, coleta de feedback
+-tático > priorização do backlog 
+-estratégico > visão do produto
+
+sprint 
+	passado		     presente 		     futuro	
+feedback e relatórios   dúvidas e reuniões  refinamento e priorização
+
+conseguir falar não, em relação as prioridades
+
+...papel Product Owner
+
+Qual o objetivo da pessoa que possui o papel de Product Owner em um projeto?
+
+Encontrar maneiras de maximizar o valor que aquele produto gera para o negócio.
+
+
+Para isso, essa pessoa precisa de algumas habilidades como senso de dono, foco e conhecimento profundo do negócio.
+
+artigo
+
+Rafael Vieira, Product Owner dentro da empresa em que trabalha, escreveu um artigo esclarecendo o que é e como é ser um Product Owner, ele escreve sobre o dia a dia, os desafios e as responsabilidades de um PO dentro da empresa.
+
+https://medium.com/produto-di%C3%A1rio/o-que-%C3%A9-um-product-owner-c44bb29a9f66
+
+
+***
+O que é Product Owner?
+Nessa aula aprendemos que a pessoa responsável pelo papel de Product Owner tem o desafio de conseguir maximizar o valor que aquele produto irá gerar para o negócio.
+
+Para isso, o PO, além de precisar ter um foco alto e senso de dono, precisará conversar frequentemente com as outras áreas que fazem parte da empresa, para entender quais são os pontos-chave que remetem a dor dos clientes, e conhecer a fundo o produto e mercado em que a empresa está inserida.
+
+Como é o dia a dia de um PO?
+No seu dia a dia, o PO terá que descrever o que precisa ser feito, e para isso, é necessário conversar com outras áreas para entender as necessidades e também o que pode ou não ser feito. Além de priorizar o que precisa ser construído, muitas vezes o PO terá que dizer não para funcionalidades que agregam menos valor para o negócio/projeto naquele momento.
+
+Dev Team
+
+Equipe de desenvolvimento
+
+equipe não muito grande
+recomenda de 3 a 9 pessoas(scrum guide)
+todos no mesmo barco
+Conseguir levar a idéia ao "pronto"
+
+Perfil T = conhecimentos de cada membro/especialistas de cada linguagem
+funcionalidade, truck factor= quantas pessoas de uma determinada equipe
+precisam ser atropeladas para a equipe travar.
+
+
+...Development Team qualidades
+
+De acordo com o que aprendemos nessa aula, um Development Team é composto por pessoas que podem ser:
+
+Especialista: alguém com profundidade de conhecimento em algum assunto;
+
+Generalista: pessoa que sabe um pouco de cada coisa, mas não tem nenhum conteúdo muito aprofundado;
+
+T-shaped: alguém com especialidade em algo, mas com um conhecimento generalizado em outras coisas;
+
+Já sabemos os tipos de profissionais no Development Team, mas qual é o papel de um development team em uma equipe ágil?
+
+Construir, validar e integrar o incremento de um produto.
+Exatamente. Uma equipe de desenvolvimento é a responsável por executar o que foi definido, validando para garantir que está adequado.
+
+Ex:
+Considere que uma nova área de vendas está sendo criada na sua empresa e foi mapeado que é preciso contratar 12 novas pessoas para essa área entre coordenação, vendas e pré-vendas.
+
+A Product Owner identificou toda a necessidade, conheceu bem os produtos que essas pessoas irão trabalhar e mapeou bem as características que serão buscadas nessas pessoas.
+
+A equipe que executará o trabalho, ou seja, a Development Team, irá fazer as entrevistas, negociação de salários, integração e avaliação da performance das pessoas especialistas em diferentes temas, como processos seletivos, vendas, liderança, psicologia e negociação, mas elas fazem parte de um único time: nesse caso, o time de "recrutamento da nova equipe de vendas".
+
+
+***
+Aprendemos que uma equipe de desenvolvimento é responsável por construir, validar e integrar o incremento de um produto.
+
+Além disso, essa equipe é composta por pessoas que não possuem títulos, todos são "membros" daquele time.
+
+E uma das características mais interessantes para a pessoa fazer parte de uma Development Team ou até mesmo de uma equipe ágil é ela ser T-shaped, ou seja, além dela ter pelo menos uma expertise na qual ela é especialista, ela também consegue ser generalista, podendo atuar com tranquilidade em diferentes papéis e assuntos.
