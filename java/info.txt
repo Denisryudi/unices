@@ -230,3 +230,158 @@ Errado! Na verdade existem algumas vantagens. Normalmente o uso de interfaces (p
 
 Com composições e interfaces teremos mais flexibilidade com nosso código, já que não nos prenderemos ao acoplamento que a herança propõe.
 Correto!
+
+.....
+exceções
+
+
+Marque as alternativas verdadeiras sobre exceções em Java:
+
+
+Exceções em Java podem ou não ter um nome que a identifique.
+Exceções sempre possuem um nome.
+
+
+
+Exceções não tratadas caem na pilha de execução procurando por alguém que saiba lidar com ela.
+Correto!
+
+
+
+Um programa Java sintaticamente correto jamais apresentará erros durante sua execução. Aliás, essa é uma das vantagens da linguagem Java.
+Errado, o compilador fará apenas uma verificação sintática. Mesmo assim pode acontecer exceções.
+
+
+
+Toda exceção em Java possui um nome que a identifica. Essa abordagem torna seu entendimento mais fácil do que o uso de números mágicos (códigos de erros) como 15, 7012 ou 16.
+Correto!
+
+...
+uma exceção
+Caso não seja tratada, a exceção muda o fluxo de execução do programa.
+Alternativa correta! Caso não seja tratada, a exceção muda o fluxo de execução do programa, encerrando-o abruptamente.
+
+--- usa a referencia para chamar um método
+
+
+... throw
+
+Existe uma hierarquia grande de classes que representam exceções. Por exemplo, ArithmeticException é filha de RuntimeException, que herda de Exception, 
+que por sua vez é filha da classe mais ancestral das exceções, Throwable. Conhecer bem essa hierarquia significa saber utilizar exceções em sua aplicação.
+
+Throwable é a classe que precisa ser extendida para que seja possível jogar um objeto na pilha (através da palavra reservada throw)
+
+A hierarquia iniciada com a classe Throwable é dividida em exceções e erros. Exceções são usadas em códigos de aplicação. Erros são usados exclusivamente pela máquina virtual. 
+Classes que herdam de ExceptionError são usadas para comunicar erros na máquina virtual.
+
+Desenvolvedores de aplicação não devem criar erros que herdam de ErrorStackOverflowError é um erro da máquina virtual para informar que a pilha de execução não tem mais memória.
+
+Exceções são separadas em duas grandes categorias: aquelas que são obrigatoriamente verificadas pelo compilador e as que não são verificadas. 
+As primeiras são denominadas checked e são criadas através do pertencimento a uma hieraquia que não passe por RuntimeException. As segundas são
+as unchecked, e são criadas como descendentes de RuntimeException.
+
+r: Isso aí! A primeira frase da afirmação 3 está correta. Contudo, classes que comunicam erros da máquina virtual herdam de Error. 
+Fala pro Miguel assistir os vídeos novamente!
+
+checked obrigatorio tratar
+unchecked o desenvolvedor escolher
+
+a - throw
+
+b - finally
+
+c - catch
+
+d - throws
+
+e - try
+
+todas
+
+
+...finally
+
+Veja as afirmações sobre o bloco finally:
+
+a - O bloco finally é opcional quando há bloco catch.
+
+b - O bloco finally sempre será executado (sem ou com exceção).
+
+c - O bloco finally só será executado sem exceção.
+
+d - O bloco finally é tipicamente utilizado para fechar um recurso como conexão ou transação.
+
+Quais são corretas?
+
+a, b, d
+
+
+Correto, é opcional, executa sempre (sem ou com exceção) e é tipicamente utilizado para fechar um recurso.
+
+
+...try catch finally
+
+
+try {}
+finally {}
+
+Correto, no tratamento o bloco catch é opcional quando tem o bloco finally.
+
+try {}
+catch(SacaException | DepositaException  ex) {}
+
+Correto, um tratamento com try e multi-catch.
+
+
+
+Alternativa correta
+try {}
+finally {}
+
+Correto, no tratamento o bloco catch é opcional quando tem o bloco finally.
+
+
+
+try {}
+catch(SacaException ex) {}
+catch(DepositaException ex) {}
+finally {}
+
+Correto, temos um try com dois blocos catch (clássicos) e o bloco finally.
+
+...try-with-resources
+
+O que está garantido quando usamos o try-with-resources?
+
+try(Conexao con = new Conexao()) {
+     con.leDados();
+}
+
+
+O bloco finally é criado automaticamente.
+Correto, automaticamente é criado um bloco finally. Nele é chamado o método close() do recurso.
+
+O recurso precisa implementar o método close().
+Correto, automaticamente é criado um bloco finally. Nele é chamado o método close() do recurso.
+
+***
+Nessa aula, aprendemos:
+
+que existe um bloco finally, útil para o fechamento de recursos (como conexão);
+quando há um bloco finally o bloco catch é opcional;
+que o bloco finally é sempre executado, sem ou com exceção;
+como usar o try-with-resources.
+
+
+...FQN full
+
+O que é o FQN mesmo?
+
+
+
+Alternativa correta
+É o nome completo da classe composto pelo nome do pacote e o nome da classe.
+
+
+Correto, o FQN (Full Qualified Name) é nome completo da classe, composto pelo nome do pacote e o nome da classe.
+FQN = Nome Pacote . Nome Simples da Classe
