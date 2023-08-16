@@ -385,3 +385,292 @@ Alternativa correta
 
 Correto, o FQN (Full Qualified Name) é nome completo da classe, composto pelo nome do pacote e o nome da classe.
 FQN = Nome Pacote . Nome Simples da Classe
+
+...package
+
+packages são diretórios que tem significado especial dentro do código fonte Java (b), a palavra chave package deve ser 
+a primeira declaração(c) e packages servem para organização e agrupar as classes e interfaces (d).
+
+...FQN
+
+O seu amigo Pedro trabalha na empresa Uberdist no projeto com o apelido udnotas. O Pedro também mencionou que a empresa possui um site com o endereço uberdist.com.br.
+
+O Pedro está com dúvida sobre a nomenclatura do package. Qual nome faria mais sentido e é considerado boa prática?
+
+
+
+br.com.uberdist.udnotas
+
+
+Correto, sempre seguindo a regra:
+NOME_DO_SITE_AO_CONTRARIO.NOME_DO_PROJETO
+
+...estrutura FQN
+
+
+Veja a estrutura seguinte:
+
+src
+  br
+    gov
+      rio
+        sicis
+          Usuario.javaCOPIAR CÓDIGO
+E o código fonte da classe Usuario:
+
+//AQUI
+
+public class Usuario {
+
+  //atributos e métodos omitidos
+}COPIAR CÓDIGO
+Assumindo que a pasta src é a raiz do nosso código fonte. O que devemos colocar no lugar de //AQUI para compilar a classe Usuario com sucesso?
+
+r: 
+
+package br.gov.rio.sicis;
+
+Correto, o package possui todos os nomes dos diretórios separado pelo caracter . (ponto).
+
+......* package
+
+
+Vimos agora que em um arquivo de classe ou interface existe a declaração do package, a declaração do import e a definição da classe.
+
+a) Só pode ter uma declaração package por arquivo
+
+b) A declaração do import é opcional
+
+c) É possível repetir a declaração import para importações de packages diferentes
+
+d) A definição da classe sempre deve vir por último (após package e import)
+
+Quais afirmações estão corretas?
+
+
+b, c, d
+Errado, pois falta a opção a:
+
+
+Só pode ter uma declaração package no código fonte e, além disso, a declaração deve ser a primeira clausula no código fonte (só comentários pode ter antes do package).
+Alternativa correta
+Todas
+
+
+
+a, c e d
+Errado, pois falta a opção b:
+A declaração do import é opcional
+Não é preciso usar o import (porém útil). Sempre podemos usar o FQN da classe.
+
+
+a e d
+Errado, pois faltam as opções b e c:
+A declaração do import é opcional (b) e é possível repetir a declaração import para importações de packages diferentes (c).
+
+...package
+
+No desenvolvimento em Java, organizamos nossas classes em pacotes. Sobre esse tema é correto afirmar que:
+
+O modificador default do Java restringe acesso a nível de pacote. Logo, se não for definido algum modificador, seja na classe, método, ou atributo,
+apenas classes do mesmo pacote podem acessar essas informações.
+Correto, com default apenas classes do mesmo pacote podem acessar essas informações.
+
+
+Quando um projeto utiliza pacotes, podemos usar o import de outras classes para sua utilização.
+Correto! O import facilita o uso da classe pois não precisamos do Full Qualified Name.
+
+
+Por organização e pela convenção adotada, precisamos seguir o domínio da empresa. Ou seja, se a empresa tem como domínio alura.com.br, os pacotes devem ser subpacotes de br.com.alura.
+Correto, mas existem exceções (poucas).
+
+***
+
+O que aprendemos?
+
+packages servem para organizar o nosso código
+packages fazem parte do FQN (Full Qualified Name) da classe
+o nome completo da classe (FQN) é composto de: PACKAGE.NOME_SIMPLES_CLASSE
+a definição do package deve ser a primeira declaração no código fonte
+para facilitar o uso de classes de outros packages podemos importá-los
+os imports ficam logo após da declaração do package
+a nomenclatura padrão é usar o nome do domínio na web ao contrário junto com o nome do projeto, por exemplo:
+br.com.caelum.geradornotas
+br.com.alura.gnarus
+br.gov.rj.notas
+de.adidas.lagerCOPIAR CÓDIGO
+Uma vez organizado as nossas classes podemos revisar os modificadores de visibilidades que dependem dos pacotes. Vamos continuar?
+
+protected = publico para os filhos
+
+...modificadores
+
+Sobre os modificadores de acesso do Java é correto afirmar que:
+
+Alternativa correta
+Temos quatro modificadores: private, protected, default e public. Onde a ordem do MAIS restritivo para o MENOS restritivo é: private, default, protected e public.
+
+...modificador1
+
+Qual modificador é visível nos seguintes lugares?
+
+Classe   Package   Classe Filho   Qualquer Package
+────────────────────────────────────────────
+ ✔        ✔         ✔             ✘
+───────────────────────────────────────────
+
+protected
+
+
+Correto! 
+O modificador protected funciona igual ao *<<package private>> mas adiciona a visibilidade para os filhos (chamado de "publico para os filhos").
+
+
+...modificador2
+
+E agora, qual modificador é visível nos seguintes lugares?
+
+Classe   Package   Classe Filho   Qq Package
+────────────────────────────────────────────
+ ✔        ✔         ✘             ✘
+────────────────────────────────────────────
+
+
+<<package private>> (ausência do modificador)
+
+A ausência do modificador, também chamado de package private ou default, o membro fica visível na classe e no package, mas é invisível fora do pacote (nem para filhos).
+
+***
+
+Nessa aula falamos novamente sobre visibilidade e aprendemos:
+
+existem 3 palavras chaves relacionado com a visibilidade: private, protected, public
+existem 4 níveis de visibilidade (de menor para maior):
+private (visível apenas na classe)
+<<package private>> (visível na classe E em qualquer outro membro do mesmo pacote, podendo ser chamado de default)
+protected (visível na classe E em qualquer outro membro do mesmo pacote E para qualquer filho)
+public (visível em qualquer pacote)
+os modificadores podem ser usados na definição da classe, atributo, construtor e método
+
+
+...javadoc
+
+Leia as afirmações com atenção:
+
+a) É preciso ter instalado o JDK para poder gerar a documentação javadoc.
+
+b) O javadoc é uma documentação escrita pelo desenvolvedor para desenvolvedores.
+
+c) Todos os membros da classe são contemplados no javadoc. ---
+
+d) Existem tags especias para marcar o autor ou a versão da classe.
+
+Todas são verdadeiras exceto:
+
+
+c.
+Não é verdadeira pois apenas os membros "públicos" são contemplados no javadoc. Outros membros (não públicos) são considerados detalhes da implementação
+ e não podem ser utilizados por outras classes.
+
+ ***
+
+ Já vimos nessa aula algumas tags (ou anotações) do javadoc como @version ou @author. Segue a lista completa:
+
+@author (usado na classe ou interface)
+@version (usado na classe ou interface)
+@param (usado no método e construtor)
+@return (usado apenas no método)
+@exception ou @throws (no método ou construtor)
+@see
+@since
+@serial
+@deprecated
+Importante é que as tags do javadoc existem apenas para padronizar alguns dados fundamentais do seu código fonte como o autor e a versão.
+
+Outras anotações
+Nos cursos você também já viu uma anotação fora do javadoc, a anotação @Override. Essa anotação é considerada uma configuração, nesse caso interpretado pelo compilador.
+
+As anotações vão muito além das tags javadoc e são muito mais sofisticadas e poderosas. Elas só entraram na plataforma Java a partir da versão 1.5 enquanto o javadoc está presente desde o nascimento da plataforma Java. O interessante é que as anotações foram inspirados pelas tags do javadoc.
+
+Se você ainda não está seguro sobre o uso das anotações, fique tranquilo pois você verá ainda muitas usadas pelas bibliotecas por ai para definir dados e configurações. Aguarde!
+
+
+
+...toString()
+
+Qual é o objetivo do método toString() da classe Object?
+
+Alternativa correta
+O método toString() existe para ser sobrescrito.
+Correto, é boa prática sobrescrever o método para dar um significado maior do que a saída padrão desse método.
+
+
+O método toString() existe para devolver uma informação sobre o estado do objeto.
+Correto, o método toString deve devolver informações sobre o estado do objeto. É útil para a depuração no desenvolvimento.
+
+
+
+---array
+
+heap (memoria objeto)
+array é um objeto
+
+
+...ref. array
+
+4.
+
+
+Você está se preparando para a certificação Java e passou pelo código seguinte:
+
+ContaPoupanca[] contas = new ContaPoupanca[10];
+ContaPoupanca cp1 = new ContaPoupanca(11,22);
+ContaPoupanca cp2 = new ContaPoupanca(33,44);
+
+contas[0] = cp1;
+contas[1] = cp1;
+contas[4] = cp2;
+contas[5] = cp2;
+
+ContaPoupanca ref1 = contas[1];
+ContaPoupanca ref2 = contas[4];COPIAR CÓDIGO
+Quantas referências apontam para a ContaPoupanca com a agencia 33 e número 44?
+
+Bingo! Vamos contar?
+r: 
+
+1) ContaPoupanca cp2 = new ContaPoupanca(33, 44);
+2) contas[4] = cp2;
+3) contas[5] = cp2;
+4) ContaPoupanca ref2 = contas[4];
+
+*
+Até agora vimos a forma "classica" de criar um objeto array usando a palavra chave new, por exemplo:
+
+int[] numeros = new int[5];
+numeros[0] = 1;
+numeros[1] = 2;
+numeros[2] = 3;
+numeros[3] = 4;
+numeros[4] = 5;
+COPIAR CÓDIGO
+No entanto também há uma forma literal. Literal, nesse contexto, significa usar valores diretamente, menos burocrático, mais direito. Veja a diferença:
+
+int[] refs = {1,2,3,4,5};
+COPIAR CÓDIGO
+Usamos as chaves {} para indicar que se trata de um array e os valores já ficam declarados dentro das chaves.
+
+***
+
+Nessa aula sobre Arrays aprendemos:
+
+Um array é uma estrutura de dados e serve para guardar elementos (valores primitivos ou referências)
+Arrays usam colchetes ([]) sintaticamente
+Arrays têm um tamanho fixo!
+Um array também é um objeto!
+Arrays são zero-based (o primeiro elemento se encontra na posição 0)
+Um array é sempre inicializado com os valores padrões.
+Ao acessar uma posição inválida recebemos a exceção ArrayIndexOutOfBoundException
+Arrays possuem um atributo length para saber o tamanho
+A forma literal de criar uma Array, com o uso de chaves {}.
+No próximo capítulo falaremos mais um pouco sobre arrays (do tipo Object) e veremos como funciona esse parâmetro do método main.
