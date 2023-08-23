@@ -674,3 +674,205 @@ Ao acessar uma posição inválida recebemos a exceção ArrayIndexOutOfBoundExc
 Arrays possuem um atributo length para saber o tamanho
 A forma literal de criar uma Array, com o uso de chaves {}.
 No próximo capítulo falaremos mais um pouco sobre arrays (do tipo Object) e veremos como funciona esse parâmetro do método main.
+
+
+***typecast
+
+Cast explícito e implícito
+Já falamos bastante sobre o Type Cast que é nada mais do que a conversão de um tipo para outro.
+
+Cast implícito e explícito de primitivos
+Para ser correto, já vimos o cast acontecendo antes mesmo de defini-lo. Temos dois exemplos, o primeiro do mundo de primitivos:
+
+int numero = 3;
+double valor = numero; //cast implícito
+Repare que colocamos um valor da variável numero (tipo int) na variável valor (tipo double), sem usar um cast explícito. Isso funciona? A resposta é sim, 
+pois qualquer inteiro cabe dentro de um double. Por isso o compilador fica quieto e não exige um cast explicito, mas nada impede de escrever:
+
+int numero = 3;
+double valor = (double) numero; //cast explícito
+Agora, o contrário não funciona sem cast, uma vez que um double não cabe em um int:
+
+double valor = 3.56;
+int numero = (int) valor; //cast explicito é exigido pelo compiladorCOPIAR CÓDIGO
+Nesse caso o compilador joga todo valor fracional fora e guarda apenas o valor inteiro.
+
+Cast implícito e explícito de referências
+Nas referências, o mesmo princípio se aplica. Se o cast sempre funciona não é necessário deixá-lo explícito, por exemplo:
+
+ContaCorrente cc1 = new ContaCorrente(22, 33);
+Conta conta = cc1; //cast implicito
+Aqui também poderia ser explícito, mas novamente, o compilador não exige pois qualquer ContaCorrente é uma Conta:
+
+ContaCorrente cc1 = new ContaCorrente(22, 33);
+Conta conta = (Conta) cc1; //cast explícito mas desnecessário 
+
+
+...cast explícito
+
+int numero = 3;
+double valor = (double) numero; //cast explícito
+Agora, o contrário não funciona sem cast, uma vez que um double não cabe em um int:
+
+
+...implícito
+
+int numero = 3;
+double valor = numero; //cast implícito
+
+
+ex:
+
+Type cast explícito sempre funciona?
+A resposta é não. O cast explicito só funciona se ele for possível, mas há casos em que o compilador sabe que um cast é impossível e aí nem compila, 
+nem com type cast. Por exemplo:
+
+Cliente cliente = new Cliente();
+Conta conta = (Conta) cliente; //impossível, não compilaCOPIAR CÓDIGO
+Como o cliente não estende a classe Conta ou implementa uma interface do tipo Conta, é impossível esse cast funcionar, pois uma referência 
+do tipo Conta jamais pode apontar para um objeto do tipo Cliente.
+
+A certificação Java tem muitas dessas perguntas sobre cast possível, impossível, explícito e implícito. Se você pretende tirar essa certificação,
+ vale a pena estudar esse assunto com muita calma.
+
+
+...review unchecked
+
+Leia as afirmações com atenção sobre a ClassCastException:
+
+a) é do pacote java.lang
+b) é uma exceção checked
+c) É lançada quando o type cast falha
+Todas são verdadeiras exceto:
+
+Alternativa correta
+a)
+É verdadeira. A ClassCastException é do pacote java.lang.
+Alternativa correta
+
+c)
+É verdadeira. A ClassCastException é lançada quando o cast falha.
+Alternativa correta
+
+b)
+Errado, justamente contrário. A ClassCastException é unchecked pois estende RuntimeException.
+
+***
+
+Nessa aula aprendemos:
+
+uma array do tipo Object pode guardar qualquer tipo de referência
+quando convertemos uma referência genérica para uma referência mais específica é preciso usar um type cast
+o cast só compila quando é possível, mesmo assim pode falhar na hora de rodar
+quando o type cast falha podemos receber uma ClassCastException
+para receber valores ao chamar o programa Java na linha de comando podemos usar o array String[] no método main
+
+...ref ArrayList
+
+
+O que acontece se você adiciona uma referência em uma lista do tipo ArrayList sem definir a posição?
+
+Alternativa correta
+O elemento é adicionado no fim da lista
+
+
+Correto, ao adicionar o elemento sempre fica no fim da lista.
+
+
+...limite array
+
+Quantos elementos um objeto do tipo java.util.ArrayList pode guardar?
+
+O limite é a memória da JVM.
+Correto, o único limite é a memória da JVM.
+
+...generics
+
+
+Você encontrou um código legado que ainda não usa generics:
++
+ArrayList lista = new ArrayList();
+Cliente cliente = new Cliente();
+lista.add(cliente);
++
+Como você pode melhorar o código e aplicar os generics?
+
+
+ArrayList<Cliente> lista = new ArrayList<Cliente>();
+Correto, parametrizamos a ArrayList usando <>. Há uma variação/simplificação que entrou no Java 1.7. O código abaixo é equivalente a alternativa:
+
+ArrayList<Cliente> lista = new ArrayList<>();
+
+
+...generics
+
+Os generics entraram na versão 1.5 na plataforma Java e foram levemente melhorados no Java 1.7. Quais são os principais benefícios?
+
++-
+Antecipar problemas de casts no momento de compilação.
+Correto, o compilador avisa se erramos no tipo, por exemplo:
+
+ArrayList<String> lista = new ArrayList<String>(); 
+lista.add("Nico");
+Conta c = lista.get(0); //nao compila
++-
+
++-
+Evitar casts excessivos
+Correto, uma vez parametrizada a lista, não precisamos mais o cast, por exemplo:
+
+Cliente ref = (Cliente) lista.get(0); // desnecessário com generics
++-
+
+
+-+
+O compilador consegue otimizar o código para deixar a execução mais performática.
+Errado, em geral, o compilador Java não otimiza o código. Isso é a tarefa da JVM. Os generics ajudam na hora de escrever o código, na hora de rodar não há impacto.
+-+
+
++-
+O código mais legível, já que fica explícito o tipo dos elementos.
+Correto, na criação da lista fica claro qual a intenção. Por exemplo, na declaração abaixo está bem claro que a lista guarda Strings:
+
+ArrayList<String> nomes = new ArrayList<String>(); 
++-
+
+***
+
+Lista com capacidade predefinida
+Falamos que o ArrayList é um array dinâmico, ou seja, por baixo dos panos é usado um array, mas sem se preocupar com os detalhes e limitações.
+
+Agora pense que você precisa criar uma lista representando todos os 26 estados do Brasil. Você gostaria de usar um ArrayList para "fugir" do array, 
+mas sabe que o ArrayList cria um array automaticamente, do tamanho que a classe acha conveniente.
+
+Será que não há uma forma de criar essa lista já definindo o tamanho do array? Claro que tem e é muito simples. O construtor da classe ArrayList é 
+sobrecarregado e possui um parâmetro que recebe a capacidade:
+
+ArrayList lista = new ArrayList(26); //capacidade inicial
+A lista continua dinâmica, mas o tamanho do array inicial é de 26!
+
+Lista a partir de outra
+Outra forma de inicializar uma lista é baseado na outra que é muito comum no dia a dia. Para tal a ArrayList possui mais um construtor que recebe a lista base:
+
++-
+ArrayList lista = new ArrayList(26); //capacidade inicial
+lista.add("RJ");
+lista.add("SP");
+//outros estados
+ArrayList nova = new ArrayList(lista); //criando baseado na primeira lista
+Quanto mais sabemos sobre as classes Java padrão mais fácil fica o nosso código.
++-
+
+***
+
+O que aprendemos?
+
+Nessa aula começamos a falar sobre lista e conhecemos a classe java.util.ArrayList. Aprendemos:
+
+que a classe java.util.ArrayList encapsula o uso do array e oferece vários métodos de mais alto nível
+que uma lista guarda referencias
+como usar métodos size, get, remove
+como usar a sintaxe foreach para iterar a ArrayList
+que os generics parametrizam classes
+que no caso da ArrayList podemos definir o tipo dos elementos através de generics
+Isso é apenas o início sobre esse poderoso pacote java.util. Na próxima aula vamos mergulhar mais!
