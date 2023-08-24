@@ -876,3 +876,43 @@ como usar a sintaxe foreach para iterar a ArrayList
 que os generics parametrizam classes
 que no caso da ArrayList podemos definir o tipo dos elementos através de generics
 Isso é apenas o início sobre esse poderoso pacote java.util. Na próxima aula vamos mergulhar mais!
+
+
+...equals 
+
+O método equals, junto aos métodos toString e hashCode, é um dos métodos fundamentais da classe Object.
+
+Qual é a assinatura correta desse método?
+
+
+public boolean equals(Object ref)
+Correto, é publico, devolve boolean e recebe um Object.
+
+
+...equals 
+
+
+O que é verdade sobre o método equals?
+
++-
+É definido na classe Object.
+Correto, mas isso você já sabia :)
++-
+
++-
+A implementação padrão compara as referências.
+Correto, a implementação do método equals da classe Object compara apenas as referências.
++-
+
+-+
+Se os objetos não forem iguais devemos lançar uma exceção.
+Errado, devemos devolver false apenas.
+-+
+
++-
+Devemos sobrescrever para definir o critério de igualdade.
+Correto, devemos sobrescrever o método equals para definir a igualdade do objeto.
++-
+
++Em geral, os métodos equals, toString e hashCode existem para sobrescrita.
+
