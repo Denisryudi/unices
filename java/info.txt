@@ -1333,3 +1333,21 @@ autoboxing e unboxing acontecem automaticamente.
 as classes wrapper possuem vários métodos auxiliares, por exemplo para o parsing
 todas as classes wrappers que representam um valor numérico possuem a classe java.lang.Number como mãe
 Na próxima aula vamos aprender como ordenar as listas!
+
+
+... duas interfaces para definir critério de ordenação dos elementos de uma lista
+
+
+No mundo Java existem duas interfaces para definir o critério de ordenação dos elementos de uma lista.
+
+As interfaces são:
+
++-
+java.util.Comparator
+Correto, o comparator é um parâmetro do método sort da lista e da classe Collections.
++-
+
++-
+java.lang.Comparable
+Correto, para definir a ordem natural dos elementos!
++-
