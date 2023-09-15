@@ -1,0 +1,67 @@
+sistemas críticos cascade
+
+três tipos
+
+reuso
+incremental
+cascata
+
+Especificação tem que ser muito bem feita
+
+--
+
+modelo Xp 
+>qualidade
+>mais rapidez
+>simples
+
+De acordo com Martins a XP dá preferência ao desenvolvimento OO 
+e permite trabalhar com pequenas equipes de até 12 desenvolvedores
+modelo incremental que conforme o sistema é utilizado
+novas melhorias ou mudanças podem ser implementadas
+
+Scrum
+
+Framework para desenvolver e manter produtos complexos.
+Uma metodologia agil de software que concentra as suas 
+atenções no produto final, com rápido desenvolvimento,
+e nas interações dos indivíduos.
+
+cerimônia de planejamento - sprint plan
+cerimônia de review -apresentação do incremento de software para o cliente
+crescimento de retrospectiva - o que foi bom e o que foi ruim durante a sprint(container que contem todos esses eventos) 
+daily reunião diária - impedimento, o que falta, o que precisa.
+
+
+
+
+---
+requisitos:
+>Definição detalhada e formal de uma função do sistema
+>As descrições do que o sistema deve fazer, os serviços
+ que oferece e as restrições a seu funcionamento
+ex: Realizar um saque, depósito, transferência no banco
+
+Req funcionais:
+Definem as funções que o sistema deve fornecer, sobre como o sistema 
+deve reagir a entradas específicas e sobrecomo se comportar em 
+determinadas situações, podendo também declarar o que o 
+sistema não deve fazer. 
+ex:transferir, depositar dinheiro. Funções básicas do sistema
+
+req não funcionais
+requisitos relacionados com a utilização do software em termos de desempenho,
+confiabilidade, segurança, usabilidade e portabilidade, entre outros.
+
+ex: transferir em 5seg, funções de menor importância em relação aos
+funcionais, essenciais, mas não tanto quando as básicas de um sistema
+
+
+---casos de uso
+uml - entender diagramas
+extend opcional
+include obrigatorio
+
+casos de uso = realizar depósito. registrar movimento
+
+agentes: cliente, banco
