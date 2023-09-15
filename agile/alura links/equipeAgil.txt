@@ -72,7 +72,8 @@ Dev Team (qualidade), Scrum Master (eficiência), Product Owner (eficácia). Ess
 ***
 Aprendemos que o Scrum team é um conjunto de pessoas que tem o objetivo de fazer produtos excepcionais, e para isso acontecer, são necessárias 3 responsabilidades:
 
-Negócio: responsabilidade em garantir que o produto a ser desenvolvido faça sentido para o mercado. Não adianta você produzir o melhor produto, se não tem cliente para o mesmo.
+Negócio: responsabilidade em garantir que o produto a ser desenvolvido faça sentido para o mercado. 
+Não adianta você produzir o melhor produto, se não tem cliente para o mesmo.
 
 Tecnológica: responsabilidade em garantir que o produto produzido esteja correto para aquele mercado em específico e público-alvo.
 
@@ -117,10 +118,15 @@ https://medium.com/produto-di%C3%A1rio/o-que-%C3%A9-um-product-owner-c44bb29a9f6
 O que é Product Owner?
 Nessa aula aprendemos que a pessoa responsável pelo papel de Product Owner tem o desafio de conseguir maximizar o valor que aquele produto irá gerar para o negócio.
 
-Para isso, o PO, além de precisar ter um foco alto e senso de dono, precisará conversar frequentemente com as outras áreas que fazem parte da empresa, para entender quais são os pontos-chave que remetem a dor dos clientes, e conhecer a fundo o produto e mercado em que a empresa está inserida.
+Para isso, o PO, além de precisar ter um foco alto e senso de dono, precisará conversar frequentemente com as outras áreas 
+que fazem parte da empresa, para entender quais são os pontos-chave que remetem a dor dos clientes, e conhecer a fundo o 
+produto e mercado em que a empresa está inserida.
 
 Como é o dia a dia de um PO?
-No seu dia a dia, o PO terá que descrever o que precisa ser feito, e para isso, é necessário conversar com outras áreas para entender as necessidades e também o que pode ou não ser feito. Além de priorizar o que precisa ser construído, muitas vezes o PO terá que dizer não para funcionalidades que agregam menos valor para o negócio/projeto naquele momento.
+No seu dia a dia, o PO terá que descrever o que precisa ser feito, e para isso, é necessário conversar com outras áreas 
+para entender as necessidades e também o que pode ou não ser feito. Além de priorizar o que precisa 
+ser construído, muitas vezes o PO terá que dizer não para funcionalidades que agregam menos valor
+ para o negócio/projeto naquele momento.
 
 Dev Team
 
@@ -152,11 +158,16 @@ Construir, validar e integrar o incremento de um produto.
 Exatamente. Uma equipe de desenvolvimento é a responsável por executar o que foi definido, validando para garantir que está adequado.
 
 Ex:
-Considere que uma nova área de vendas está sendo criada na sua empresa e foi mapeado que é preciso contratar 12 novas pessoas para essa área entre coordenação, vendas e pré-vendas.
+Considere que uma nova área de vendas está sendo criada na sua empresa e foi mapeado que é preciso contratar 12 novas
+pessoas para essa área entre coordenação, vendas e pré-vendas.
 
-A Product Owner identificou toda a necessidade, conheceu bem os produtos que essas pessoas irão trabalhar e mapeou bem as características que serão buscadas nessas pessoas.
+A Product Owner identificou toda a necessidade, conheceu bem os produtos que essas pessoas irão trabalhar e mapeou 
+bem as características que serão buscadas nessas pessoas.
 
-A equipe que executará o trabalho, ou seja, a Development Team, irá fazer as entrevistas, negociação de salários, integração e avaliação da performance das pessoas especialistas em diferentes temas, como processos seletivos, vendas, liderança, psicologia e negociação, mas elas fazem parte de um único time: nesse caso, o time de "recrutamento da nova equipe de vendas".
+A equipe que executará o trabalho, ou seja, a Development Team, irá fazer as entrevistas, negociação de salários,
+integração e avaliação da performance das pessoas especialistas em diferentes temas, como processos seletivos,
+vendas, liderança, psicologia e negociação, mas elas fazem parte de um único time: nesse
+ caso, o time de "recrutamento da nova equipe de vendas".
 
 
 ***
@@ -182,7 +193,8 @@ Expert em Scrum
 
 ...papel scrum Master
 
-Além da capacidade que um Scrum Master tem de ser um Líder Servidor, que tem como principal objetivo ajudar o próximo para que atinjam o resultado almejado, um Scrum Master tem muitas outras capacidades.
+Além da capacidade que um Scrum Master tem de ser um Líder Servidor, que tem como principal objetivo ajudar o próximo para que 
+atinjam o resultado almejado, um Scrum Master tem muitas outras capacidades.
 
 Qual dessas características abaixo NÃO representam uma pessoa com papel de Scrum Master?
 
@@ -212,7 +224,8 @@ Ele consegue fazer perguntas que geram reflexões
 
 ***
 
-Aprendemos que a pessoa no papel de Scrum Master é responsável por maximizar a eficiência do Scrum Team, promovendo e suportando o Scrum e ajudando a melhorar as interações existentes.
+Aprendemos que a pessoa no papel de Scrum Master é responsável por maximizar a eficiência do Scrum Team, promovendo e 
+suportando o Scrum e ajudando a melhorar as interações existentes.
 
 Essa pessoa possui algumas características principais:
 
