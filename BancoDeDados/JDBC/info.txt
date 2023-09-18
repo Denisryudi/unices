@@ -1,0 +1,75 @@
+mysql -u root -p (usuário)root -h (senha)localhost(local) loja_virtual(database) 
+= mysql -u root -p root -h localhost loja_virtual
+
+Aplicação java > biblioteca java JAR (driver MySql Java)> Mysql
+ex:
+Aplicação java > (driver Sql Server Java)> Mysql
+
+conexao con = MySqlConnector.getConnection(usuario, senha, db, servidor);
+
+conexao con = SqlServerConnectionProvider.connect(usuario, senha, db, servidor..);
+
+alteração de entradas.
+Como ajudar = JDBC 
+
+camada de abstração
+Aplicação Java > JDBC - Java Database Connectivity(java.sql.*) > (driver Sql Server Java) ou biblioteca java JAR (driver MySql Java) > MySql
+ Conection con = DriverManager.getConnection(UrlDeConexao); (UrlDeConexao) = usuario, senha, local, database
+
+ex:
+
+
+package lojavirtual;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+public class TestaConexao {
+
+	public static void main(String[] args) throws SQLException {
+		
+		Connection connection = DriverManager
+				.getConnection("jdbc:mysql://localhost:3306/loja_virtual?useTimezone=true&serverTimezone=UTC", "root", "senha");
+		
+		System.out.println("fechando conexão");
+		connection.close();
+		System.out.println("fechando conexão");
+	}
+
+}
+
+
+boolean  = se for uma lista
+
+se for String = void = não retorna nada (delete, insert, update)
+
+
+
+
+
+...JDBC
+
+Qual a vantagem de utilizar uma API como o JDBC, baseada em interfaces, para fazer a comunicação entre o seu código e um banco de dados relacional?
+
+r: 
+Facilidade ao trocar de um banco de dados para outro, sem muitas alterações
+Alternativa correta! Só é necessário trocar o driver JDBC (JAR) para o banco específico e o JDBC se encarregará do resto.
+
+
+***
+
+Nesta aula, aprendemos que:
+
+Para acessar o banco de dados, precisamos de um driver
+Um driver nada mais é do que uma biblioteca (JAR)
+JDBC significa Java DataBase Conectivity
+JDBC define uma camada de abstração entre a sua aplicação e o driver do banco de dados
+Essa camada possui, na sua grande maioria, interfaces que o driver implementa
+Para abrir uma conexão, devemos usar o método getConnection, da classe DriverManager
+O método getConnection recebe uma string de conexão JDBC, que define a URL, usuário, senha, etc
+.
+
+.
+
+
