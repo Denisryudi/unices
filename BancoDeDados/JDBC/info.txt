@@ -1,6 +1,30 @@
 mysql -u root -p (usuário)root -h (senha)localhost(local) loja_virtual(database) 
 = mysql -u root -p root -h localhost loja_virtual
 
+
+mysql> CREATE DATABASE loja_virtual;
+Query OK, 1 row affected (0.01 sec)
+
+mysql> USE loja_virtual;
+Database changed
+
+mysql> CREATE TABLE PRODUTO (id INT AUTO_INCREMENT, nome VARCHAR(50) NOT NULL, descricao VARCHAR(255), PRIMARY KEY(id)) Engine = InnoDB;
+Query OK, 0 rows affected (0.06 sec)
+
+mysql> INSERT INTO PRODUTO (nome, descricao) VALUES ('NOTEBOOK', 'NOTEBOOK SAMSUNG');
+Query OK, 1 row affected (0.01 sec)
+
+SELECT * FROM PRODUTO' at line 2
+mysql> SELECT * FROM PRODUTO;
++----+----------+------------------+
+| id | nome     | descricao        |
++----+----------+------------------+
+|  1 | NOTEBOOK | NOTEBOOK SAMSUNG |
++----+----------+------------------+
+1 row in set (0.00 sec)
+
+
+
 Aplicação java > biblioteca java JAR (driver MySql Java)> Mysql
 ex:
 Aplicação java > (driver Sql Server Java)> Mysql
@@ -72,4 +96,9 @@ O método getConnection recebe uma string de conexão JDBC, que define a URL, us
 
 .
 
+...interfaces bd
 
+O que o java.sql.Connection, java.sql.Statement e java.sql.ResultSet possuem em comum?
+
+r:
+Alternativa correta! Connection, Statement e ResultSet são algumas das interface do pacote java.sql.
