@@ -370,3 +370,147 @@ Assim, tem sido mais realista pensar na engenharia de software enquanto um
 processo evolucionário, em que o software é sempre mudado ao longo de seu
 período de vida, em resposta aos requisitos que estão em constante modificação
 e às necessidades do cliente.
+
+
+Diagrama de classes é uma representação gráfica que descreve a estrutura das classes incluindo os atributos, métodos e relacionamentos
+
+Entry = momento de entrada do estados
+
+exit = momento de saida
+
+do = entre o entry e o exit, em atividade
+
+SCM
+software configuration management
+
+
+SCM é uma atividade do tipo “guarda-chuva”, aplicada no decorrer de toda
+a gestão de qualidade. As mudanças podem ocorrer em qualquer instante, por
+isso, as atividades de SCM são desenvolvidas para:
+■■ Identificar a alteração feita.
+■■ Controlar a alteração que está sendo feita.
+■■ Assegurar que a alteração esteja sendo implementada corretamente no
+software.
+■■ Relatar as alterações aos membros da equipe.
+
+
+Segundo Pressman e Maxim (2016, p. 624), “os itens que compõem todas as
+informações produzidas como parte do processo de software são chamados
+coletivamente de configuração de software”. Além disso, conforme se avança no
+desenvolvimento do software, cria-se uma hierarquia dos itens de configuração
+de software, a qual corresponde a um elemento de informação que contém um
+nome que pode ser pequeno, como um diagrama UML, ou grande, como um
+documento de projeto de software completo.
+Todavia, um dos problemas do gerenciamento de configurações, de acordo
+com Sommerville (2011, p. 476), «é que diferentes empresas falam sobre os mesmos
+conceitos usando termos diferentes». A seguir, apresentamos um quadro
+com algumas das terminologias usadas no SCM:
+
+
+Para finalizar, é importante que tenhamos em mente que a SCM é uma atividade
+abrangente e aplicada em todo o processo de software. Ela identifica, controla, realiza
+auditoria e relata modificações que podem ocorrer invariavelmente enquanto
+o software está sendo desenvolvido e até mesmo depois que está sendo usado
+pelo cliente. Todos os artefatos criados como parte do processo de desenvolvimento
+tornam-se parte de uma configuração de software.
+
+
+Os três tipos diferentes de manutenção de software são:
+■■ Manutenção para reparo de defeitos de software.
+■■ Manutenção para adaptar o software a um ambiente operacional diferente.
+■■ Manutenção para adicionar funcionalidade ao sistema ou modificá-la.
+
+Não é possível testar um programa completamente.
+Teste de software é um exercício baseado em risco.
+Teste não mostra que bugs não existem, mas sim, o contrário.
+
+
+
+DIAGRAMA DE SEQUÊNCIA
+Segundo Guedes (2011, p. 192), “o diagrama de sequência procura determinar
+a sequência de eventos que ocorrem em um determinado processo, identificando
+quais mensagens devem ser disparadas entre os elementos envolvidos e
+em que ordem”.
+A criação do diagrama
+
+
+Mensagens assíncronas
+As mensagens assíncronas são utilizadas para indicar que a execução ocorre em
+paralelo aos outros processos e que ela pode ter um processamento contínuo, o que
+retira a necessidade de aguardar por uma resposta para que o processo continue.
+
+
+Estereótipo <<control>>
+O estereótipo <<control>> trata-se de uma classe intermediária entre as classes
+<<boundary>> e as demais. Seu objetivo é o de realizar uma interpretação de eventos
+realizados pelo objeto <<boundary>>, como as ações do mouse e a execução de
+botões, por exemplo, o que permite retransmitir ações aos demais objetos do sistema
+(GUEDES, 2011):
+
+
+
+
+
+DIAGRAMA DE CLASSES
+O diagrama de classes tem, como objetivo, permitir a visualização das classes
+utilizadas pelo sistema e como elas se relacionam, apresentando uma visão
+estática de como estão organizadas, preocupando-se apenas em definir sua estrutura
+lógica (GUEDES, 2007). Ainda, de acordo com o estudioso, um diagrama
+de classes pode ser utilizado para modelar o modelo lógico de um banco de
+dados, parecendo-se, nesse caso, com o diagrama de entidade-relacionamento
+(o modelo entidade-relacionamento o qual você estuda na disciplina de banco
+de dados). No entanto, deve ficar bem claro que o diagrama de classes não é utilizado
+unicamente para essa finalidade e que uma classe não necessariamente
+corresponde a uma tabela.
+Uma classe pode representar o repositório lógico dos atributos de uma tabela,
+mas a classe não é a tabela. Isso se deve, uma vez que os atributos de seus objetos
+são armazenados em memória, enquanto uma tabela armazena seus registros
+fisicamente em disco. Além disso, uma classe possui métodos que não existem
+em uma tabela.
+
+CLASSE ASSOCIATIVA
+Quando um relacionamento possui multiplicidade, ou seja, muitos (*) em suas
+duas extremidades, é necessário criar uma classe associativa para guardar os objetos
+envolvidos nessa associação. Na classe associativa, são definidos o conjunto de
+
+MULTIPLICIDADE
+De acordo com Guedes (2007), a multiplicidade determina o número mínimo
+e máximo de instâncias envolvidas em cada uma das extremidades da associação,
+permitindo, também, especificar o nível de dependência de um objeto com
+os outros. Quando não existe multiplicidade explícita, entende-se que a multiplicidade
+é “1..1”, o que significa que somente uma instância dessa extremidadeda associação 
+relaciona-se com as instâncias da outra extremidade. A tabela aseguir demonstra 
+alguns dos diversos valores de multiplicidade que podem ser utilizados
+em uma associação:
+
+
+
+
+Algumas técnicas de validação de requisitos podem ser utilizadas em conjunto
+ou individualmente. A seguir, são mostradas algumas delas:
+
+1. Revisões de requisitos: os requisitos são analisados sistematicamente
+por uma equipe de revisores, a fim de eliminar erros e inconsistências.
+
+2. Prototipação: nessa abordagem de validação, um modelo executável
+do sistema é mostrado aos usuários finais e clientes, possibilitando que
+eles experimentem o modelo para verificar se atende às necessidades da
+empresa.
+
+3. Geração de casos de teste: como modelo ideal, os requisitos deveriam
+ser testáveis. Se os testes para os requisitos são criados como parte do
+processo de validação revelam problemas com os requisitos. Se um teste
+é difícil ou impossível de ser projetado, significa, muitas vezes, que os
+requisitos serão de difícil implementação e devem ser reconsiderados.
+O desenvolvimento de testes a partir dos requisitos de usuário, antes da
+implementação do sistema, é uma parte integrante da Extreme Programming.
+
+As dificuldades da validação de requisitos não devem ser subestimadas, pois é
+muito difícil demonstrar que um conjunto de requisitos atende às necessidades
+de um usuário. Os usuários devem pensar no sistema em operação e imaginar
+como esse sistema se adequaria ao seu trabalho. Não é fácil para profissionais
+habilitados em computação conseguirem realizar esse tipo de análise abstrata,
+imagine o quão difícil é para os usuários de sistema. Dessa forma, a validação
+de requisitos não consegue descobrir todos os problemas com os requisitos,
+implicando em modificações para corrigir essas omissões e falhas de compreensão
+depois que o documento de requisitos foi aceito (SOMMERVILLE, 2011).
