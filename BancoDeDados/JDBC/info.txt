@@ -102,3 +102,34 @@ O que o java.sql.Connection, java.sql.Statement e java.sql.ResultSet possuem em 
 
 r:
 Alternativa correta! Connection, Statement e ResultSet são algumas das interface do pacote java.sql.
+
+
+...PreparedStatement
+
+Quais os riscos de utilizar um Statement, ao invés de um PreparedStatement?
+
+O Statement não mantém uma versão da consulta compilada no banco de dados
+
+r:
+Alternativa correta! O PreparedStatement mantém a consulta compilada no banco de dados,
+para o usuário que necessitar realizar a mesma consulta, diversas vezes, 
+com parâmetros diferentes.
+
+***
+
+Nesta aula, aprendemos que:
+
+Ao executar SQL como Statement, temos um risco de segurança, chamado de SQL Injection
+SQL Injection nada mais é do que passar um novo comando SQL como parâmetro
+Para evitar SQL Injection, devemos usar a interface PreparedStatement
+Diferentemente do Statement, o PreparedStatement trata (sanitiza) cada parâmetro do comando SQL
+
+
+...Auto-Commit
+
+Qual o padrão do JDBC (ou seja do driver) para lidar com transações e o banco de dados?
+r:
+
+Auto-Commit
+Esse é o padrão, que pode ser alterado pelo método setAutoCommit, da interface Connection.
+

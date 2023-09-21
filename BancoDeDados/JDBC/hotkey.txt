@@ -1,0 +1,2 @@
+ctrl + 3
+extract method

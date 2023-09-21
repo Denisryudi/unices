@@ -514,3 +514,16 @@ imagine o quão difícil é para os usuários de sistema. Dessa forma, a valida�
 de requisitos não consegue descobrir todos os problemas com os requisitos,
 implicando em modificações para corrigir essas omissões e falhas de compreensão
 depois que o documento de requisitos foi aceito (SOMMERVILLE, 2011).
+
+Requisitos>
+
+
+Contudo, a diferenciação entre esses dois tipos de requisitos não é tão clara como
+sugerem as definições apresentadas. Um requisito referente à proteção pode parecer
+um requisito não funcional, mas, quando desenvolvido com mais detalhes,
+pode levar a outros requisitos que são claramente funcionais, como a necessidade
+de incluir recursos de autorização de usuários no sistema, por exemplo
+(SOMMERVILLE, 2011).
+Portanto, embora seja interessante dividir os requisitos em funcionais e não
+funcionais, devemos lembrar que essa é, na verdade, uma distinção artificial. O
+mais importante é que os requis
