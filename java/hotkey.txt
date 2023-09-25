@@ -23,3 +23,5 @@ sysout + ctrl + espaço
 para gerar a instrução System.out.println()
 
 ctrl + shift + t = atalho achar comandos
+
+ctrl + shoft + f = formatar

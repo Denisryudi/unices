@@ -1,0 +1,83 @@
+
+...desvantagens jdbc
+Quais as principais desvantagens do JDBC, das quais a JPA foi criada para resolver?
+r:
+
+Utilizar o JDBC implica em escrever um código de difícil manutenção
+Alternativa correta! Códigos que utilizam JDBC são mais verbosos e isso aumenta a dificuldade de manutenção
+
+JDBC aumenta o acoplamento do código
+Alternativa correta! O JDBC causa um acoplamento maior entre o código da aplicação e o banco de dados
+
+
+JPA especificação
+
+
+... != jpa 
+
+Qual a diferença entre Hibernate e JPA?
+r:
+JPA é uma especificação e Hibernate é uma de suas implementações
+Alternativa correta! JPA é a especificação enquanto o Hibernate é uma de suas implementações
+
+...Persistence
+
+Qual o objetivo da tag <persistence-unit> no arquivo persistence.xml?
+r:
+Agrupar as configurações de uma unidade de persistência, que representa um banco de dados utilizado pela aplicação
+Alternativa correta! Esse é justamente o objetivo da tag <persistence-unit>
+
+
+--> alterar pom e persistence.xml para configurar qual banco de dados usar
+
+JPA por padrão considera o nome da tabela o mesmo da entidade
+
+@Entity
+@Table(name = "produtos")
+public class Produto {
+
+
+}
+
+Mapeamento de uma entidade 
+
+@Entity
+@Table(name = "produtos")
+public class Produto {
+	
+	private Long id;
+	private String nome;
+	@Column(name = "descricao") ex.
+	private String descricao;
+	private BigDecimal preco;
+	
+}
+
+
+
+...Para cada classe adicionada, ela deve ser adicionada na persistence
+
+	<persistence-unit name="loja" transaction-type="RESOURCE_LOCAL">
+		
+		<class>br.com.alura.loja.modelo.Produto</class>   <------------------------------------ hinernate adiciona automaticamente, mas outras JPAs podem não o fazê-la
+		
+		<properties>
+            <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver" />
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/loja" />
+            <property name="javax.persistence.jdbc.user" value="root" />
+            <property name="javax.persistence.jdbc.password" value="" />
+            
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect" />
+		</properties>
+		
+		
+		
+	</persistence-unit>
+</persistence>
+
+
+ ...Qual a melhor definição de uma entidade JPA?
+ r:
+
+ É uma classe que faz o mapeamento de uma tabela do banco de dados
+Alternativa correta! Uma entidade JPA funciona como um espelho de uma tabela no banco de dados
