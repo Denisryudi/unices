@@ -81,3 +81,24 @@ public class Produto {
 
  É uma classe que faz o mapeamento de uma tabela do banco de dados
 Alternativa correta! Uma entidade JPA funciona como um espelho de uma tabela no banco de dados
+
+
+
+...commit 
+Quando devemos iniciar e comitar uma transação ao persistir uma entidade?
+r:
+
+Ao realizar operações de escrita no banco de dados, como insert, update e delete
+Alternativa correta! Operações de escrita exigem o uso de transações
+
+ex:
+
+		em.getTransaction().begin();
+		em.persist(celular);
+		em.getTransaction().commit();
+		em.close();
+
+
+persistence 
+
+ <property name="hibernate.hbm2ddl.auto" value="update"/>
