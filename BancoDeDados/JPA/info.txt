@@ -189,3 +189,160 @@ public BigDecimal buscarPrecoDoProdutoComNome(String nome) {
 r:
 A classe passada como parâmetro para o método createQuery está incorreta
 Alternativa correta! O correto deveria ser BigDecimal.class e não Produto.class
+
+JPA exige um constructor padrão default sem nenhum argumento. 
+
+Cardinalidade = ManyToMany, OneToMany
+
+...relacionamento bidirecional
+
+Por qual motivo o parâmetro mappedBy deve ser utilizado na anotação @OneToMany?
+r:
+Para indicar que se trata de um relacionamento bidirecional
+Alternativa correta! Sem esse parâmetro a JPA considera se tratar de outro relacionamento, assumindo que existe outra tabela de join
+
+...Parâmetro cascade
+
+Qual a utilidade do parâmetro cascade?
+
+r:
+Propagar as operações realizadas em uma entidade em seu relacionamento
+Alternativa correta! O cascade cria um efeito cascata nas operações realizadas em uma entidade
+
+***
+Nessa aula, você aprendeu:
+A mapear novas entidades na aplicação conforme a modelagem do banco de dados;
+A mapear um relacionamento com cardinalidade muitos-para-muitos;
+A mapear um relacionamento bidirecional;
+Como persistir entidades que possuam relacionamentos bidirecionais.
+
+
+...Vantagens do join fetch
+
+Por qual motivo é interessante utilizar o recurso join fetch em uma consulta JPQL?
+r:
+Para carregar um relacionamento mapeado como LAZY
+Alternativa correta! O join fetch permite escolher quais relacionamentos serão carregados em determinada consulta, ao invés de sempre os carregar
+
+***
+
+Nessa aula, você aprendeu:
+Como funcionam as estratégias EAGER e LAZY, em consultas de entidades que possuem relacionamentos;
+Por que a JPA pode lançar a exception LazyInitializationException em determinadas situações;
+As boas práticas no carregamento de entidades com relacionamentos;
+Como realizar consultas planejadas com o recurso join fetch.
+
+...Consulta dinâmica
+
+public List<Cliente> buscarClientes(String nome, LocalDate dataNascimento) {
+    String jpql = "SELECT c FROM Cliente c WHERE ";
+    if (nome != null && !nome.trim().isEmpty()) {
+        jpql += "AND c.nome = :nome ";
+    }
+    if (dataNascimento != null) {
+        jpql += " AND c.dataNascimento = :dataNascimento ";
+    }
+    TypedQuery<Cliente> query = em.createQuery(jpql, Cliente.class);
+    if (nome != null && !nome.trim().isEmpty()) {
+        query.setParameter("nome", nome);
+    }
+    if (dataNascimento != null) {
+        query.setParameter("dataNascimento", dataNascimento);
+    }
+    return query.getResultList();
+}
+
+Uma exception será lançada, independente dos parâmetros informados
+Alternativa correta! A querie contém um erro na cláusula where.
+correto = 
+WHERE 1=1
+boolean positivo
+
+...Desvantagem criteria API
+
+
+Qual das seguintes opções é uma das desvantagens da Criteria API?
+
+r:
+Código mais complexo de entender e manter
+Alternativa correta! A API de Criteria torna o código mais difícil de entender
+
+...Herança entre entidades
+
+
+Analise as seguintes entidades:
+
+@Entity
+public class Pessoa {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    private String nome;
+    private String email;
+
+
+}
+@Entity
+@Inheritance(strategy = InheritanceType.JOINED)
+public class PessoaFisica extends Pessoa {
+
+    private String cpf;
+    private LocalDate dataNascimento;
+
+
+}
+@Entity
+@Inheritance(strategy = InheritanceType.JOINED)
+public class PessoaJuridica extends Pessoa {
+
+    private String cnpj;
+    private String inscricaoEstadual;
+
+}
+
+r:
+
+A anotação de herança está na classe errada
+Alternativa correta! A anotação @Inheritance deveria ser adicionada apenas na classe base
+
+@Embeddable
+para herdar em uma mesma tabela
+
+
+...Utilizando chave composta
+
+
+
+
+Considere o seguinte mapeamento:
+
+@Entity
+public class Usuario {
+
+    @Embedded
+    private UsuarioId id;
+
+
+}
+
+@Embeddable
+public class UsuarioId implements Serializable {
+
+    private static final long serialVersionUID = 1L;
+
+    private String nome;
+    private String cpf;
+
+}
+
+r:
+
+O atributo id foi mapeado de maneira incorreta
+Alternativa correta! O atributo id deveria ser anotado com @EmbeddedId ao invés de @Embedded
+
+***
+Nessa aula, você aprendeu:
+A utilizar as anotações @Embeddable e @Embedded para organizar o código de uma entidade;
+A realizar herança entre entidades com as estratégias SINGLE_TABLE e JOINED;
+Como mapear uma chave composta com a anotação @EmbeddedId.

@@ -2,4 +2,9 @@ ctrl + 3
 extract method
 
 Generate Constructor
-ctrl + shoft + f = formatar
+
+
+ctrl + shift + f = formatar
+
+ctrl +d 
+delete line
