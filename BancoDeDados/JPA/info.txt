@@ -102,3 +102,90 @@ ex:
 persistence 
 
  <property name="hibernate.hbm2ddl.auto" value="update"/>
+
+
+ ...anotações JPA 
+
+ Quais tipos de atributos podemos mapear sem a necessidade de configurações adicionais via anotações da JPA?
+ r:
+ Os tipos primitivos, atributos do tipo String e algumas classes do Java, como LocalDate e BigDecimal
+Alternativa correta! Esses tipos podem ser mapeados automaticamente, sem a necessidade de configurações adicionais
+
+
+...Cardinalidade do relacionamento
+
+Aprendemos a utilizar a anotação @ManyToOne para indicar a cardinalidade de um relacionamento. Qual 
+a cardinalidade padrão assumida pela JPA, no caso de um atributo que representa um relacionamento 
+não possuir anotações?
+
+r:
+É obrigatório adicionar alguma anotação de cardinalidade em todos os atributos que representam relacionamentos.
+Alternativa correta! A JPA não assume uma cardinalidade padrão quando não anotamos um atributo
+
+***
+
+Nessa aula, você aprendeu:
+Como escrever uma classe DAO utilizando a JPA;
+Como mapear atributos do tipo Enum em uma entidade;
+Como mapear um relacionamento entre entidades.
+
+
+...Método merge JPA
+
+
+Analise o seguinte trecho de código e indique qual o resultado esperado:
+
+em.getTransaction().begin();
+Produto produto = em.find(Produto.class, 1l);
+produto.setDescricao(“Teste 1”);
+em.flush();
+produto.setDescricao(“Teste 2”);
+em.merge(produto);
+produto.setDescricao(“Teste 3”);
+em.getTransaction().commit();
+em.close();
+
+
+r:
+A entidade produto será atualizada no banco de dados com a descrição Teste 3
+Alternativa correta! No código anterior o merge acabou sendo indiferente, pois a entidade já estava no estado Managed
+
+
+...Removendo uma entidade em JPA
+
+em.getTransaction().begin();
+Produto produto = em.find(Produto.class, 1l);
+produto.setDescricao(“Teste 1”);
+em.flush();
+em.clear();
+em.remove(produto);
+em.getTransaction().commit();
+em.close();
+
+r:
+
+Uma exception será lançada ao tentar remover a entidade produto
+Alternativa correta! A entidade produto estava no estado Detached ao ser removida, algo que a JPA não permite
+
+***
+
+Nessa aula, você aprendeu:
+Como funciona o ciclo de vida de entidades JPA;
+As transições de estados de uma entidade ao ser persistida;
+As transições de estados de uma entidade ao ser atualizada;
+As transições de estados de uma entidade ao ser removida.
+
+
+...Carregando parte da entidade jpql
+
+public BigDecimal buscarPrecoDoProdutoComNome(String nome) {
+    String jpql = "SELECT p.preco FROM Produto p WHERE p.nome = :nome";
+    return em.createQuery(jpql, Produto.class)
+                .setParameter("nome", nome)
+                .getSingleResult();
+}
+
+
+r:
+A classe passada como parâmetro para o método createQuery está incorreta
+Alternativa correta! O correto deveria ser BigDecimal.class e não Produto.class
