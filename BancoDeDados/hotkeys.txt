@@ -6,6 +6,12 @@ alterações na estrutura da tabela. Abaixo estão alguns exemplos comuns de com
 Adicionar uma coluna a uma tabela:
 
 ALTER TABLE nome_da_tabela
+
+mysql -u -root -p
+
+show databases
+
+
 ADD nome_da_coluna tipo_de_dado;
 Por exemplo, para adicionar uma coluna chamada "email" à tabela "usuarios" com o tipo de dados VARCHAR(255):
 

@@ -1,0 +1,7 @@
+intelij
+
+alt+ insert = criar classe
+
+shift + shift = settings =  ctrl + alt + s
+
+
