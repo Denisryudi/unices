@@ -643,3 +643,364 @@ Considerando que a classe Controller a qual esse método pertence está anotada 
 O parâmetro dinâmico id, adicionado na anotação @DeleteMapping, foi declarado sem estar entre chaves({}). Com isso, 
 o Spring vai considerar que a URL para chamar esse método deve ser /produtos/id, ou seja, ele vai considerar
  que a palavra id faz parte da URL, e não que se trata de um parâmetro dinâmico.
+
+
+ ***
+
+Nessa aula, você aprendeu como:
+Mapear requisições PUT com a anotação @PutMapping;
+Escrever um código para atualizar informações de um registro no banco de dados;
+Mapear requisições DELETE com a anotação @DeleteMapping;
+Mapear parâmetros dinâmicos em URL com a anotação @PathVariable;
+Implementar o conceito de exclusão lógica com o uso de um atributo booleano.
+
+...URI
+
+
+Header Location
+
+
+Você se depara com o seguinte método, em uma classe Controller:
+
+@PostMapping
+@Transactional
+public ResponseEntity cadastrar(@RequestBody @Valid DadosCadastroProduto dados) {
+    var produto = new Produto(dados);
+    repository.save(produto);
+
+    var uri = new URI("/produtos/{id}");
+
+    return ResponseEntity.ok(new DadosDetalhamentoProduto(produto));
+}
+Levando em consideração as boas práticas de retorno em uma requisição HTTP do tipo POST,
+escolha as alternativas que indicam os problemas do código anterior:
+
+r:
+O cabeçalho Location será criado de maneira incorreta.
+
+No código anterior, não foi utilizada a classe UriComponentsBuilder, do Spring, para a criação da URI; 
+em vez disso, a URI foi criada manualmente e de maneira incorreta. Além disso,
+a URI nem foi adicionada na resposta a ser devolvida pela API.
+
+
+***
+
+Nessa aula, você aprendeu como:
+Utilizar a classe ResponseEntity, do Spring, para personalizar os retornos dos métodos de uma classe Controller;
+Modificar o código HTTP devolvido nas respostas da API;
+Adicionar cabeçalhos nas respostas da API;
+Utilizar os códigos HTTP mais apropriados para cada operação realizada na API.
+
+
+...Exceptions Spring
+
+
+ Tratamento de exceptions
+
+
+Em um projeto de uma API Rest com Spring Boot, o tratamento personalizado de Erro 404 não está sendo realizado
+corretamente, apesar de existir a seguinte classe nesse projeto:
+
+
+
+@RestController
+public class ExceptionHandler {
+
+    @ExceptionHandler(EntityNotFoundException.class)
+    public void tratarErro404() {
+    }
+
+}
+
+
+Por qual motivo o método tratarErro404 dessa classe não está sendo executado?
+
+
+r:
+
+    -.Errada.
+O retorno do método foi declarado como void.
+Embora o ideal seja devolver alguma informação, deixar o método sem retorno não impede que ele seja chamado pelo spring.
+
+
+O retorno do método foi declarado como void.
+
+A classe foi anotada de maneira incorreta.
+
+    -.Correta.
+Em APIs Rest, classes de tratamento de exceptions devem ser anotadas com 
+o @RestControllerAdvice e não com o @RestController.
+
+
+... Personalização de erro
+
+
+ Para saber mais: personalizando mensagens de erro
+PRÓXIMA ATIVIDADE
+
+Você deve ter notado que o Bean Validation possui uma mensagem de erro para cada uma de suas anotações. Por exemplo, quando a validação falha em algum atributo anotado com @NotBlank, a mensagem de erro será: must not be blank.
+
+Essas mensagens de erro não foram definidas na aplicação, pois são mensagens de erro padrão do próprio Bean Validation. Entretanto, caso você queira, pode personalizar tais mensagens.
+
+Uma das maneiras de personalizar as mensagens de erro é adicionar o atributo message nas próprias anotações de validação:
+
+public record DadosCadastroMedico(
+    @NotBlank(message = "Nome é obrigatório")
+    String nome,
+
+    @NotBlank(message = "Email é obrigatório")
+    @Email(message = "Formato do email é inválido")
+    String email,
+
+    @NotBlank(message = "Telefone é obrigatório")
+    String telefone,
+
+    @NotBlank(message = "CRM é obrigatório")
+    @Pattern(regexp = "\\d{4,6}", message = "Formato do CRM é inválido")
+    String crm,
+
+    @NotNull(message = "Especialidade é obrigatória")
+    Especialidade especialidade,
+
+    @NotNull(message = "Dados do endereço são obrigatórios")
+    @Valid DadosEndereco endereco) {}COPIAR CÓDIGO
+Outra maneira é isolar as mensagens em um arquivo de propriedades, que deve possuir o nome ValidationMessages.properties e ser criado no diretório src/main/resources:
+
+nome.obrigatorio=Nome é obrigatório
+email.obrigatorio=Email é obrigatório
+email.invalido=Formato do email é inválido
+telefone.obrigatorio=Telefone é obrigatório
+crm.obrigatorio=CRM é obrigatório
+crm.invalido=Formato do CRM é inválido
+especialidade.obrigatoria=Especialidade é obrigatória
+endereco.obrigatorio=Dados do endereço são obrigatóriosCOPIAR CÓDIGO
+E, nas anotações, indicar a chave das propriedades pelo próprio atributo message, delimitando com os caracteres { e }:
+
+public record DadosCadastroMedico(
+    @NotBlank(message = "{nome.obrigatorio}")
+    String nome,
+
+    @NotBlank(message = "{email.obrigatorio}")
+    @Email(message = "{email.invalido}")
+    String email,
+
+    @NotBlank(message = "{telefone.obrigatorio}")
+    String telefone,
+
+    @NotBlank(message = "{crm.obrigatorio}")
+    @Pattern(regexp = "\\d{4,6}", message = "{crm.invalido}")
+    String crm,
+
+    @NotNull(message = "{especialidade.obrigatoria}")
+    Especialidade especialidade,
+
+    @NotNull(message = "{endereco.obrigatorio}")
+    @Valid DadosEndereco endereco) {}
+
+
+
+    ***
+
+
+Nessa aula, você aprendeu como:
+Criar uma classe para isolar o tratamento de exceptions da API, com a utilização da anotação @RestControllerAdvice;
+Utilizar a anotação @ExceptionHandler, do Spring, para indicar qual exception um determinado método da classe de tratamento de erros deve capturar;
+Tratar erros do tipo 404 (Not Found) na classe de tratamento de erros;
+Tratar erros do tipo 400 (Bad Request), para erros de validação do Bean Validation, na classe de tratamento de erros;
+Simplificar o JSON devolvido pela API em casos de erro de validação do Bean Validation.
+
+
+stateless nao fala se o usuário esta logado, nao guarda estado.
+Cada requisição tivesse que logar o usuário novamente
+
+Para nao precisar enviar usuario e senha para cada requisição, é usado o token
+para recuperar as informações
+json web token
+
+
+Existem diversas formas de se realizar o processo de autenticação e autorização em aplicações Web e APIs Rest, sendo que no curso utilizaremos Tokens JWT.
+
+Você pode conferir as principais formas de autenticação lendo este artigo: Tipos de autenticação.
+https://www.alura.com.br/artigos/tipos-de-autenticacao?_gl=1*dtwyf*_ga*MzE2NDUyMDgxLjE2OTYwMTAzMzk.*_ga_1EPWSW3PCS*MTY5NjE3NjIzNS42MC4xLjE2OTYxODI1NzAuMC4wLjA.*_fplc*amIlMkJzWWRqYSUyRmRaR0hBYjhZOU13alRNaVNlaWhNeEVSWVg5cW8ybHRNOTJzUUpIWWRCUnBpczd6ZSUyQmdGaiUyQjI1bkt4TmR4YmlHNUVQM0JIQjV6WDBXVktlNTF4VzZCbnFIREtjeG5BMnVSQ1doR2dJYWZZYUlOMGtDa014Y2clM0QlM0Q.
+
+
+Autenticação por sessão
+Este foi um dos primeiros métodos de autenticação, criado no início do desenvolvimento das aplicações web. Muito empregado até hoje, 
+neste modelo o usuário pode se autenticar com usuário e senha ou por algum outro método.
+
+O servidor, por sua vez, cria uma sessão em sua memória ou banco e devolve a informação de usuário através
+de um cookie com o identificador da sessão criada.
+
+Na próxima requisição, é passado o identificador da sessão e o servidor devolve o acesso ao recurso solicitado 
+ou realiza algum outro tipo de manipulação referente à conta autenticada.
+
+
+
+Autenticação por token
+Neste método, após ter um login e senha validados pelo servidor, será criado um token que o usuário receberá em resposta e que
+permitirá o acesso a algum recurso. O padrão adotado por grande número das aplicações web hoje é o formato
+JWT (JSON Web Token) e ele fará com que o token seja assinado da forma correta para haver a autenticação 
+da requisição a um recurso no servidor.
+
+
+
+É importante salientar que informações do usuário não ficarão salvas no servidor. Elas são gravadas no token, que tem um período
+ geralmente curto para expiração, por volta de 10 minutos. O tempo dependerá dos requisitos de segurança da aplicação.
+
+Se um token chegar a expirar, uma solução seria pedir ao servidor um novo token válido. Isso acarretaria um novo
+processo de autenticação por login e senha ou por outro método escolhido. Porém, não é prático que a 
+aplicação solicite usuário e senha novamente a cada expiração. Uma estratégia para lidar com essa
+situação seria usar refresh token.
+
+Como uma solução comum, costuma-se enviar tanto o token de acesso quanto o refresh token, assim que
+a autenticação na aplicação é realizada. No entanto, o refresh token possui um tempo maior
+para a expiração, e neste caso não armazenamos nenhuma informação de usuário.
+
+Outra característica do refresh token é que ele é de uso único, então na próxima 
+solicitação é enviado um token e um novo refresh token.
+
+Autenticando por sessão versus token JWT
+Apresentadas as características destes dois métodos vamos ver agora uma comparação entre eles.
+
+Na autenticação por sessão, o estado da sessão é mantido pelo servidor com as informações do usuário, 
+podendo ser armazenado em um banco de dados ou na memória (Stateful). Com essa estratégia, podemos
+nos deparar com problemas como limites de hardware. Um consumo excessivo de memória pode causar
+até o travamento da máquina, dada a quantidade de chamadas para o garbage collector.
+
+Quando utilizamos autenticação por Token JWT, o cenário muda um pouco, já que as informações não
+são mais mantidas no servidor (Stateless), e sim no token, na máquina do cliente. O token 
+carregará todas as informações necessárias para a autenticação, como a identificação do
+usuário, assinatura, data de expiração e até o método de autenticação utilizado.
+
+Mas de maneira prática, como diferenciar os dois modelos de autenticação? A princípio são
+bem similares. O que vai diferenciá-los de maneira mais efetiva será guardar ou não o
+estado no servidor (stateless/stateful) o que irá impactar na forma de implementar
+escalabilidade, para que nosso sistema lide com uma carga maior de trabalho.
+
+
+---escalabilidade
+
+No tempo de vida de uma aplicação de qualquer tipo é muito comum que ela comece a demandar mais recursos para sua operação.
+
+Esse crescimento deve ser ordenado e suportado de maneira a não afetar a utilização do sistema, o que chamamos de escalabilidade.
+
+A implementação de segurança através de um dos métodos de autenticação traz alguns desafios à escalabilidade da aplicação. 
+Se optarmos por usar sessões, o controle tende a ficar complexo, pois o estado pode estar espalhado por diversos 
+servidores e/ou instâncias.
+
+Neste contexto, é comum haver a figura do balanceador de carga (load balance), responsável por distribuir a carga de 
+requisições aos recursos entre os demais servidores que mantém a aplicação.
+
+No caso da autenticação por sessão, como podemos garantir que a sessão correta será devolvida para o cliente? Trabalhar 
+com o conceito de Sticky Session pode ser útil, já que em cenários com load balance, esta técnica vincula uma sessão
+ de usuário a um servidor/instância específico.
+
+Escalar uma aplicação é muito importante e devemos usar métodos de autenticação que atendam a esse requisito, garantindo
+ assim maior segurança na utilização de sistemas por nossos usuários.
+
+Conclusão
+Independentemente do método a ser adotado, o importante é que ao projetar uma solução de software o desenvolvedor “fique ligado” 
+na implementação de métodos de autenticação que possibilitem a escalabilidade da aplicação com o menor transtorno, 
+além de uma manutenção sem estresse.
+
+Para aprender mais sobre autenticação e segurança, veja:
+
+Podcast sobre Segurança
+O que é Json Web Token (JWT)?
+Curso Node.js e JWT: autenticação com tokens na Alura
+Curso Autenticação mais segura com 2 fatores na Alura
+
+------hash
+
+
+
+Hashing nada mais é do que uma função matemática que converte um texto em outro texto totalmente diferente e de difícil dedução.
+
+Por exemplo, o texto Meu nome é Rodrigo pode ser convertido para o texto 8132f7cb860e9ce4c1d9062d2a5d1848, utilizando 
+o algoritmo de hashing MD5.
+
+Um detalhe importante é que os algoritmos de hashing devem ser de mão única, ou seja, não deve ser possível obter o texto original 
+
+a partir de um hash. Dessa forma, para saber se um usuário digitou a senha correta ao tentar se autenticar em uma aplicação,
+devemos pegar a senha que foi digitada por ele e gerar o hash dela, para então realizar a comparação com o hash que está armazenado no banco de dados.
+
+Existem diversos algoritmos de hashing que podem ser utilizados para fazer essa transformação nas senhas dos usuários, sendo que
+
+alguns são mais antigos e não mais considerados seguros hoje em dia, como o MD5 e o SHA1. Os principais algoritmos recomendados
+atualmente são:
+
+Bcrypt
+Scrypt
+Argon2
+PBKDF2
+
+Ao longo do curso utilizaremos o algoritmo BCrypt, que é bastante popular atualmente. Essa opção também leva em consideração o
+
+fato de que o Spring Security já nos fornece uma classe que o implementa.
+
+...Spring Data
+
+Para saber mais: documentação Spring Data
+
+
+Conforme aprendido em vídeos anteriores, o Spring Data utiliza um padrão próprio de nomenclatura de métodos que devemos 
+seguir para que ele consiga gerar as queries SQL de maneira correta.
+
+Existem algumas palavras reservadas que devemos utilizar nos nomes dos métodos, como o findBy e o existsBy, para indicar
+ao Spring Data como ele deve montar a consulta que desejamos. Esse recurso é bastante flexível, podendo ser
+um pouco complexo devido às diversas possibilidades existentes.
+
+Para conhecer mais detalhes e entender melhor como montar consultas dinâmicas com o Spring Data, 
+acesse a sua documentação oficial.
+https://docs.spring.io/spring-data/jpa/docs/current/reference/html/
+
+...
+
+
+Mudanças na versão 3.1
+PRÓXIMA ATIVIDADE
+
+ATENÇÃO!
+
+A partir da versão 3.1 do Spring Boot algumas mudanças foram realizadas, em relação às configurações de segurança. 
+Caso você esteja utilizando o Spring Boot nessa versão, ou em versões posteriores, o código demonstrado
+ no vídeo anterior vai apresentar um aviso de deprecated, por conta de tais mudanças.
+
+A partir dessa versão, o método securityFilterChain deve ser alterado para:
+
+@Bean
+public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
+    return http.csrf(csrf -> csrf.disable())
+            .sessionManagement(sm -> sm.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
+            .build();
+}
+
+
+...Bean
+
+Classe de configurações
+PRÓXIMA ATIVIDADE
+
+Um colega de trabalho pede sua ajuda para identificar um problema em seu código, referente a uma classe de configurações do Spring Security:
+
+@Configuration
+@EnableWebSecurity
+public class SecurityConfigurations {
+
+    public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
+        return http.csrf().disable()
+                .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
+                .and().build();
+    }
+
+}
+
+
+Ele afirma que mesmo após criar essa classe, o Spring Security ainda está bloqueando todas as requisições que chegam na API, devolvendo o código HTTP 401 (Unauthorized).
+Analise o código anterior e escolha a opção que indica o que está causando esse problema.
+
+r:
+
+O método securityFilterChain deveria ter sido anotado com @Bean.
+Sem essa anotação no método, o objeto SecurityFilterChain não será exposto como um bean para o Spring.
+
