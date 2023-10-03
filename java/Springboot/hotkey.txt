@@ -1004,3 +1004,72 @@ r:
 O método securityFilterChain deveria ter sido anotado com @Bean.
 Sem essa anotação no método, o objeto SecurityFilterChain não será exposto como um bean para o Spring.
 
+@Bean Serve para exportar uma classe para o Spring, fazendo com que ele
+consiga carregala e realize a sua injeção de dependência em outras classes.
+
+
+
+JSON Web Token, ou JWT, é um padrão utilizado para a geração de 
+tokens, que nada mais são do que Strings, representando, de maneira
+ segura, informações que serão compartilhadas entre dois sistemas. 
+ Você pode conhecer melhor sobre esse padrão em seu site oficial.
+
+Aqui na Alura temos o artigo O que é JSON Web Tokens? e o Alura+ O
+que é Json Web Token (JWT)?, que também explicam o funcionamento
+do padrão JWT.
+
+
+https://jwt.io/introduction
+
+https://www.alura.com.br/artigos/o-que-e-json-web-tokens?_gl=1*vyfmvj*_ga*MzE2NDUyMDgxLjE2OTYwMTAzMzk.*_ga_1EPWSW3PCS*MTY5NjI2NjgwMC42NS4xLjE2OTYyNjc0NjcuMC4wLjA.*_fplc*WDNLQ2doRW12UDhWRnBWZ3d6amlwcWZ4TVp4SXVtTGdNeWxyNnJWTDFJZXVpdlJLTjdTJTJCN1c3MWJSZGJKejBsa2lYZGlUQnlQTjZMQVBPdkprNCUyQlJ4RVUzVyUyQnY4Ullwekw2NWZBMmlDOGZOS21ZaGtXVXNwRzhMZWZWd2t3JTNEJTNE
+
+
+...withClaim()
+
+Para saber mais: Outras informações no token
+
+Além do Issuer, Subject e data de expiração, podemos incluir outras informações no token JWT, de acordo com as necessidades da aplicação.
+ Por exemplo, podemos incluir o id do usuário no token, para isso basta utilizar o método withClaim:
+
+return JWT.create()
+    .withIssuer("API Voll.med")
+    .withSubject(usuario.getLogin())
+
+    .withClaim("id", usuario.getId())
+
+    .withExpiresAt(dataExpiracao())
+    .sign(algoritmo);
+
+
+O método withClaim recebe dois parâmetros, sendo o primeiro uma String que identifica o nome do claim (propriedade armazenada no token),
+e o segundo a informação que se deseja armazenar.
+
+...injeção
+
+
+ Injeção de propriedades
+
+
+Vimos ao longo dessa aula que podemos injetar uma propriedade declarada no arquivo application.properties
+ em uma classe gerenciada pelo Spring, com a utilização da anotação @Value.
+
+Supondo que o arquivo application.properties tenha a seguinte propriedade declarada:
+
+app.teste=true
+
+Qual das opções a seguir indica a maneira CORRETA de injetá-la em um atributo de uma classe gerenciada pelo Spring?
+
+r:
+Alternativa correta
+@Value("${app.teste}")
+Esse é o jeito correto de utilizar a anotação @Value.
+
+***
+
+Nessa aula, você aprendeu como:
+Adicionar a biblioteca Auth0 java-jwt como dependência do projeto;
+Utilizar essa biblioteca para realizar a geração de um token na API;
+Injetar uma propriedade do arquivo application.properties em uma classe gerenciada pelo Spring, utilizando a anotação @Value;
+Devolver um token gerado na API quando um usuário se autenticar nela.
+
+

@@ -1,0 +1,22 @@
+controller
+
+pt.1:
+
+@RestController
+@RequestMapping("medicos")
+public class MedicoController {}
+
+
+    @Autowired
+    private MedicoRepository repository;  integração JPA
+
+
+domain
+
+infra
+
+resources
+>db.migration 
+>application.properties
+
+pom.xml
