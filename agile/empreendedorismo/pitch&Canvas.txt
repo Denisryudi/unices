@@ -287,4 +287,91 @@ Quando falamos de canais particulares diretos, qual o significado deles?
 r:Canais particulares diretos são os canais que são meus, que o cliente tem contato direto comigo, diferentemente de 
 uma comunicação em televisão e rádio, já que não sou dono de um canal de TV ou de uma emissora 
 
+No setor fontes de receitas, nós conseguimos entender e identificar onde iremos obter dinheiro através de cada segmento de clientes, e daqui, serão subtraídos os custos.
+
+Diferentemente do que temos em taxa de assinatura, em taxa de uso, o usuário paga o quanto utilizar do serviço, ou seja, quanto mais
+o cliente utiliza o serviço e/ou produto, mais ele irá pagar.
+
+Quando falamos de fontes de receita do tipo Licenciamento, estamos levando em consideração que uma empresa que criou algo, está deixando ou 
+uma outra empresa ou um usuário comum, utilizar essa "propriedade intelectual" em troca de um valor e quando ele não é pago,
+o "comprador dessa licença" não pode mais utilizá-la.
+
+Quando uma empresa adota a fonte de receita do tipo Empréstimos/Aluguéis/Leasing, estamos levando em consideração que a empresa 
+irá permitir que um terceiro utilize o seu produto e/ou serviço por meio de pagamento periódico e por um período determinado.
+
+Quando citamos o Nubank, mencionamos que eles ganham dinheiro através da intermediação de compras entre comerciantes e compradores,
+cobrando uma taxa dos comerciantes por ter intermediado o processo. Qual o nome do tipo de fonte de receita que o Nubank
+e outras empresas que tem cartões de débito e crédito tem em seus negócios?
+
+r:
+
+Quando pensamos em empresas como o Nubank, que tem sua fonte de receita do tipo Taxa de Corretagem, pensamos em empresas
+que intermediam serviços entre duas ou mais partes e assim, recebem uma porcentagem em cima 
+de cada uma das transações feitas.
+
+Quais os tipos de recursos principais que vimos na aula?
+r:
+
+Recurso financeiro, intelectual, humano e físico.
+
+Em atividades-chave, verificamos quais são as atividades e processos mais importantes de se executar, para a empresa obter sucesso em sua operação.
+Em atividades-chave, verificamos as principais atividades que o negócio precisa cumprir para sua entrega ser boa e dentro dessas atividades 
+temos os seguintes tipos: produção, resolução de problemas e plataforma/rede.
+
+...Business Model Generation
+
+Aqui, nessa área do Canvas, entendemos e descrevemos os custos necessários para o
+funcionamento do negócio que estamos trabalhando.
+
+Os tipos de estruturas de custos que o Business Model Generation adota e que mencionamos em aula são:
+custo fixo, variável, economias de escopo, direcionada pelo valor, direcionada pelo custo e economias de escala.
+
+Custos variáveis recebem esse nome pois seus valores não são sempre os mesmos, variando de acordo com o volume
+
+O UberPool é um bom exemplo de estrutura de custo do tipo direcionada pelo custo, pois o consumidor consegue utilizar o 
+serviço do Uber que é o de transporte a um baixo custo, ou seja, empresas que tem essa iniciativa tem como objetivo 
+minimizar o custo sempre que possível, tanto para a empresa quanto para os clientes.
+
+Empresas com estruturas de custo direcionadas pelo valor, não se preocupam com o valor financeiro do serviço,
+tanto para a empresa quanto para o cliente; Eles se preocupam mesmo com a proposta de valor que irão 
+entregar e que com isso, justificam o preço do serviço e/ou produto.
+
+Quando pensamos em empresas como esta, cujo mote é a estrutura de custo do tipo economias de escala, estamos 
+observando uma empresa que lucra mais conforme a saída do produto e/ou serviço aumenta.
+
+Empresas que tem o tipo de estrutura de custo denominado economia de escopo, focam em ter uma operação que 
+atende uma demanda muito maior e mesmo assim consegue dar conta de atender essa demanda.
+
+
+...Conclusão do Canvas
+
+
+Quando terminamos de preencher o canvas o que podemos ter certeza?
+
+r:
+
+Podemos ter certeza que finalizamos por enquanto, mas que precisamos avaliar continuamente o negócio e refazer o processo quando for necessário.
+
+Quando terminamos de preencher o Canvas, podemos ter certeza que finalizamos por enquanto, mas que precisamos avaliar continuamente o 
+negócio e refazer o processo quando for necessário, pois as empresas e o mercado estão em constante mutação e evolução, 
+sendo assim, uma empresa que não se reinventa e não percebe as mudanças ao seu redor, não consegue performar bem por
+muito tempo. Fique atento a isso!
+
+Para receber um aporte financeiro, podemos ir até bancos e verificar se podem investir no meu negócio ou até mesmo ter uma carta de crédito 
+liberada para investirmos na nossa empresa, ou ir em rodadas de negócios de startups para encontrar investidores e incubadoras, 
+para não correr um risco de pegar um empréstimo e não conseguir gerenciar a empresa com a experiência que esses investidores e 
+incubadoras podem ter para auxiliar a startup.
+
+
+Toda empresa deve se avaliar continuamente, seja através do Business Model Canvas ou de outro modelo de negócios que eu acreditar 
+que é válido para o meu negócio e que pode me auxiliar a melhorar a minha ideia de negócios ou até mesmo verificar que minha
+ideia não é viável e que não existe mercado para minha nova empresa.
+
+O que devemos ter em mente ao utilizar o Business Model Canvas ou qualquer outro modelo de negócios é:
+
+Alternativa correta
+Com pesquisa, planejamento e construção de ideias, eu posso entender melhor o mercado e verificar a viabilidade do meu negócio.
+
+Com pesquisa, planejamento e construção de ideias, eu posso entender melhor o mercado e verificar a viabilidade do meu negócio e ter 
+uma ideia estruturada para conseguir trabalhar melhor a minha empresa ou até mesmo conseguir um aporte financeiro.
 
