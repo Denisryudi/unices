@@ -1,0 +1,59 @@
+anos final 80 e inicio 90
+ansi(American National Standards Institute) = SQL(Structured Query Language)
+                                            linguagem de consulta estruturada
+Obj = padronizar a forma como os dados são consultados nesses bancos de dados relacionais.
+
+Pros:
+Aprendizado
+Portabilidade
+Longetividade
+Comunicação
+Liberdade de escolha
+
+Cons:
+Falta de criatividade
+Falta de estruturação
+
+ANSI
+DDL(Data definition language) = Manipulação das estruturas de um banco de dados
+DML(Data manipulation language)= Gerenciar os dados, consultas 
+DCL(Data control language)= Administrar o banco de dados, acesso, gerenciar usuario, política de crescimento, adm processos, logs. 
+
+inicio
+código livre -> MySQL -> mariaDB
+Escalabilidade robusta
+sun -> oracle 
+
+MySQL:
+
+Servidor
+Portabilidade
+Multithreads
+Formas de Armazenamento
+Velocidade
+Desempenho
+Capacidade
+Aplicabilidade
+logs
+
+repository que armazena dados
+Table
+>campo
+>registros
+
+na criação fazemos a definição
+do tipo e quantos campos
+relacional = relações entre as tabelas
+índice = where
+select 
+
+
+Procedures >
+Linguagens fora do padrão ansi
+permitem com comandos sql fazer
+lógicas estruturadas(if else, func)
+
+Numa tabela temos campos, registros, chaves primárias e estrangeiras
+
+Como podemos agrupar as tabelas?
+r: Em esquemas (Schema)
