@@ -57,3 +57,141 @@ Numa tabela temos campos, registros, chaves primárias e estrangeiras
 
 Como podemos agrupar as tabelas?
 r: Em esquemas (Schema)
+
+CREATE SCHEMA 'test' DEFAULT CHARACTER SET utf8;
+
+DROP {DATABSE | SCHEMA} [IF EXISTS] db_name;
+
+conect = mysql -h localhost -u root -p
+
+use db_name; 
+
+float = 4 bytes
+double = 8 bytes
+
+SIGNED ou UNSIGNED = vai possuir ou não sinal no número
+
+ZEROFILL = preenche com zero os espaços
+ex:INT(4) = armazenar 5 = 0005 
+
+AUTO_INCREMENT = sequencia auto incr.
+
+OUT OF RANGE = estourar os limites
+
+DATE = 1000-01-01 até 9999-12-31
+
+DATETIME= 1000-01-01 00:00:00 até 9999-12-31 23:59:59
+
+TIMESTAMP = 1970-01-01 00:00:01 UTC até 2038-01-19 UTC   = fuso 
+
+TIME = 838:59:59 e 839:59:59
+
+YEAR = 1901-2155 formato 2 ou 4 digitos
+
+CHAR(4) = "aa" = "  aa"
+VARCHAR(4) = "aa" = "aa"
+
+BINARY (0 A 255) Fixo = o CHAR Mas = expresso em binário 
+VARBINAY (0 A 255) VARIADO = VARCHAR Mas = expresso em binário
+
+
+Strings
+BLOB = Binário longo
+
+TINYBLOB 
+BLOB
+MEDIUMBLOB
+LONGBLOB = salvar grande binário = bytes de uma foto dentro do banco de dados
+
+
+TEXT = Texto longo
+
+TINYTEXT
+TEXT
+MEDIUMTEXT
+LONGTEXT = Armazenar texto
+
+ENUM 
+Armazenar uma lista pré-definica de valores.
+ex: Size ENUM('x-small', 'small', 'medium', 'large', 'x-large')
+
+SET E COLLATE = tipo de caracteres que serão suportados
+
+Spacial:
+
+GEOMETRY áreas 
+POINT ponto
+LINESTRING LINHa
+POLYGON áreas 
+
+...
+
+CREATE DATABASE SUCOS;
+
+USE SUCOS;
+
+CREATE TABLE tbCliente 
+(CPF VARCHAR(11),
+NOME VARCHAR(100),
+ENDEREÇO1 VARCHAR(150),
+ENDEREÇO2 VARCHAR(150),
+BAIRRO VARCHAR(50),
+CIDADE VARCHAR(50),
+ESTADO VARCHAR(50),
+CEP VARCHAR(8),
+IDADE SMALLINT,
+SEXO VARCHAR(1),
+LIMITE_CREDITO FLOAT, POR conta de exibir com Procedures
+VOLUME_COMPRA FLOAT,
+PRIMEIRA_COMPRA BIT(1))
+
+
+CREATE TABLE tbProduto
+(CODIGO_PRODUTO VARCHAR(150) not null,
+NOME VARCHAR(150) not null,
+EMBALAGEM VARCHAR(50) not null,
+TAMANHO VARCHAR(50) not null,
+SABOR VARCHAR(50) not null,
+PRECO_LISTA FLOAT not null) ;
+
+
+INSERT INTO tbProduto (
+    PRODUTO,
+    NOME,
+    EMBALAGEM,
+    TAMANHO,
+    SABOR,
+    PRECO_LISTA) VALUES (
+        '1023213', 'Light - 350 ml - Melãncia', 'lata',
+        '350 ml', 'Melância', 4.56);
+
+SELECT * INTO tbProduto;
+
+
+UPDATE tbProduto SET EMBALAGEM = 'lata', PRECO_LISTA = 2.46
+WHERE PRODUTO = '1023213'; 
+
+DROP = COMPONENTES DO MYSQL. BANCO DE DADOS, TABLE, INDICES, CHAVES PRIMARIAS.
+
+DELETE = INFO DENTRO DA TABELA.
+
+DELETE FROM tbProduto WHERE PRODUTO = '1023213';
+
+ALTER TABLE tbProduto ADD PRIMARY KEY (PRODUTO);
+
+CONSTRAINT - PRIMARY KEY
+
+ALTER TABLE tbCliente ADD PRIMARY KEY (CPF);
+
+ALTER TABLE tbCliente ADD COLUMN (DATA_NASCIMENTO DATE);
+
+INSERT INTO tbcliente (
+CPF, NOME, ENDERECO1, ENDERECO2, 
+BAIRRO, CIDADE, ESTADO, 
+CEP, IDADE, SEXO, LIMITE_CREDITO, 
+VOLUME_COMPRA, PRIMEIRA_COMPRA, DATA_NASCIMENTO) 
+VALUES ('00388934505', 'João da Silva', 
+'Rua projetada A número 10', '', 'Vila Roman', 'CARATINGA', 'AM', 
+'2222222', 30, 'M', 10000.00, 2000, 0, '1989-10-05');
+
+
