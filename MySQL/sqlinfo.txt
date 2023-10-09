@@ -195,3 +195,102 @@ VALUES ('00388934505', 'João da Silva',
 '2222222', 30, 'M', 10000.00, 2000, 0, '1989-10-05');
 
 
+SELECT * FROM tbcliente;
+
+SELECT CPF, ENDERECO1, ENDERECO2, BAIRRO, CIDADE, ESTADO, CEP, DATA_NASCIMENTO, IDADE, SEXO, LIMITE_CREDITO, VOLUME_COMPRA, PRIMEIRA_COMPRA FROM tbcliente;
+:
+CPF	NOME
+1471156710	Érica Carvalho
+19290992743	Fernando Cavalcante
+2600586709	César Teixeira
+3623344710	Marcos Nogueira
+492472718	Eduardo Jorge
+50534475787	Abel Silva
+5576228758	Petra Oliveira
+
+SELECT CPF, NOME FROM tbCliente LIMIT 5;
+: 
+CPF	NOME
+1471156710	Érica Carvalho
+19290992743	Fernando Cavalcante
+2600586709	César Teixeira
+3623344710	Marcos Nogueira
+492472718	Eduardo Jorge
+
+SELECT CPF, NOME FROM tbcliente;
+:
+CPF	NOME
+1471156710	Érica Carvalho
+19290992743	Fernando Cavalcante
+2600586709	César Teixeira
+3623344710	Marcos Nogueira
+492472718	Eduardo Jorge
+50534475787	Abel Silva
+5576228758	Petra Oliveira
+
+
+SELECT CPF AS CPF_CLIENTE, NOME AS NOME_CLIENTE FROM tbCliente LIMIT 5;
+AS = ALIASES
+
+
+CPF_CLIENTE	NOME_CLIENTE
+1471156710	Érica Carvalho
+19290992743	Fernando Cavalcante
+2600586709	César Teixeira
+3623344710	Marcos Nogueira
+492472718	Eduardo Jorge
+50534475787	Abel Silva
+5576228758	Petra Oliveira
+
+SELECT * FROM tbproduto WHERE PRODUTO = '544931';
+
+SELECT * FROM tbcliente WHERE CIDADE = 'Rio de Janeiro';
+
+SELECT * FROM tbproduto WHERE SABOR = 'Cítricos';
+
+UPDATE tbproduto SET SABOR = 'Cítricos' WHERE SABOR = 'Limão';
+:
+PRODUTO	NOME	EMBALAGEM	TAMANHO	SABOR	PRECO_LISTA
+1042712	Linha Citros - 700 ml - Limão	Garrafa	700 ml	Cítricos	4.904
+1051518	Frescor do Verão - 470 ml - Limão	Garrafa	470 ml	Cítricos	3.2995
+1088126	Linha Citros - 1 Litro - Limão	PET	1 Litro	Cítricos	7.004
+544931	Frescor do Verão - 350 ml - Limão	Lata	350 ml	Cítricos	2.4595
+
+
+SELECT * FROM tbcliente WHERE IDADE <> 22;
+exceto 22 anos.
+
+SELECT * FROM tbcliente WHERE NOME > ‘Fernando Cavalcante’;
+apenas acima de Fe = Fi Fo Fu 
+E > A . Então Fátima seria desconsiderada.
+
+
+SELECT * FROM tbproduto WHERE PRECO_LISTA = 16.008 o resultado é vazio, para pesquisar FLOAT
+é necessário usar outros filtros, como o BETWEEN
+
+SELECT * FROM tbproduto WHERE PRECO_LISTA BETWEEN 16.007 AND 16.009;
+
+
+SELECT * FROM tbcliente WHERE DATA_NASCIMENTO > '1995-01-13';
+
+SELECT * FROM tbcliente WHERE DATA_NASCIMENTO <= '1995-01-13';
+
+SELECT * FROM tbcliente WHERE YEAR(DATA_NASCIMENTO) = 1998;
+:
+1998-01-13
+1998-01-11
+1998-10-07
+
+SELECT * FROM tbcliente WHERE MONTH(DATA_NASCIMENTO) = 10;
+:
+1998-10-07
+1992-10-07
+
+
+SELECT * FROM tbproduto WHERE PRECO_LISTA >= 16.007 AND PRECO_LISTA <= 16.009;
+
+SELECT * FROM tbcliente WHERE IDADE >= 18 AND IDADE <= 22 AND SEXO = 'M';
+
+SELECT * FROM tbcliente WHERE cidade = 'Rio de Janeiro' OR BAIRRO = 'Jardins';
+
+SELECT * FROM tbcliente WHERE (IDADE >= 18 AND IDADE <= 22 AND SEXO = 'M') OR (cidade = 'Rio de Janeiro' OR BAIRRO = 'Jardins');
