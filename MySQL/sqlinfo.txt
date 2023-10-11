@@ -9,6 +9,10 @@ Portabilidade
 Longetividade
 Comunicação
 Liberdade de escolha
+A linguagem SQL permite reduzir custos de treinamento
+Apresenta uma padronização entre os bancos de dados
+Fácil migração entre os bancos.
+
 
 Cons:
 Falta de criatividade
@@ -294,3 +298,65 @@ SELECT * FROM tbcliente WHERE IDADE >= 18 AND IDADE <= 22 AND SEXO = 'M';
 SELECT * FROM tbcliente WHERE cidade = 'Rio de Janeiro' OR BAIRRO = 'Jardins';
 
 SELECT * FROM tbcliente WHERE (IDADE >= 18 AND IDADE <= 22 AND SEXO = 'M') OR (cidade = 'Rio de Janeiro' OR BAIRRO = 'Jardins');
+
+----
+
+
+Por que devemos visualizar o esquema de dados? 
+: engenharia reversa
+Para poder executar os comandos SQL corretamente.
+Para determinar que consultas vou fazer é fundamental conhecer a estrutura do banco de dados.
+
+
+SELECT CPF as IDENTIFICADOR, NOME as CLIENTE FROM tabela_de_clientes; == SELECT CPF, NOME FROM tabela_de_clientes;
+
+
+
+SELECT * FROM tab where X = A 
+
+SELECT * FROM tab where X = A  OR Y = N
+
+SELECT * FROM tab where X = A AND Y = B
+
+(NOT ((3 > 2) OR (4 >= 5)) AND (5 > 4) ) OR (9 > 0)
+:
+
+(NOT ((3 > 2) OR (4 >= 5)) AND (5 > 4) ) OR (9 > 0)
+(NOT ((Verdadeiro) OR (Falso)) AND (Verdadeiro) ) OR (Verdadeiro)
+(NOT (Verdadeiro) AND (Verdadeiro) ) OR (Verdadeiro)
+(Falso AND Verdadeiro) OR (Verdadeiro)
+(Falso) OR (Verdadeiro)
+Verdadeiro
+
+SELECT * FROM tabela_de_produtos WHERE NOT (SABOR = 'Manga' OR TAMANHO = '470 ml');
+
+SELECT * FROM tabela_de_produtos WHERE SABOR = 'Manga' AND NOT (TAMANHO = '470 ml');
+
+SELECT * FROM tabela_de_produtos WHERE SABOR = 'Laranja' OR SABOR = 'Manga';
+
+SELECT * FROM tabela_de_clientes WHERE CIDADE IN ('Rio de Janeiro', 'São Paulo') AND (IDADE >= 20 AND IDADE <= 22);
+
+
+SELECT * FROM tab WHERE campo LIKE '%Soares%';
+:
+
+Nomes
+Pedro Almeida Soares
+Margarida Silva Soares
+Carlos Soares da Silva
+Antônio Almeida Soares
+Jonas Soares Filho
+Vitor Filho Soares
+
+
+
+SELECT * FROM tab WHERE campo LIKE '%Soares';
+:
+
+Nomes
+Pedro Almeida Soares
+Margarida Silva Soares
+Antônio Almeida Soares
+Vitor Filho Soares
+
+
