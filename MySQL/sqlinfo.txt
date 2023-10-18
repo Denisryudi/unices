@@ -360,3 +360,71 @@ Antônio Almeida Soares
 Vitor Filho Soares
 
 
+SELECT DISTINCT * FRM TABELA;
+Irá retornar linhas com valores diferentes
+
+combinações que não se repetem:
+
+
+
+SELECT DISTINCT EMBALAGEM, TAMANHO FROM tabela_de_produtos WHERE SABOR = 'Laranja';
+
+Nesse caso, o MySQL mostrará apenas os distincts com sabor laranja:
+Detalhes a respeito do sabor laranja, 
+
+EMBALAGEM	TAMANHO
+PET	2 Litros
+Garrafa	470 ml
+PET	1 Litro
+Lata	200 ml
+PET	1.5 Litros
+
+
+
+
+Quais são os bairros da cidade do Rio de Janeiro que possuem clientes?
+
+SELECT DISTINCT BAIRRO FROM tabela_de_clientes WHERE CIDADE = 'Rio de Janeiro
+:
+Obteremos 7 bairros listados.
+
+
+SELECT * FROM TABELA LIMIT 4;
+
+
+
+O número que colocamos depois de LIMITdirá quantas linhas serão exibidas. Para ver em um exemplo, considere a seguinte tabela:
+
+Nomes
+João da Silva Filho
+Pedro Almeida Soares
+Margarida Silva Soares
+José da Silva Almeida
+Carlos Soares da Silva
+Pedro Filho de Almeida
+Jorge da Silva Filho
+Antônio Almeida Soares
+Jonas Soares Filho
+Vitor Filho Soares
+E vamos imaginar que rodamos o código a seguir:
+
+
+SELECT * FROM tabela LIMIT 4;
+O resultado dessa consulta traria os quatro primeiros registros da tabela original:
+
+Nomes
+João da Silva Filho
+Pedro Almeida Soares
+Margarida Silva Soares
+José da Silva Almeida
+
+
+
+SELECT * FROM tabela_de_produtos LIMIT 2,3;
+Apartir do segundo os três próximos contando com o 2
+
+
+Queremos obter as 10 primeiras vendas do dia 01/01/2017. Qual seria o comando SQL para obter este resultado?
+:
+SELECT * FROM notas_fiscais  WHERE DATA_VENDA = '2017-01-01' limit 10
+
