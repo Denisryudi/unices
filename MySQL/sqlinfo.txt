@@ -428,3 +428,140 @@ Queremos obter as 10 primeiras vendas do dia 01/01/2017. Qual seria o comando SQ
 :
 SELECT * FROM notas_fiscais  WHERE DATA_VENDA = '2017-01-01' limit 10
 
+
+
+
+Caso não seja especificado ASC ou DESC, o MySQL automaticamente optará pela ordem ascendente. - menor para o maior
+
+Além disso, também podemos escolher dois campos, ao mesmo tempo, como critério de seleção. Com esse intuito, 
+faríamos uma consulta com ORDER BY CAMPO1, CAMPO2 e o resultado seria algo parecido com o seguinte:
+
+CAMPO1	CAMPO2
+A	1
+A	2
+A	3
+B	1
+B	2
+B	3
+C	1
+C	2
+C	3
+
+
+
+SELECT * FROM tabela_de_produtos ORDER BY PRECO_DE_LISTA DESC;
+: 
+do maior para o menor
+
+
+
+SELECT * FROM tabela_de_produtos ORDER BY EMBALAGEM DESC, NOME_DO_PRODUTO ASC;
+: 
+Embalagem do maior para o menor
+E nome do menor para o maior
+
+
+Qual (ou quais) foi (foram) a(s) maior(es) venda(s) do produto “Linha Refrescante - 1 Litro - Morango/Limão”, em quantidade? (Obtenha este resultado usando 2 SQLs).
+
+
+Primeiro vamos buscar o código do produto “Linha Refrescante - 1 Litro - Morango/Limão”.
+
+SELECT * FROM tabela_de_produtos WHERE nome_do_produto = 'Linha Refrescante - 1 Litro - Morango/Limão'
+
+Com esta consulta obtemos o resultado do código deste produto: ‘1101035’ <----
+
+
+Com esta informação fazemos a consulta para achar a maior quantidade vendida deste produto.
+
+SELECT * FROM itens_notas_fiscais WHERE codigo_do_produto = '1101035' ORDER BY QUANTIDADE DESC;
+Veremos que a maior quantidade foi 99.
+
+
+Qual (ou quais) foi (foram) a(s) maior(es) venda(s) do produto “Linha Refrescante - 1 Litro - Morango/Limão”, em quantidade? (Obtenha este resultado usando 2 SQLs).
+
+SELECT * FROM tabela_de_produtos WHERE nome_do_produto = 'Linha Refrescante - 1 Litro - Morango/Limão'
+
+SELECT * FROM tabela_de_produtos WHERE '1101035' ORDER BY QUANTIDADE DESC;
+
+
+
+
+
+SELECT <campos> ALIASES FROM 'TAB' GROUP BY CAMPO
+
+PODEMOS usar:
+
+SUM: soma
+MAX: max
+ManipulaçãoAVG: Média
+COUNT:Cibta ocorrências
+
+SELECT ESTADO, SUM(LIMITE_CREDITO) AS LIMITE_TOTAL FROM tabela_de_clientes GROUP BY ESTADO;
+
+SELECT EMBALAGEM, PRECO_DE_LISTA FROM tabela_de_produtos;
+
+SELECT EMBALAGEM, PRECO_DE_LISTA FROM tabela_de_produtos;
+Mais caro pet, garrafa e lata?
+
+SELECT EMBALAGEM, MAX(PRECO_DE_LISTA) AS MAIOR_PRECO FROM tabela_de_produtos GROUP BY EMBALAGEM
+
+SELECT EMBALAGEM, COUNT(*) as CONTADOR FROM tabela_de_produtos GROUP BY EMBALAGEM;
+
+SELECT BAIRRO, SUM(LIMITE_CREDITO) AS LIMITE FROM tabela_de_clientes WHERE CIDADE = 'Rio De Janeiro', GROUP BY BAIRRO;
+
+
+SELECT ESTADO, BAIRRO, SUM(LIMITE_CREDITO) AS LIMITE FROM tabela_de_clientes 
+WHERE CIDADE = 'Rio De Janeiro', 
+GROUP BY ESTADO, BAIRRO;
+ORDER BY BAIRRO;
+
+quantos itens de venda existem para o produto '1101035' ?
+SELECT MAX('QUANTIDADE') AS 'MAIOR QUANTIDADE' FROM itens_notas_fiscais WHERE CODIGO_DO_PRODUTO = '1101035'
+
+SELECT COUNT(*) FROM notas_fiscais WHERE CODIGO_DO_PRODUTO = '1101035' AND QUANTIDADE = 99;
+
+
+
+
+Desse resultado, vamos supor que queremos apenas as linhas em que a soma de "Y" seja maior ou igual a 6. No caso, 
+seriam as letras B e C. Então, aplicaremos o HAVING depois do GROUP BY:
+
+SELECT X, SUM(Y) FROM tab GROUP BY X HAVING SUM(Y) >= 6;
+X	Y
+B	6
+C	8
+
+
+A solução será usar o HAVING, que virá depois do GROUP BY:
+
+SELECT ESTADO, SUM(LIMITE_DE_CREDITO) as SOMA_LIMITE FROM tabela_de_clientes
+GROUP BY ESTADO
+HAVING SUM(LIMITE_DE_CREDITO) > 900000;
+
+
+
+
+SELECT EMBALAGEM, MAX(PRECO_DE_LISTA) as MAIOR_PRECO, 
+MIN(PRECO_DE_LISTA) as MENOR_PRECO FROM tabela_de_produtos 
+GROUP BY EMBALAGEM
+HAVING SUM(PRECO_DE_LISTA) <= 80 AND MAX(PRECO_DE_LISTA) >= 5;
+
+    EMBALAGEM | MAIOR PREÇO | MENOR PREÇO
+:    Garrafa       13.23        3.768
+
+Embalagem = garrafa, maior preço e menor preço da tabela_de_produtos
+agrupados pela embalagem e devem ter na somatória total menor ou igual que 80 e máximo de preço deve ser maior ou igual que 5
+
+Quais foram os clientes que fizeram mais de 2000 compras em 2016?
+:
+SELECT CPF, COUNT(*) FROM notas_fiscais
+WHERE YEAR(DATA_VENDA) = 2016
+GROUP BY CPF 
+HAVING COUNT(*) > 2000;
+
+Quais foram os clientes que fizeram mais de 2000 compras em 2016?
+:
+SELECT CPF, COUNT(*) FR0M notas_fiscais
+WHERE YEAR(DATA_VENDA) = 2016
+GROUP BY CPF
+HAVING COUNT(*) > 2000;
