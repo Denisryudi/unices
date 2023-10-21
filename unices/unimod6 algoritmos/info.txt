@@ -1,0 +1,41 @@
+tipagem Dinâmica reconhece o tipo automaticamente
+!= estática
+
+Inteiro
+Real ou float
+lógico boolean
+caractere
+
+Expressões aritmeticas +-*
+relacionais  <>=
+lógicas and, or ~!    -- p = true  -> ~p = não true
+
+parênteses> potenciação e radiciação> multi e divisao > soma e subtração
+
+relacionais
+boolean > parênteses>inversão naos>conjunção es> disjunção ous []
+
+funcionalidades pre prontas:
+SQRT = raiz quadrada
+POW ou EXP = exponenciação
+ABS = numero absoluto
+COS = cos
+SIN = seno
+
+Atribuição = alterar o conteúdo de uma variável
+
+Class MaiorQueDez {
+    var numero, resto : Int
+    
+
+    valor1 = input("Digite um número: ")
+    resto = numero DIV 2
+    resto = numero - (resto *2)
+
+    if(resto == 0) {
+        println("O numero é par")
+    }else {
+        println("O número é impar")
+    }
+    
+}
