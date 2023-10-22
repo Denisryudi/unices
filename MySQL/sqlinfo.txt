@@ -565,3 +565,174 @@ SELECT CPF, COUNT(*) FR0M notas_fiscais
 WHERE YEAR(DATA_VENDA) = 2016
 GROUP BY CPF
 HAVING COUNT(*) > 2000;
+
+
+
+SELECT NOME_DO_PRODUTO, PRECO_LISTA,
+CASE 
+WHEN PRECO_DE_LISTA >= 12 THEN 'PRODUTO CARO'
+WHEN PRECO_DE_LISTA >=7 AND PRECO_DE_LISTA <12 THEN 'PRODUTO EM CONTA'
+ELSE 'PRODUTO BARATO' 
+END AS STATUS_PRECO, AVG(PRECO_DE_LISTA) AS PRECI_MEDIO  
+FROM tabela_de_produtos;
+WHERE sabor = 'manga'
+GROUP BY EMBALAGEM, 
+CASE 
+WHEN PRECO_DE_LISTA >= 12 THEN 'PRODUTO CARO'
+WHEN PRECO_DE_LISTA >=7 AND PRECO_DE_LISTA <12 THEN 'PRODUTO EM CONTA'
+ELSE 'PRODUTO BARATO' 
+END
+ORDER BY EMBALAGEM;
+
+
+
+Veja o ano de nascimento dos clientes e classifique-os como: Nascidos antes de 1990 são velhos, nascidos entre 1990 
+e 1995 são jovens e nascidos depois de 1995 são crianças. Liste o nome do cliente e esta classificação.
+:
+SELECT NOME,
+CASE WHEN YEAR(data_de_nascimento) < 1990 THEN 'Velho'
+WHEN YEAR(data_de_nascimento) >= 1990 AND
+YEAR(data_de_nascimento) <= 1995 THEN 'Jovens' 
+ELSE 'Crianças' 
+END  AS "CLASSIFICAÇÃO POR IDADE"
+FROM tabela_de_clientes;
+
+
+
+join
+
+INNER join = correspondentes
+LEFT join todo mundo da esquerda e somente os correspondentes da direita 
+RIGHT Todos da direita e somente os correspondentes da esquerda
+FULL JOIN TUDO
+CROSS JOIN que retorna o produto cartesiano das duas tabelas
+ON = em comum
+
+
+
+
+
+
+SELECT A.NOME, B.HOBBY FROM TABELA_ESQUERDA A RIGHT JOIN TABELA_DIREITA B
+ON A.IDENTIFICADOR = B.IDENTIFICADOR;
+
+todos elementos da tabela da direita se juntam com a tabela da esquerda
+
+
+
+
+INNER JOIN
+
+
+SELECT A.NOME, B.HOBBY FROM 
+TABELA_ESQUERDA A
+INNER JOIN TABELA_DIREITA B
+ON A.IDENTIFICADOR = B.IDENTIFICADOR;
+Nome	Hobby
+João	Praia
+Maria	Futebol
+
+
+Vamos entender por partes o que cada pedaço dessa consulta significa. Em TABELA_ESQUERDA A, estamos declarando "A" como o alias da
+ primeira tabela, à esquerda. Um processo semelhante é feito em TABELA_DIREITA B. Assim, quando escrevemos SELECT A.NOME, 
+ B.HOBBY, vamos selecionar o campo "NOME" da tabela A e o campo "HOBBY" da tabela B. Ao final, temos a expressão 
+ ON A.IDENTIFICADOR = B.IDENTIFICADOR, na qual especificamos qual é campo em comum dessas tabelas. E o comando 
+ INNER JOIN é responsável por retornar somente os registros que têm correspondência nas duas tabelas. Nesse caso,
+  são apenas João e Maria (identificadores 1 e 3).
+
+
+
+Outro tipo de comando JOIN é o LEFT JOIN:
+
+SELECT A.NOME, B.HOBBY FROM 
+TABELA_ESQUERDA A
+LEFT JOIN TABELA_DIREITA B
+ON A.IDENTIFICADOR = B.IDENTIFICADOR;COPIAR CÓDIGO
+Left, em inglês, significa "esquerda" e, no nosso contexto, representa a primeira tabela, à esquerda, a que vem antes 
+do comando JOIN. Com essa consulta, o MySQL trará todos os elementos da tabela A e somente os correspondentes da tabela B:
+
+Nome	Hobby
+João	Praia
+Maria	Futebol
+Pedro	NULL
+Cláudia	NULL
+
+
+RIGHT JOIN,
+
+Da mesma maneira que existe o LEFT JOIN, temos o RIGHT JOIN, que trará todos os elementos da tabela da direita 
+(ou seja, a que vem depois do comando JOIN) e somente os correspondentes da esquerda:
+
+SELECT A.NOME, B.HOBBY FROM 
+TABELA_ESQUERDA A
+RIGHT JOIN TABELA_DIREITA B
+ON A.IDENTIFICADOR = B.IDENTIFICADOR;COPIAR CÓDIGO
+Nome	Hobby
+João	Praia
+Maria	Futebol
+NULL	Fotografia
+NULL	Artesanato
+
+
+Além disso, existe também o FULL JOIN:
+
+SELECT A.NOME, B.HOBBY FROM 
+TABELA_ESQUERDA A
+FULL JOIN TABELA_DIREITA B
+ON A.IDENTIFICADOR = B.IDENTIFICADOR;COPIAR CÓDIGO
+Com esse comando, todos os elementos tanto de uma quanto da outra tabela aparecerão no resultado. Os registros que não tiverem correspondência, 
+apresentarão a coluna com valor nulo:
+
+Nome	Hobby
+João	Praia
+Maria	Futebol
+Pedro	NULL
+Cláudia	NULL
+NULL	Fotografia
+NULL	Artesanato
+
+
+CROSS JOIN 
+
+
+Por fim, temos o CROSS JOIN (junção cruzada), que retorna o produto cartesiano das duas tabelas. Ele tem uma estrutura 
+ligeiramente diferente das anteriores, sem nenhuma condição de união. Ou seja, quando não especificamos qual 
+é o campo que liga as tabelas, o MySQL fará o CROSS JOIN:
+
+SELECT A.NOME, B.HOBBY FROM
+TABELA_ESQUERDA A, TABELA-DIREITA B;COPIAR CÓDIGO
+Nome	Hobby
+João	Praia
+Maria	Praia
+Pedro	Praia
+Cláudia	Praia
+João	Futebol
+Maria	Futebol
+Pedro	Futebol
+Cláudia	Futebol
+...	...
+
+
+
+SELECT * FROM tabela_de_vendedores A
+INNER JOIN notas_fiscais B
+ON A.MATRICULA = B.MATRICULA;
+
+
+
+Os campos em comum usados no JOIN não precisam ter o mesmo nome. O importante é que tenham o mesmo conteúdo
+ para que a relação entre tabelas seja viável.
+
+O retorno mostrará todos os campos da tabela A e todos os campos da tabela B, unidos em um só resultado. 
+Será possível ver os dados de cada nota fiscal emitida, junto das informações do vendedor associado 
+a ela.
+
+Com essas duas tabelas, também podemos usar outros comandos com o JOIN, como o GROUP BY. Por exemplo, 
+se nossa meta for descobrir quantas notas fiscais cada vendedor emitiu:
+
+SELECT A.MATRICULA, A.NOME, COUNT(*) FROM
+tabela_de_vendedores A
+INNER JOIN notas_fiscais B
+ON A.MATRICULA = B.MATRICULA
+GROUP BY A.MATRICULA, A.NOME;
+
