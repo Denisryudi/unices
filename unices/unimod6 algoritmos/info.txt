@@ -144,15 +144,83 @@ for(i =1; i<=3, i ++) {
 
 1 - Algoritmo MatrizRetangular
 2 -      Var mat: vetor[1..2, 1..3] de inteiro
-3 -            i: inteiro
-4 -            j: inteiro
+3 -      i, j: inteiro
+4 -
 5 -      i ← 0
-6 -      j ← 0
-7 -      Enquanto i <= 3 faça
-8 -            Enquanto j <= 2 faça
+6 -      Enquanto i <= 2 faça
+7 -            j ← 0
+8 -            Enquanto j <= 3 faça
 9 -                 mat[i,j] ← 1
-10 -                 j ← j + 1
-11 -            Fim_enquanto
-12 -      Fim_enquanto
-13 - Fim_algoritmo
-	
+10 -                j ← j + 1
+11 -           Fim_enquanto
+12 -     i ← i + 1
+13 -     Fim_enquanto
+14 - Fim_algoritmo
+
+
+Sim, você pode dizer que a estrutura de repetição "while" é normalmente 
+utilizada quando você deseja repetir um bloco de código um número 
+indefinido de vezes, com base em uma condição que precisa ser 
+verdadeira para continuar a repetição. A quantidade de repetições
+não é fixa e depende da condição especificada.
+
+Fluxograma
+Inicio = redondo
+retangulo inclinado = representa algo que o programa lê, alguma informação vinda,
+normalmente do usuário, que está sendo inserida no programa. Representa a entrada de dados.
+retangulo = processamento Indica a realização de cálculos e operações de atribuição.
+retangulo quebrado = saida de dados
+losangulo = decisão
+
+init redondo
+
+>entrada de dados > retangulo inclinado
+
+atribuição > retangulo normal
+
+saida > retângulo quebrado
+
+fim> redondo
+
+redondo>retangulo inclinado>retangulo normal> retangulo quebrado>redondo
+
+Um algoritmo escrito em pseudocódigo tem como objetivo descrever uma solução por meio 
+de representações textuais e próximas da linguagem humana, não por meio de 
+diagramas visuais
+
+Os fluxogramas permitem que um(a) desenvolvedor(a) desenvolva algoritmos por meio 
+de blocos lógicos visuais.
+
+>do while = teste condicional verificado somente ao final do laço.
+>ou seja, obrigatóriamente vai ser executado pelo menos uma vez.
+>invertida comparada ao while
+>iterado até que a condição seja atendida
+
+As linhas de código 08 e 09 são exemplos de situações nas quais valores
+textuais literais e o conteúdo de variáveis são exibidos na tela,
+utilizando a função Escreva().
+
+Aqui estão alguns exemplos de expressões relacionais comuns:
+
+Igualdade (==): Verifica se dois valores são iguais. Por exemplo, a == b verifica 
+se "a" é igual a "b".
+
+Desigualdade (!=): Verifica se dois valores são diferentes. Por exemplo,
+x != y verifica se "x" é diferente de "y".
+
+Maior que (>): Verifica se o valor da esquerda é maior que o valor da
+direita. Por exemplo, n > 10 verifica se "n" é maior que 10.,
+
+
+10
+
+||
+||
+||
+v = []
+for( i = 1; i <= 2; i ++) {
+    for(j = 1; i <= 3; i ++) {
+        input(v[j,i])
+
+    }
+}
