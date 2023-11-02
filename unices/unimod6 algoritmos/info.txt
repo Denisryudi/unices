@@ -292,3 +292,109 @@ for (i = 1; i <= 4; i++) {
 
 media = soma / 4
 println("A média é: " + media)
+
+
+fatorial de 7 em pseudocódigo
+
+Class fatorial
+
+num, cont, fat : inteiro
+
+println("escreva um numero: ")
+input(num)
+
+fat = 1
+
+for(cont = num; cont >= 1; cont --) {
+    fat = fat * cont
+}
+
+Algoritmo conversaoDeEurosEmReais
+
+function converte(qtde: real, cot: real) : real
+var conv: real
+
+conv = qtde * cot
+
+return conv
+
+
+
+coin(r : real, e: real) : real
+
+    println("Qual moeda?")
+    if(r) {
+        return input(r)
+    }else{
+        input(e)
+    }
+
+
+
+testeConvReal
+
+r, e, , result, cot : real
+
+
+input(cot)
+
+result = converte(coin, cot)
+
+
+
+Algoritmo conversaoDeEurosEmReais
+
+Função converte(qtde: real, cot: real) : real
+    var conv: real
+    conv = qtde * cot
+    retorne conv
+
+Função coin(r : real, e: real) : real
+    println("Qual moeda?")
+    se r então
+        retorne input(r)
+    senão
+        retorne input(e)
+
+Algoritmo testeConvReal
+    var r, e, result, cot : real
+
+    input(cot)
+    r = 0
+    e = 0
+
+    result = converte(coin(r, e), cot)
+
+    println("O resultado da conversão é: ", result)
+
+
+01 - Algoritmo fatRec
+02 -        Funcao fat(x: inteiro): inteiro
+03 -        Início
+04 -                      Se (x == 0) então
+05 -                                     retorne 1
+06 -                      Senão
+07 -                                     retorne x * fat(x - 1)
+08 -                      Fim_se
+09 -        Fim_funcao
+10 -        Var n, resultado: inteiro
+11 - Início
+12 -        n <- 5
+13 -        resultado <- fat(n)
+14 -        escreva(resultad0)
+15 - Fim,
+
+
+function Fib(n: inteiro) : inteiro
+
+if(n < 2)
+    return N
+else {
+    return fib(n - 2) + fib(n - 1)
+}
+
+
+Nesta aula, estudamos a estrutura de repetição por contagem, que utiliza uma
+variável contadora para controlar o laço. Essa estrutura é recomendada em situações
+nas quais sabemos, previamente, quantas vezes o comando deve ser repetido.
+for
