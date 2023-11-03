@@ -398,3 +398,14 @@ Nesta aula, estudamos a estrutura de repetição por contagem, que utiliza uma
 variável contadora para controlar o laço. Essa estrutura é recomendada em situações
 nas quais sabemos, previamente, quantas vezes o comando deve ser repetido.
 for
+
+
+x MOD 2 = 0
+
+a expressão "numero MOD 2 = 0" é outra maneira válida de verificar se um número é par. Se o resultado dessa expressão for igual 
+a zero, isso significa que o número não deixa um resto quando dividido por 2, o que é uma característica de números pares. 
+Portanto, essa expressão é apropriada para verificar se um número é par e é comumente usada para esse fim em muitas 
+linguagens de programação.
+
+i verti
+j horiq a

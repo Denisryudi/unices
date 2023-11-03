@@ -1,0 +1,26 @@
+https://docs.python.org/pt-br/3/
+
+https://www.alura.com.br/apostila-python-orientacao-a-objetos#breve-histria
+
+Breve história da linguagem
+Python foi criada em 1990 por Guido Van Rossum no Centro de Matemática Stichting na Holanda como uma sucessora da linguagem ABC.
+Guido é lembrado como o principal autor de Python mas outros programadores ajudaram com muitas contribuições.
+
+A linguagem ABC foi desenhada para uso de não programadores, mas logo de início mostrou certas limitações e restrições. 
+A maior reclamação dos primeiros alunos não programadores dessa linguagem era a presença de regras arbitrárias que as
+linguagens de programação haviam estabelecido tradicionalmente - muita coisa de baixo nível ainda era feita e não
+agradou o público.
+
+Guido então se lançou na tarefa de criar uma linguagem de script simples que possuísse algumas das melhores propriedades 
+da ABC. Listas Python, dicionários, declarações básicas e uso obrigatório de indentação - conceitos que aprenderemos 
+neste curso - diferenciam Python da linguagem ABC.
+
+Você provavelmente já ouviu ou leu em algum lugar que Python é uma linguagem interpretada ou uma linguagem de script.
+Em certo sentido, também é verdade que Python é tanto uma linguagem interpretada quanto uma linguagem compilada.
+Um compilador traduz linguagem Python em linguagem de máquina - código Python é traduzido em um código 
+intermediário que deve ser executado por uma máquina virtual conhecida como PVM (Python Virtual Machine).
+
+O interpretador faz esta 'tradução' em tempo real para código de máquina, ou seja, em tempo de execução. Já o
+compilador traduz o programa inteiro em código de máquina de uma só vez e então o executa, criando um arquivo 
+que pode ser rodado (executável). O compilador gera um relatório de erros (casos eles existam) e o interpretador 
+interrompe a tradução quando encontra um primeiro erro.
