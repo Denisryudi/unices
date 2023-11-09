@@ -184,6 +184,20 @@ fim> redondo
 
 redondo>retangulo inclinado>retangulo normal> retangulo quebrado>redondo
 
+
+redondo inicio > retangulo inclinado > 
+
+pseudo
+
+Class redondo  
+int init =0; retangulo inclinado
+multi = init *2 retangulo 
+mult retangulo quebrado
+redondo 
+
+losangulo if else 
+
+
 Um algoritmo escrito em pseudocódigo tem como objetivo descrever uma solução por meio 
 de representações textuais e próximas da linguagem humana, não por meio de 
 diagramas visuais

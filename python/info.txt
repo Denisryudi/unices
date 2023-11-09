@@ -23,4 +23,52 @@ intermediário que deve ser executado por uma máquina virtual conhecida como PV
 O interpretador faz esta 'tradução' em tempo real para código de máquina, ou seja, em tempo de execução. Já o
 compilador traduz o programa inteiro em código de máquina de uma só vez e então o executa, criando um arquivo 
 que pode ser rodado (executável). O compilador gera um relatório de erros (casos eles existam) e o interpretador 
-interrompe a tradução quando encontra um primeiro erro.
+interrompe a tradução quando encontra um primeiro erro.1    q2w3aer5t76yuioAS
+
+
+#lista chamada idades
+idades = []
+
+for i in range(5):
+  idade = int(input('Digite uma idade'))
+  idades.append(idade)
+
+for idade in idades:
+  if(idade >= 18):
+    print('Maior de idade, pode dirigir')
+  else:
+    print('Menor, não pode dirigir')
+
+
+
+em função
+
+def verifica_se_pode_dirigir(idade):
+  idades = []
+
+  for i in range(5):
+    idade = int(input('Digite uma idade: '))
+    idades.append(idade)
+  
+  for idade in idades:
+    if(idade >= 18):
+      print('Maior de idade, pode dirigir')
+    else:
+      print('Menor, não pode dirigir')
+
+
+def verifica_se_pode_dirigir(idade):
+    if idade >= 18:
+        return 'Maior de idade, pode dirigir'
+    else:
+        return 'Menor, não pode dirigir'
+
+idades = []
+
+for i in range(5):
+    idade = int(input('Digite uma idade: '))
+    idades.append(idade)
+
+for idade in idades:
+    resultado = verifica_se_pode_dirigir(idade)
+    print(f'Idade: {idade} - {resultado}')
