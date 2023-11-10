@@ -72,3 +72,30 @@ for i in range(5):
 for idade in idades:
     resultado = verifica_se_pode_dirigir(idade)
     print(f'Idade: {idade} - {resultado}')
+
+
+permissoes = []
+idades = [20, 14, 40]
+
+def verifica_se_pode_dirigir(idades, permissoes):
+  for idade in idades:
+    if(idade >= 18):
+      permissoes.append(True)
+    else:
+      permissoes.append(False)
+
+verifica_se_pode_dirigir(idades, permissoes)
+
+permissoes
+
+for permissao in permissoes:
+  if(permissao == True):
+    print('Pode dirigir True')
+  else:
+    print('Não pode dirigir False')
+
+
+lista = ['Juca', 28, True, '18']
+
+for elemento in lista:
+  print(f'O elemento {elemento} é do tipo: ', type(elemento))    
