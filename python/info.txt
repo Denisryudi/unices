@@ -99,3 +99,54 @@ lista = ['Juca', 28, True, '18']
 
 for elemento in lista:
   print(f'O elemento {elemento} é do tipo: ', type(elemento))    
+
+
+
+
+welcome = "Hi! Let's put your trivia knowledge to the test. " \
+          "I bet you will ace it!"
+send_message(welcome)
+trivia_quiz = [
+    {
+		"question": "What is the name of Harry Potter's school?",
+		"answer": "Hogwarts"
+	},
+	{
+		"question": "Who was the first Disney Princess?",
+		"answer": "Snow White"
+	}
+]
+
+# Use a for to send all questions
+for quiz in trivia_quiz:
+    send_message(quiz["question"])
+    
+
+
+def send_message(message):
+    print(message)
+
+greetings = [
+    "Hello there!",
+    "I will ask you trivia questions.",
+    "Let's test your knowledge.",
+    "I bet you will ace it!"
+]
+
+# Send the elements in the list
+for greeting in greetings:
+    send_message(greeting)
+
+
+
+for t in trivia_quiz:
+    send_message(t["question"])
+    # Read the user's response and store it
+    response = read_message()
+    
+    if response == t["answer"]:
+        send_message("Good Job!")
+    else:
+        send_message("Wrong! The correct answer is %s" % 
+                      t["answer"])
+        
