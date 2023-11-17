@@ -1,0 +1,2 @@
+Verificar colunas e linhas em branco> Deletar colunas, deletar linhas em branco
+Verificar se os tipos batem(str, int, etc)
