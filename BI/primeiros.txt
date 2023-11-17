@@ -1,2 +1,9 @@
-Verificar colunas e linhas em branco> Deletar colunas, deletar linhas em branco
+Verificar colunas e linhas em branco> Deletar colunas, 
+deletar linhas em branco> ReduceRows> remove blank rows> View> Column QUality
 Verificar se os tipos batem(str, int, etc)
+
+editar> dividir/multiplicar> transform> +-:*
+
+
+M510 Mouse sem fio - Vermelho
+dividir = split column > by delimiter
