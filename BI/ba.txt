@@ -33,3 +33,8 @@ Modelagem de dados
 -:>Criação dos relatórios /Dashboards
 
 -:>Compartilhamento dos relatórios online
+
+
+
+
+
