@@ -1,0 +1,50 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+void main() {
+	
+	int idade = 0;
+	setlocale(LC_ALL, "");
+	
+	printf("olá mundo\n");
+	
+	printf("Digite a sua idade \n");
+	/*Leitura variável idade */
+	scanf("%d", &idade);
+	
+	printf("A idade digitada foi %d\n", idade);
+	
+	if(idade >= 18 && idade <= 25) {
+		printf("Você é maior de idade, mas tem menos de 25 anos\n");
+	}else{
+		if(idade >= 25) {
+			printf("tem mais que 25 anos\n");
+		}else{
+			printf("Menor de idade\n");
+		}
+	}
+	
+	switch(idade) {
+		case 1:{
+			printf("idade é um");
+			break;
+		}
+		case 10:{
+			printf("idade é 10");
+			break;
+		}
+		case 30:{
+			printf("voce digitou 20");
+			break;
+		}
+		default:{
+			printf("valor invalido\n");
+			break;
+		}
+	}
+	
+}
+
+
+case = valores fixos 
