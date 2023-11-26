@@ -150,3 +150,56 @@ for t in trivia_quiz:
         send_message("Wrong! The correct answer is %s" % 
                       t["answer"])
         
+
+STEP
+
+
+precos = "Jan: 25, Fev: 27, Mar: 29"
+​
+preco_jan = precos[9:-9]
+​
+print(preco_jan)
+​= 
+Fev: 27
+
+
+||
+
+
+#step 2 em 2
+precos = "Jan: 25, Fev: 27, Mar: 29"
+​
+preco_jan = precos[::2]
+​
+print(preco_jan)
+=
+Jn 5 e:2,Mr 9
+
+
+||
+
+
+#Negativo
+
+#step 2 em 2
+precos = "Jan: 25, Fev: 27, Mar: 29"
+
+preco_jan = precos[::-2]
+
+print(preco_jan)
+=
+9 rM,2:e 5 nJ
+
+||
+
+
+
+precos = "Jan: 25, Fev: 27, Mar: 29"
+
+preco_jan = precos[10:2:-2]
+
+print(preco_jan)
+=
+e 5 
+
+dicas: primeiro é inclusivo e último é exclusivo
