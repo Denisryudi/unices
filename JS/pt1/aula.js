@@ -45,3 +45,16 @@ console.log(musica);
 
 //Tipo referência = a variável não vai armazenar o dado especificamente e sim a chave 
 //variáveis que abrigam obg, array são variáveis com tipos de referência
+
+//const pode modificar os dados de um objeto, mas não podemos jogar um novo objeto
+
+const listaAlunos = ['Daniel', 'Lira', 'Alon'];
+listaAlunos[3] = 'Renan';
+
+console.log(listaAlunos);
+
+console.log('Erro');
+
+//listaAlunos = ['Afonso'];
+//da erro, pois tentei atribuir uma nova lista, um novo array
+
