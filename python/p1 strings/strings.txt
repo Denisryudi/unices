@@ -112,3 +112,7 @@ preco = 100
 valor_imposto = round(preco * imposto, 1)
 print('Imposto sobre o preço é de {}'.format(valor_imposto))
 Imposto sobre o preço é de 15.8
+
+
+não pode alterar o valor de uma lista de strings
+ja de int pode
