@@ -7,3 +7,12 @@ function calcularRaizQuadrada(base) {
 }
 
 calcularRaizQuadrada();
+
+//return = bomba codificada
+
+function criarPessoa(nome, idade) {
+    return { nome: nome, idade: idade };
+}
+
+const pessoa = criarPessoa('João', 25);
+console.log(pessoa);
