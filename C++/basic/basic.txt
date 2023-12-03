@@ -48,3 +48,53 @@ void main() {
 
 
 case = valores fixos 
+
+
+O processo de compilação analisa o código, do ponto de vista
+sintático, e o converte para um código - objeto, que é a versão em linguagem de
+máquina do programa. Se o programa possui chamada às funções de bibliotecas,
+o linker (ligador) reúne o programa - objeto com as bibliotecas referenciadas e
+gera o código executável (arquivo binário) (ROCHA, 2006).
+
+scanf("%d", &idade)  <input 
+
+stdio = prinf scanf
+
+
+codigo fonte > compilado > programa a nivel de maquina > linkeditor > .exe
+linkeditor = assimila a biblioteca ao projeto e criar executavel
+
+
+
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main() {   
+	
+	setlocale(LC_ALL, "");
+	
+	int idades[5];
+	
+	int i;
+	
+	for(i = 0; i < 5; i++) {
+		printf("Digite a idade da pessoa em número: %d\n", i);
+		scanf("%d", &idades[i]);		
+	}
+	
+	for(i = 0; i < 5; i++) {
+		printf("A idade da pessoa número: %d é: %d\n", i, idades[i]);
+		
+	}
+
+
+
+
+int idades[5]
+float precos[10]
+char nome[5] 
+string = vetor de char = char nome[5]
+
+struct = estrutura de dados heterogenea, armazenar diferentes tipos
