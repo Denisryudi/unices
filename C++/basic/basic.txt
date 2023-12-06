@@ -142,8 +142,23 @@ int main() {
 	}
 
 	strcmp = String Compare
+	Para atribur um valor a uma variável do tipo vetor de char na linguagem C utiliza-se a função "strcpy" 
+	da biblioteca "string.h".
+	Uma String na linguagem C é definida através de um vetor de char.
+
+	O modo de abertura "w" em arquivos possibilita a criação e escrita em arquivo de texto.
 
 
+strcpy(C, A);
+strcat(C, B);
+
+strcpy(C, A);: Isso copia o conteúdo da string A para a string C. strcpy significa "string copy" (cópia de string).
+Neste caso, copia os caracteres de A para C até encontrar o caractere nulo ('\0') em A. Portanto, após essa linha,
+C conterá a string "Pietro".
+
+strcat(C, B);: Isso anexa (concatena) o conteúdo da string B ao final da string C. strcat significa "string concatenate" 
+(concatenação de string). Após essa linha, C terá os caracteres de B adicionados ao final. Portanto, C agora conterá a 
+string "PietroMartins".
 
 {
 
@@ -233,3 +248,42 @@ int main() {
         printf("O produto de código %d, de nome %s, de valor %f, foi cadastrado com sucesso!\n", produtos[i].codigo, produtos[i].nome, produtos[i].valorVenda);
 	}
 	
+
+
+
+
+
+fatorial
+
+int fat(int n){
+    if(n == 1)
+        return 1;
+    else
+        return n * fat(n-1);
+}
+
+int main() {
+	
+	setlocale(LC_ALL, "");
+	
+	
+    int num, res;
+    printf("Informe o número:\n");
+    scanf("%d", &num);
+    res = fat(num);
+    printf("O fatorial é: %d\n", res);
+    return 0;	
+	
+II. A chamada recursiva da função fat() depende do parâmetro n. A chamada
+recursiva é return n * fat(n-1);, onde n-1 é passado como argumento 
+para a próxima chamada recursiva.
+
+III. O caso base da função é atingido quando o parâmetro da função é 
+igual a 1, conforme indicado pela condição if(n == 1) na linha 04.
+ Esse é o ponto de parada da recursividade.
+
+
+
+
+
+ 
