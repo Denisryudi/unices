@@ -286,4 +286,4 @@ igual a 1, conforme indicado pela condição if(n == 1) na linha 04.
 
 
 
- 
+ scanf = ("%d", &nome);
