@@ -1,0 +1,15 @@
+C:\uni\Unicesu\unices\bin\Debug\net8.0\unices.exe
+C:\uni\Unicesu\unices\bin\Debug\net8.0\unices.deps.json
+C:\uni\Unicesu\unices\bin\Debug\net8.0\unices.runtimeconfig.json
+C:\uni\Unicesu\unices\bin\Debug\net8.0\unices.dll
+C:\uni\Unicesu\unices\bin\Debug\net8.0\unices.pdb
+C:\uni\Unicesu\unices\obj\Debug\net8.0\unices.GeneratedMSBuildEditorConfig.editorconfig
+C:\uni\Unicesu\unices\obj\Debug\net8.0\unices.AssemblyInfoInputs.cache
+C:\uni\Unicesu\unices\obj\Debug\net8.0\unices.AssemblyInfo.cs
+C:\uni\Unicesu\unices\obj\Debug\net8.0\unices.csproj.CoreCompileInputs.cache
+C:\uni\Unicesu\unices\obj\Debug\net8.0\unices.sourcelink.json
+C:\uni\Unicesu\unices\obj\Debug\net8.0\unices.dll
+C:\uni\Unicesu\unices\obj\Debug\net8.0\refint\unices.dll
+C:\uni\Unicesu\unices\obj\Debug\net8.0\unices.pdb
+C:\uni\Unicesu\unices\obj\Debug\net8.0\unices.genruntimeconfig.cache
+C:\uni\Unicesu\unices\obj\Debug\net8.0\ref\unices.dll
