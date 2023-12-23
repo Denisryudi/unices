@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\uni\\Unicesu\\unices\\C#\\Calculadora\\Calculadora.csproj",
+      "projectUniqueName": "C:\\uni\\Unicesu\\unices\\c#\\Calculadora\\Calculadora.csproj",
       "projectName": "Calculadora",
-      "projectPath": "C:\\uni\\Unicesu\\unices\\C#\\Calculadora\\Calculadora.csproj",
+      "projectPath": "C:\\uni\\Unicesu\\unices\\c#\\Calculadora\\Calculadora.csproj",
       "packagesPath": "C:\\Users\\denis\\.nuget\\packages\\",
-      "outputPath": "C:\\uni\\Unicesu\\unices\\C#\\Calculadora\\obj\\",
+      "outputPath": "C:\\uni\\Unicesu\\unices\\c#\\Calculadora\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\denis\\AppData\\Roaming\\NuGet\\NuGet.Config"
