@@ -1,4 +1,4 @@
-using Calculadora.Services;
+/*using Calculadora.Services;
 namespace CalculadoraTestes;
 
 public class CalculadoraTests
@@ -58,3 +58,4 @@ public class CalculadoraTests
     }
 }
 
+*/

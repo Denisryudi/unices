@@ -1,4 +1,4 @@
-namespace Calculadora.Services;
+/*namespace Calculadora.Services;
 
 public class ValidacoesString
 {
@@ -7,4 +7,4 @@ public class ValidacoesString
         int num = texto.Length;
         return num;
     }
-}
+}*/

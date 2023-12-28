@@ -1,4 +1,4 @@
-namespace Calculadora.Services;
+/*namespace Calculadora.Services;
 
 public class CalculadoraImp
 {
@@ -11,4 +11,4 @@ public class CalculadoraImp
     {
         return num % 2 == 0;
     }
-}
+}*/

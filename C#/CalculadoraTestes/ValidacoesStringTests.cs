@@ -1,7 +1,7 @@
-using Calculadora.Services;
+/*using Calculadora.Services;
 namespace CalculadoraTestes;
 
-public class ValidacoesStringTests
+/*public class ValidacoesStringTests
 {
     private ValidacoesString _valid;
 
@@ -25,4 +25,4 @@ public class ValidacoesStringTests
     }
     
     
-}
+}*/
