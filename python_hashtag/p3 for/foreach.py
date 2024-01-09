@@ -9,4 +9,6 @@ for venda in vendas:
 
 venda_total = len(vendas)
 
-print('O percentual de pessoas que bateram a meta foi de {:.1%}'.format(qtde_bateu_meta/venda_total))
+print('O percentual de pessoas que bateram a meta foi de {:.2%}'.format(qtde_bateu_meta/venda_total))
+
+
