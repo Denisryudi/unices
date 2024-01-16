@@ -16,3 +16,6 @@ for item in vendas:
     if produto == 'iphone x' and data == '20/08/2020':
         faturamento += unidades * valor_unitario
 print(faturamento)
+
+
+
