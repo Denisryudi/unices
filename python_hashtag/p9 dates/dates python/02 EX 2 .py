@@ -1,5 +1,5 @@
 import time
-import locale
+
 tempo_atual = time.localtime()
 tempo_ano_novo = time.mktime((2024, 1, 29, 0, 0, 0, 0, 0, 0))
 
