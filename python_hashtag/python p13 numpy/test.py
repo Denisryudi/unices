@@ -1,5 +1,6 @@
 import numpy as np
 
+#min max sort mean num dot
 precos = np.array([25, 20, 35, 30, 40])
 quantidades = np.array([5, 10, 25, 30, 40])
 
