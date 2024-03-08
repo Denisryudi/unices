@@ -1,3 +1,4 @@
 /.metadata/
 /test/test.ipynb/
 .env
+.idea/
