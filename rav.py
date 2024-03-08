@@ -1,7 +1,13 @@
+import subprocess
+
 import pyautogui
 import time
 import keyboard
+
+#mouse nas extremidades
+pyautogui.FAILSAFE = True
 #mouseinfo  >>> from mouseinfo import mouseInfo   -- mouseInfo()
+#abrir ravendawn
 
 
 tempo_inicial = time.time()
