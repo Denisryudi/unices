@@ -15,3 +15,5 @@ após corrigido>
 
 git reset --hard BranchDeployInicial
 
+
+git rm -r --cached [names)
