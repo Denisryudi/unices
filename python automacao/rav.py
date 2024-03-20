@@ -11,7 +11,7 @@ pyautogui.FAILSAFE = True
 
 
 tempo_inicial = time.time()
-limite = 50
+limite = 20
 
 duração_do_clique = 1
 contador = 0
