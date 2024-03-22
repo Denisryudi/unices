@@ -179,3 +179,72 @@ LUZ&GO Alimentos. Temperos secos x temperos frescos: qual é o melhor? LUZ&GO Al
  Kantar. Consumo de caldos e temperos prontos no Brasil. Kantar, 2023. Disponível em: https://www.kantar.com/brazil/inspiration/consumo/2023-wp-caldos-e-temperos-prontos-bra. Acesso em: 14 fev. 2024.
 
 G1. Pequenos agricultores dominam a produção de temperos no Brasil. G1, 2021. Disponível em:https://g1.globo.com/economia/agronegocios/agro-a-industria-riqueza-do-brasil/noticia/2021/05/03/de-onde-vem-o-que-eu-como-pequenos-agricultores-dominam-a-producao-de-temperos-no-brasil.ghtml. Acesso em: 14 fev. 2024.
+
+
+A sigla ADEEC refere-se a um modelo de gestão e planejamento estratégico que envolve cinco fases críticas
+para o sucesso de qualquer projeto ou empreendimento. Cada letra representa uma etapa específica no
+processo de planejamento e execução de estratégias dentro de uma organização. Vamos detalhar cada
+uma delas:
+
+Análise Ambiental (A): Esta fase envolve o exame minucioso do ambiente interno e externo no qual
+a organização opera. O objetivo é identificar oportunidades e ameaças no ambiente externo, assim
+como forças e fraquezas internas, por meio de ferramentas como SWOT (Strengths, Weaknesses,
+Opportunities, Threats - Forças, Fraquezas, Oportunidades, Ameaças). Isso ajuda a empresa a
+entender melhor o contexto no qual está inserida, facilitando a tomada de decisões mais
+informadas.
+
+Diretriz (D): Após a análise ambiental, a próxima etapa é definir as diretrizes ou os objetivos
+estratégicos. Essas diretrizes são declarações de alto nível sobre o que a organização espera
+ alcançar no médio a longo prazo. Elas servem como um norte para todas as atividades subsequentes
+ e ajudam a alinhar os esforços de diferentes partes da organização em direção a um objetivo comum.
+
+Estratégia (E): Com as diretrizes estabelecidas, a organização então desenvolve estratégias
+específicas para alcançá-las. Isso pode envolver a formulação de planos táticos e operacionais
+ que detalham como os recursos serão alocados, quais ações serão tomadas, quem será responsável
+ por cada tarefa e quais métricas serão usadas para avaliar o progresso.
+
+Execução (E): Esta fase é sobre colocar os planos em ação. Envolve a implementação das
+estratégias definidas na etapa anterior, o que pode requerer mudanças na estrutura
+organizacional, na cultura da empresa, nos processos operacionais, entre outros
+ aspectos. A execução bem-sucedida requer comunicação eficaz, liderança forte e
+ a capacidade de adaptar-se a imprevistos.
+
+Controle (C): A última etapa do modelo ADEEC é o controle, que se refere ao monitoramento contínuo do desempenho em relação aos objetivos estratégicos estabelecidos. Isso envolve a coleta e análise de dados para avaliar o progresso e identificar áreas que podem precisar de ajustes. O controle é um processo iterativo que pode levar a revisões nas diretrizes, estratégias e planos de execução.
+
+Em resumo, o modelo ADEEC é uma abordagem sistemática para o planejamento e execução de estratégias que enfatiza a importância da análise ambiental, a definição clara de objetivos, o desenvolvimento de estratégias robustas, a implementação eficaz e o monitoramento contínuo para o sucesso organizacional.
+
+
+
+
+■ Design thinking: uma das estratégias que pode ser utilizada pelos líderes
+é a adoção do Design Thinking, abordagem proposta por Tim Brown, em
+seu livro Design Thinking: Inovação em Negócios (2010). Esta abordagem
+busca compreender as necessidades e os desejos dos clientes, de forma
+empática, promovendo a geração de soluções criativas para problemas
+complexos. Isso pode ser aplicado no ambiente empresarial, estimulando
+os colaboradores a pensar fora da caixa, desenvolvendo ideias inovadoras
+e propostas criativas.
+
+■ Pensamento lateral: outra estratégia que pode ser adotada pelos líderes é
+o uso de técnicas de pensamento lateral, proposto por Edward de Bono, em
+seu livro Pensamento Lateral: Manual de Criatividade (1992). Esta técnica
+estimula o pensamento criativo e a solução de problemas, por meio da mudança de perspectiva e da
+ utilização de diferentes técnicas de pensamento,
+o que pode levar a ideias e soluções inovadoras. Esta abordagem permite
+aos colaboradores visualizarem problemas e situações de diferentes ângulos,
+desenvolvendo a capacidade de ver além do óbvio.
+
+Lean Startup: outra estratégia viável é a adoção da metodologia Lean
+Startup, proposta por Eric Ries, em seu livro A Startup Enxuta (2012).
+Esta abordagem busca desenvolver soluções, de forma mais eficiente, com
+menor desperdício de recursos, e permite que as empresas testem e validem suas ideias,
+de forma rápida e eficaz. Com isso, os líderes podem
+estimular a inovação e a criatividade ao mesmo tempo em que reduzem
+os riscos e os custos envolvidos em processos tradicionais de desenvolvimento de produtos e serviços.
+
+thinking = necessidades clientes > empatia> soluções criativas
+
+lateral = mudança perspectiva + diferentes técnicas pensamento
+
+lean = validação mvp teste rápida e eficaz > red gasto recursos/tempo
+
